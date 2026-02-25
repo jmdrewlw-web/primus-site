@@ -1,6 +1,5 @@
 "use client";
 import { useState, useEffect } from "react";
-import Image from "next/image";
 import Link from "next/link";
 
 const NAV_LINKS = [
@@ -25,18 +24,15 @@ export default function Nav() {
       className={`sticky top-0 z-50 backdrop-blur-xl transition-all duration-300 ${
         scrolled
           ? "bg-cream/90 border-b border-border shadow-sm"
-          : "bg-cream/70 border-b border-transparent"
+          : "bg-cream border-b border-transparent"
       }`}
     >
       <div className="max-w-[1280px] mx-auto px-6 md:px-10 h-[72px] flex items-center justify-between">
-        <Link href="/">
-          <Image
+        <Link href="/" className="flex-shrink-0">
+          <img
             src="/images/Primus_Logo.jpeg"
             alt="Primus Companies"
-            width={160}
-            height={42}
-            className="h-[42px] w-auto"
-            priority
+            className="h-[38px] w-auto"
           />
         </Link>
 

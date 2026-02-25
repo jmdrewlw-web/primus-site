@@ -3,14 +3,14 @@ import { useRef } from "react";
 import { useReveal } from "@/hooks/useReveal";
 
 const PROJECTS = [
-  { name: "Crystal Group HQ", loc: "Hiawatha, Iowa", type: "Light Industrial", img: "https://framerusercontent.com/images/lHkMHRR59Ok4KHMo6gT31kV1ZY.jpg" },
-  { name: "Madison Veterinary Hospital", loc: "Madison, Wisconsin", type: "Healthcare", img: "https://framerusercontent.com/images/hJ3Ggwq9LFUQ6cEPU4k6apvhKc.jpg" },
-  { name: "Titus Dentistry", loc: "Cedar Rapids, Iowa", type: "Healthcare", img: "https://framerusercontent.com/images/JwYQFGBScFmAfyW1UJ9Vj2rQ.jpg" },
-  { name: "Timberline Manufacturing", loc: "Woodbine, Iowa", type: "Light Industrial", img: "https://framerusercontent.com/images/4wNIqNMXlYxaCAZZQKAf0bUhsg.jpg" },
-  { name: "Ducharme Dermatology", loc: "Quad Cities", type: "Healthcare", img: "https://framerusercontent.com/images/gBqbCCEyH6kfaFnAMvHO6VYvyI.jpg" },
-  { name: "Bluegrass Veterinary", loc: "Gallatin, Tennessee", type: "Healthcare", img: "https://framerusercontent.com/images/6K4GYgI7GpHqJNGsW83MdKZCfA.jpg" },
-  { name: "Integrative Health", loc: "Cedar Rapids, Iowa", type: "Healthcare", img: "https://framerusercontent.com/images/6zVCkLkOmlxQYnZeMHvPDh0XcU.jpg" },
-  { name: "Cedar Rapids Endodontics", loc: "Cedar Rapids, Iowa", type: "Healthcare", img: "https://framerusercontent.com/images/qcNhAhiXP5GdcpAPRcLwDVnXKE.jpg" },
+  { name: "Crystal Group HQ", loc: "Hiawatha, Iowa", type: "Light Industrial", img: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=80" },
+  { name: "Madison Veterinary Hospital", loc: "Madison, Wisconsin", type: "Healthcare", img: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&q=80" },
+  { name: "Titus Dentistry", loc: "Cedar Rapids, Iowa", type: "Healthcare", img: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=800&q=80" },
+  { name: "Timberline Manufacturing", loc: "Woodbine, Iowa", type: "Light Industrial", img: "https://images.unsplash.com/photo-1565008447742-97f6f38c985c?w=800&q=80" },
+  { name: "Ducharme Dermatology", loc: "Quad Cities", type: "Healthcare", img: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80" },
+  { name: "Bluegrass Veterinary", loc: "Gallatin, Tennessee", type: "Healthcare", img: "https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=800&q=80" },
+  { name: "Integrative Health", loc: "Cedar Rapids, Iowa", type: "Healthcare", img: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=800&q=80" },
+  { name: "Cedar Rapids Endodontics", loc: "Cedar Rapids, Iowa", type: "Healthcare", img: "https://images.unsplash.com/photo-1585974738771-84483dd9f89f?w=800&q=80" },
 ];
 
 export default function Projects() {
@@ -31,7 +31,7 @@ export default function Projects() {
 
       <div
         ref={scrollRef}
-        className={`flex gap-6 overflow-x-auto px-6 md:px-10 pb-6 snap-x snap-mandatory scrollbar-hide transition-all duration-700 ${
+        className={`flex gap-6 overflow-x-auto px-6 md:px-10 pb-6 snap-x snap-mandatory transition-all duration-700 ${
           visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
         }`}
         style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
@@ -50,6 +50,7 @@ export default function Projects() {
                 src={p.img}
                 alt={p.name}
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                loading="lazy"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
               <div className="absolute bottom-0 left-0 p-6">

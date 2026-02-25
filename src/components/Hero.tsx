@@ -9,17 +9,13 @@ export default function Hero() {
   return (
     <section className="relative px-6 md:px-10 pt-16 md:pt-24 pb-20 md:pb-32 max-w-[1280px] mx-auto">
       <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
-        {/* Text */}
         <div>
           <span className="text-[.76rem] font-semibold tracking-[.16em] uppercase text-accent block mb-6">
             Clarify · Plan · Build · Deliver
           </span>
 
           <h1 className="font-display text-[clamp(2.6rem,6vw,4.4rem)] leading-[1.04] font-bold text-dark mb-4 tracking-tight">
-            <span
-              className="hero-word"
-              style={{ animationDelay: "0.2s" }}
-            >
+            <span className="hero-word" style={{ animationDelay: "0.2s" }}>
               You&apos;ve got a vision.
             </span>
           </h1>
@@ -56,16 +52,14 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* Hero Image */}
         <div className="relative hidden md:block">
           <div className="aspect-[4/5] rounded-2xl overflow-hidden bg-cream-light">
             <img
-              src="https://framerusercontent.com/images/SSzFMXoyvOFnlQrhmBbYiScjnc.jpg"
+              src="https://primus-companies.com/wp-content/uploads/2021/07/DSC_0604-scaled.jpg"
               alt="Primus Companies — commercial construction project"
               className="w-full h-full object-cover"
             />
           </div>
-          {/* Floating stat card */}
           <div className="absolute -bottom-6 -left-6 bg-white rounded-xl shadow-xl shadow-dark/8 px-6 py-5 flex gap-8">
             {[
               { label: "Founded", value: "1972" },
