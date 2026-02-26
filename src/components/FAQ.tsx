@@ -3,12 +3,12 @@ import { useState } from "react";
 import { useReveal } from "@/hooks/useReveal";
 
 const FAQS = [
-  { q: "When should we bring in a GC?", a: "As early as possible. The biggest cost decisions happen before construction starts — site selection, design direction, budget validation. We add the most value in preconstruction. But if you've already got drawings, we'll plug in wherever you are." },
-  { q: "Do you do design-build?", a: "Yes. We coordinate the full design-build process — architect selection, design management, permitting, and construction. One contract, one team, one point of accountability." },
-  { q: "Where do you work?", a: "We're based in Cedar Rapids, Iowa with offices in Nashville, Minneapolis, and Chicago. We've delivered projects in 15 states across the Midwest and Southeast." },
+  { q: "When should we bring in a GC?", a: "As early as possible. The biggest cost decisions happen before construction starts — site selection, design direction, budget validation. We add the most value in preconstruction. But if you've already got drawings ready to price, we plug in wherever you are." },
+  { q: "Do you do design-build?", a: "Absolutely. We're happy to run a full design-build engagement from concept through closeout. We're also open to other delivery methods if they're a better fit — construction management, owner's rep, whatever aligns with the project and the client." },
+  { q: "Where do you work?", a: "It depends on the engagement. As a general contractor, we focus within a couple-hour radius of our offices — eastern and central Iowa, Minneapolis, Omaha, Kansas City. For specific engagements, we'll travel. And for multi-site customers, we follow you wherever the next project takes us." },
   { q: "What if my project isn't a fit?", a: "We'll tell you. That's one of the things our clients appreciate most. Start with the Pathfinder and we'll give you a straight answer within a few days." },
-  { q: "What size projects do you take on?", a: "Most of our projects range from $500K to $15M. If your project is outside that range, we'll still have the conversation — we may have the right solution or the right referral." },
-  { q: "Do you help with financing?", a: "We don't lend money, but we help you build the case. Our preconstruction work gives lenders exactly what they need — validated budgets, realistic timelines, and a credible delivery plan. For qualified multi-site operators, we can facilitate 100% financing introductions." },
+  { q: "What size projects do you take on?", a: "It varies by industry and vertical. A $5 million medical project can have as much complexity as a $20 million multifamily build. It's more about scope and alignment on vision than a dollar amount. We've done 2,000 square feet and 200,000 square feet and everything in between." },
+  { q: "Do you help with financing?", a: "Yes. We have relationships with a variety of financing partners — traditional banks, SBA lenders, and alternative capital sources. Our preconstruction work gives lenders exactly what they need: validated budgets, realistic timelines, and a credible delivery plan. For qualified multi-site operators, we can facilitate 100% financing introductions." },
 ];
 
 export default function FAQ() {
@@ -27,10 +27,7 @@ export default function FAQ() {
 
         <div className="space-y-3">
           {FAQS.map((f, i) => (
-            <div
-              key={i}
-              className="bg-cream-light rounded-xl overflow-hidden"
-            >
+            <div key={i} className="bg-cream-light rounded-xl overflow-hidden">
               <button
                 onClick={() => setOpen(open === i ? null : i)}
                 className="w-full flex items-center justify-between px-6 py-5 text-left group"
@@ -40,11 +37,7 @@ export default function FAQ() {
                   +
                 </span>
               </button>
-              <div
-                className={`overflow-hidden transition-all duration-300 ${
-                  open === i ? "max-h-60 opacity-100" : "max-h-0 opacity-0"
-                }`}
-              >
+              <div className={`overflow-hidden transition-all duration-300 ${open === i ? "max-h-60 opacity-100" : "max-h-0 opacity-0"}`}>
                 <p className="px-6 pb-5 text-mid leading-relaxed">{f.a}</p>
               </div>
             </div>
