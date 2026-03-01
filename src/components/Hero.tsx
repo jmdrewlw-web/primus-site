@@ -76,7 +76,7 @@ export default function Hero() {
         <div className={`relative hidden md:block transition-all duration-1000 ${ready ? 'opacity-100 translate-y-0 scale-100' : 'opacity-0 translate-y-8 scale-[0.97]'}`} style={{ transitionDelay: '0.3s' }}>
           <div className="aspect-[4/5] rounded-2xl overflow-hidden bg-cream-light shadow-2xl shadow-dark/10">
             <img
-              src="https://primus-companies.com/wp-content/uploads/2021/07/DSC_0604-scaled.jpg"
+              src="/images/hero.jpg"
               alt="Primus Companies — commercial construction project"
               className="w-full h-full object-cover"
             />
