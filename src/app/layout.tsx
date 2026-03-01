@@ -6,14 +6,13 @@ export const metadata: Metadata = {
   description: "Clarify. Plan. Build. Deliver. 50 years of commercial construction across the Midwest. From preconstruction through closeout — one team, real numbers, no surprises.",
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <div className="grain" />
+        {children}
+      </body>
     </html>
   );
 }

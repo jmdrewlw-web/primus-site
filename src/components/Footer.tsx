@@ -1,72 +1,59 @@
 "use client";
-import Image from "next/image";
 import Link from "next/link";
-
-const NAV_LINKS = [
-  { label: "About", href: "/about" },
-  { label: "How We Work", href: "/how-we-work" },
-  { label: "Projects", href: "#projects" },
-  { label: "Field Notes", href: "/field-notes" },
-  { label: "Contact", href: "#contact" },
-  { label: "Careers", href: "/careers" },
-];
 
 export default function Footer() {
   return (
     <footer id="contact" className="bg-dark text-white/60">
       <div className="max-w-[1280px] mx-auto px-6 md:px-10 py-16 md:py-20">
         <div className="grid md:grid-cols-3 gap-12 md:gap-16">
-          {/* Brand */}
           <div>
-            <div className="inline-block bg-white rounded-lg p-3 mb-6">
-              <Image
-                src="/images/Primus_Logo.jpeg"
+            <div className="inline-block bg-white/95 rounded-lg px-3 py-2 mb-6">
+              <img
                 alt="Primus Companies"
-                width={130}
-                height={34}
-                className="h-[34px] w-auto"
+                src="/images/Primus_Logo.jpeg"
+                className="h-[28px] w-auto"
               />
             </div>
-            <p className="text-white/40 text-sm leading-relaxed max-w-xs">
+            <p className="text-white/35 text-sm leading-relaxed max-w-xs">
               Commercial general contractor and development partner. Clarify. Plan. Build. Deliver.
             </p>
           </div>
 
-          {/* Navigate */}
           <div>
-            <h4 className="text-white font-semibold text-sm uppercase tracking-wider mb-5">Navigate</h4>
-            <div className="space-y-3">
-              {NAV_LINKS.map((l) => (
-                <Link
-                  key={l.label}
-                  href={l.href}
-                  className="block text-white/50 hover:text-white transition-colors text-sm"
-                >
-                  {l.label}
+            <h4 className="text-white/80 font-semibold text-[.72rem] uppercase tracking-[.16em] mb-5">Navigate</h4>
+            <div className="space-y-2.5">
+              {[
+                ["About", "/about"],
+                ["How We Work", "/how-we-work"],
+                ["Projects", "#projects"],
+                ["Field Notes", "/field-notes"],
+                ["Contact", "#contact"],
+                ["Careers", "/careers"],
+              ].map(([label, href]) => (
+                <Link key={label} href={href} className="block text-white/40 hover:text-white transition-colors text-sm">
+                  {label}
                 </Link>
               ))}
             </div>
           </div>
 
-          {/* Contact */}
           <div>
-            <h4 className="text-white font-semibold text-sm uppercase tracking-wider mb-5">Contact</h4>
-            <div className="space-y-3 text-sm">
-              <p>(319) 393-4831</p>
-              <p>connect@primus-companies.com</p>
-              <p className="text-white/40">
-                4350 River Ridge Dr NE<br />
-                Cedar Rapids, IA 52402
+            <h4 className="text-white/80 font-semibold text-[.72rem] uppercase tracking-[.16em] mb-5">Contact</h4>
+            <div className="space-y-2.5 text-sm">
+              <p className="text-white/50">(319) 393-4831</p>
+              <p className="text-white/50">connect@primus-companies.com</p>
+              <p className="text-white/30 mt-4">
+                4350 River Ridge Dr NE<br />Cedar Rapids, IA 52402
               </p>
             </div>
           </div>
         </div>
 
-        <div className="border-t border-white/[.08] mt-14 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-white/30 text-xs">© {new Date().getFullYear()} Primus Companies. All rights reserved.</p>
+        <div className="border-t border-white/[.06] mt-14 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+          <p className="text-white/25 text-xs">© {new Date().getFullYear()} Primus Companies. All rights reserved.</p>
           <div className="flex gap-6">
-            <Link href="/privacy" className="text-white/30 hover:text-white/50 text-xs transition-colors">Privacy</Link>
-            <Link href="/terms" className="text-white/30 hover:text-white/50 text-xs transition-colors">Terms</Link>
+            <Link href="/privacy" className="text-white/25 hover:text-white/40 text-xs transition-colors">Privacy</Link>
+            <Link href="/terms" className="text-white/25 hover:text-white/40 text-xs transition-colors">Terms</Link>
           </div>
         </div>
       </div>
