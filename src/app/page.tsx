@@ -1,13 +1,12 @@
 import Nav from "@/components/Nav";
 import Hero from "@/components/Hero";
-import Projects from "@/components/Projects";
-import Quote from "@/components/Quote";
 import ProblemSolution from "@/components/ProblemSolution";
-import Stats from "@/components/Stats";
-import HowItWorks from "@/components/HowItWorks";
 import Services from "@/components/Services";
-import Markets from "@/components/Markets";
+import HowItWorks from "@/components/HowItWorks";
+import Projects from "@/components/Projects";
 import Testimonials from "@/components/Testimonials";
+import Quote from "@/components/Quote";
+import Markets from "@/components/Markets";
 import FAQ from "@/components/FAQ";
 import BottomCTA from "@/components/BottomCTA";
 import Footer from "@/components/Footer";
@@ -17,14 +16,13 @@ export default function Home() {
     <>
       <Nav />
       <Hero />
-      <Projects />
-      <Quote />
       <ProblemSolution />
-      <Stats />
-      <HowItWorks />
       <Services />
-      <Markets />
+      <HowItWorks />
+      <Projects />
       <Testimonials />
+      <Quote />
+      <Markets />
       <FAQ />
       <BottomCTA />
       <Footer />
