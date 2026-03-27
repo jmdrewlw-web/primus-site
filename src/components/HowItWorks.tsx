@@ -11,7 +11,7 @@ export default function HowItWorks() {
   const { ref, visible } = useReveal();
 
   return (
-    <section ref={ref} className={`px-6 md:px-10 py-20 md:py-28 transition-all duration-700 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"}`}>
+    <section ref={ref} aria-label="How the Project Pathfinder works" className={`px-6 md:px-10 py-20 md:py-28 transition-all duration-700 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"}`}>
       <div className="max-w-[1280px] mx-auto">
         <div className="text-center mb-16">
           <span className="text-[.72rem] font-semibold tracking-[.2em] uppercase text-accent block mb-4">

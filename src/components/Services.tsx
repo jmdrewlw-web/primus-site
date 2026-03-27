@@ -13,7 +13,7 @@ export default function Services() {
   const { ref, visible } = useReveal();
 
   return (
-    <section ref={ref} className={`bg-dark py-24 md:py-32 transition-all duration-700 ${visible ? "opacity-100" : "opacity-0"}`}>
+    <section ref={ref} aria-label="Construction services" className={`bg-dark py-24 md:py-32 transition-all duration-700 ${visible ? "opacity-100" : "opacity-0"}`}>
       <div className="max-w-[1280px] mx-auto px-6 md:px-10">
         <div className="md:flex md:justify-between md:items-end mb-16">
           <div>

@@ -14,7 +14,7 @@ export default function Testimonials() {
   const { ref, visible } = useReveal();
 
   return (
-    <section ref={ref} className={`px-6 md:px-10 py-16 md:py-24 transition-all duration-700 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"}`}>
+    <section ref={ref} aria-label="Client testimonials" className={`px-6 md:px-10 py-16 md:py-24 transition-all duration-700 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"}`}>
       <div className="max-w-[1280px] mx-auto">
         <span className="text-[.76rem] font-semibold tracking-[.16em] uppercase text-accent block mb-4">
           Client Results

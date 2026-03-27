@@ -21,7 +21,7 @@ export default function ProblemSolution() {
   const { ref, visible } = useReveal();
 
   return (
-    <section ref={ref} className={`px-6 md:px-10 py-20 md:py-28 transition-all duration-700 ${visible ? "opacity-100" : "opacity-0"}`}>
+    <section ref={ref} aria-label="Why clients choose Primus Companies" className={`px-6 md:px-10 py-20 md:py-28 transition-all duration-700 ${visible ? "opacity-100" : "opacity-0"}`}>
       <div className="max-w-[1280px] mx-auto">
         <div className="grid md:grid-cols-2 gap-0">
           {/* Problem side */}

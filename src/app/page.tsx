@@ -2,6 +2,7 @@ import Nav from "@/components/Nav";
 import Hero from "@/components/Hero";
 import ProblemSolution from "@/components/ProblemSolution";
 import Services from "@/components/Services";
+import TechnologyEdge from "@/components/TechnologyEdge";
 import HowItWorks from "@/components/HowItWorks";
 import Projects from "@/components/Projects";
 import Testimonials from "@/components/Testimonials";
@@ -15,16 +16,19 @@ export default function Home() {
   return (
     <>
       <Nav />
-      <Hero />
-      <ProblemSolution />
-      <Services />
-      <HowItWorks />
-      <Projects />
-      <Testimonials />
-      <Quote />
-      <Markets />
-      <FAQ />
-      <BottomCTA />
+      <main>
+        <Hero />
+        <ProblemSolution />
+        <Services />
+        <TechnologyEdge />
+        <HowItWorks />
+        <Projects />
+        <Testimonials />
+        <Quote />
+        <Markets />
+        <FAQ />
+        <BottomCTA />
+      </main>
       <Footer />
     </>
   );

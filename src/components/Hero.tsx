@@ -8,10 +8,12 @@ export default function Hero() {
 
   return (
     <>
-      <section className="relative min-h-[85vh] flex items-end overflow-hidden">
+      <section aria-label="Hero" className="relative min-h-[85vh] flex items-end overflow-hidden">
         {/* Background image */}
         <div
           className="absolute inset-0 bg-cover bg-center"
+          role="img"
+          aria-label="Primus Companies commercial construction project"
           style={{ backgroundImage: "url('/images/hero.jpg')", filter: "brightness(0.4)" }}
         />
         {/* Gradient overlay */}
@@ -71,10 +73,10 @@ export default function Hero() {
       <div className="bg-white border-b-[3px] border-accent">
         <div className="max-w-[1280px] mx-auto px-6 md:px-10 py-6 grid grid-cols-2 md:grid-cols-4 gap-4">
           {[
-            { value: "1,000+", label: "Projects Delivered" },
-            { value: "50+", label: "Years in Business" },
-            { value: "4", label: "Regional Offices" },
-            { value: "23", label: "Year Longest Partnership" },
+            { value: "500+", label: "Projects Delivered" },
+            { value: "24", label: "Years in Business" },
+            { value: "5", label: "Regional Offices" },
+            { value: "$770M", label: "In Delivered Projects" },
           ].map((s) => (
             <div key={s.label} className="text-center md:border-r last:border-r-0 border-border/50 py-2">
               <div className="font-display text-[clamp(1.6rem,3vw,2.2rem)] font-bold text-dark leading-none mb-1">{s.value}</div>

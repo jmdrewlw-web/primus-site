@@ -1,10 +1,12 @@
 "use client";
 
 const MARKETS = [
-  "Office & Retail",
-  "Healthcare",
-  "Light Industrial & Distribution",
+  "Dental",
+  "Veterinary",
+  "Medical & Healthcare",
+  "Daycare & Childcare",
   "Multifamily & Senior Housing",
+  "Light Industrial & Distribution",
   "Multi-Site Operators",
 ];
 
@@ -12,7 +14,7 @@ export default function Markets() {
   const marqueeText = MARKETS.join("  ·  ");
 
   return (
-    <section className="py-12 overflow-hidden border-y border-border">
+    <section aria-label="Markets served" className="py-12 overflow-hidden border-y border-border">
       <div className="relative">
         <div className="flex animate-marquee whitespace-nowrap">
           {[0, 1, 2, 3].map((i) => (

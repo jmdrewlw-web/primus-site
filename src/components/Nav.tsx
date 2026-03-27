@@ -21,7 +21,7 @@ export default function Nav() {
   }, []);
 
   return (
-    <nav className={`sticky top-0 z-50 transition-all duration-500 ${
+    <nav aria-label="Main navigation" className={`sticky top-0 z-50 transition-all duration-500 ${
       scrolled 
         ? "bg-cream/95 backdrop-blur-lg shadow-[0_1px_0_#E2DFD8]" 
         : "bg-cream"

@@ -5,7 +5,7 @@ export default function Quote() {
   const { ref, visible } = useReveal();
 
   return (
-    <section ref={ref} className={`px-6 md:px-10 py-16 md:py-24 transition-all duration-700 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"}`}>
+    <section ref={ref} aria-label="Quote from Jason Drewelow" className={`px-6 md:px-10 py-16 md:py-24 transition-all duration-700 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"}`}>
       <div className="max-w-[1280px] mx-auto bg-dark rounded-2xl p-10 md:p-16 relative overflow-hidden">
         <span className="absolute top-6 left-10 font-display text-[8rem] text-white/[.04] leading-none select-none">&ldquo;</span>
         

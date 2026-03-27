@@ -15,7 +15,7 @@ export default function Footer() {
               />
             </div>
             <p className="text-white/35 text-sm leading-relaxed max-w-xs">
-              Commercial general contractor and development partner. Clarify. Plan. Build. Deliver.
+              Commercial general contractor and development partner. Plan. Build. Develop. Grow.
             </p>
           </div>
 
