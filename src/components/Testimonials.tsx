@@ -2,12 +2,12 @@
 import { useReveal } from "@/hooks/useReveal";
 
 const TESTIMONIALS = [
-  { quote: "We're at 10,000 patients doing over \$4 million a year. The builders and architects were all on the same page from day one.", author: "Kyle Skjei", role: "Lake Dental Care", metric: "\$4M annual revenue" },
   { quote: "Less than 100 days from demo to move-in. You won't be disappointed with the quality of people at Primus.", author: "Tom Zulandt", role: "Madison Veterinary Hospital", metric: "<100 days to move-in" },
-  { quote: "Production is up 50-60%. We closed the old practice Thursday, opened the new one Monday.", author: "Dan Gleason", role: "Gleason Dental", metric: "50-60% production ↑" },
-  { quote: "Primus earned my trust by being honest and upfront. Having somebody on my side who knows that business — it's hugely helpful. A really big deal.", author: "Benjamin Zimmerman", role: "Bluegrass Veterinary Hospital", metric: "Honest & direct" },
-  { quote: "These guys are first-class. Everybody I worked with was fantastic.", author: "Hasan Karkoutly", role: "Capital Endodontics", metric: "First-class delivery" },
-  { quote: "I'm asked over and over again, 'Who did your construction?'", author: "Stephen Huber", role: "Huber Advanced Dentistry", metric: "Constant referrals" },
+  { quote: "Primus earned my trust by being honest and upfront. Having somebody on my side who knows that business — it's hugely helpful.", author: "Benjamin Zimmerman", role: "Bluegrass Veterinary Hospital", metric: "Honest & direct" },
+  { quote: "No one has more project know-how than the Primus team. After 14 years of working together, they still exceed my expectations on every build.", author: "Eric Nuss", role: "CEO, Ssun Health", metric: "14-year partnership" },
+  { quote: "They were very straightforward and blunt about what they thought was possible and what wasn't. Didn't feel like there was a lot of selling.", author: "Dr. Jonathan Titus", role: "Titus Medical Group", metric: "No-BS approach" },
+  { quote: "They made it easy, they made it affordable, and they exceeded our expectations.", author: "Dr. Laura Fauchier", role: "Marion Healthcare", metric: "Exceeded expectations" },
+  { quote: "People ask me over and over again, 'Who did your construction?' The building does the marketing.", author: "Dr. Stephen Huber", role: "Huber Advanced Healthcare", metric: "Constant referrals" },
 ];
 
 export default function Testimonials() {

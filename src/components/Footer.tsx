@@ -43,7 +43,7 @@ export default function Footer() {
               <p className="text-white/50">(319) 393-4831</p>
               <p className="text-white/50">connect@primus-companies.com</p>
               <p className="text-white/30 mt-4">
-                4350 River Ridge Dr NE<br />Cedar Rapids, IA 52402
+                401 8th Ave. SE<br />Cedar Rapids, IA 52401
               </p>
             </div>
           </div>
