@@ -4,7 +4,7 @@ import { getReadingTime } from './reading-time';
 import { categorizeArticle, type Category } from './article-categories';
 import { renderMarkdown } from './markdown';
 
-const ARTICLES_DIR = path.join(process.env.HOME || '/Users/macmini', 'primus_project/content/articles');
+const ARTICLES_DIR = path.join(process.cwd(), 'content/articles');
 
 export interface Article {
   slug: string;

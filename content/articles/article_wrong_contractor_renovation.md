@@ -1,0 +1,37 @@
+# The Renovation That Cost More Than Building New
+
+The math seemed obvious. The existing building was there. The bones were there. You'd skip site work, skip foundation, skip the framing phase — just gut the interior, update the systems, finish it out, and open. The renovation bid came in at 60% of what a ground-up had been quoted. The operator signed.
+
+Six weeks into demolition, the first envelope arrived. Asbestos in the floor tile adhesive — had to be abated before work could continue. Then the electrical panel. The existing service was at capacity, and the clinical load of a modern dental practice required a full service upgrade, which meant coordinating with the utility company, trenching, new gear. Then the HVAC. The units were 22 years old and sized for office occupancy, not clinical. They couldn't support the air exchange requirements for treatment rooms. New equipment, new ductwork, new controls. Then the plumbing. The stack serving the clinical area was galvanized, corroded through in several places, and had to be replaced entirely — which meant opening concrete in the slab.
+
+Then the structural wall. The one the floor plan had shown moving to create the open hygiene bay. The contractor's engineer evaluated it and determined it was load-bearing in a way that hadn't been apparent from the drawings. Moving it would require a beam, a column, and foundation work below. The operator had a choice: redesign the floor plan around the wall, or spend $40,000 they hadn't budgeted to move it.
+
+By the time the project reached certificate of occupancy, the final cost was 92% of what the ground-up had been quoted. The operator had spent almost as much as building new — and still had a 1978 building with a 22-year-old roof, old exterior, and a configuration that was always going to be a compromise.
+
+**Why Renovation Bids Are Structurally Optimistic**
+
+A renovation bid is based on drawings. Drawings are based on what's observable. What's observable in an existing building is the surface — the walls you can see, the systems that are labeled on the mechanical room door, the electrical panel nameplate. What's not observable is what's inside the walls, what condition the systems are actually in, and what surprises the previous construction left behind.
+
+A contractor who is being honest with you will tell you this upfront and price contingency into the renovation budget accordingly. A contractor who wants the job will price the work as drawn, hand you a number that looks attractive compared to ground-up, and then hand you change orders as the unknowns reveal themselves. The change orders are not dishonest in the narrow sense — the work is real and the costs are real. But the contract structure shifts the financial risk entirely onto the owner, and the initial budget figure was always optimistic by design.
+
+Asbestos is the most common renovation surprise in buildings constructed before the late 1980s. Floor tile, floor tile adhesive, ceiling tile, pipe insulation, duct insulation — any of these may contain asbestos, and none of it is visible without testing. Abatement is not cheap and it always pushes the schedule because you cannot work in the affected area until abatement is complete and the air is cleared by a third-party industrial hygienist. If the renovation budget doesn't include an asbestos contingency, the budget was built on incomplete information.
+
+Electrical capacity is a near-universal issue in older buildings that weren't designed for clinical use. Dental practices, medical offices, and veterinary clinics have significantly higher electrical loads than standard commercial occupancy — dedicated circuits for equipment, panel capacity for the aggregate clinical load, potential requirements for emergency power. A building that has been used as a retail space or a professional office probably does not have the electrical infrastructure to support clinical use without a service upgrade, and a service upgrade that involves utility coordination can take 8 to 12 weeks to execute.
+
+Plumbing in older buildings is frequently at or past end of life. Galvanized pipe corrodes from the inside out, and what looks intact from the exterior may be reduced to a fraction of its original diameter, with walls too thin to last another decade. A clinical renovation that adds plumbing fixtures — exam room sinks, operatory plumbing, sterilization connections — is adding load to a system that may already be compromised. The responsible contractor pressure-tests before rough-in. What they find sometimes determines the scope of the project.
+
+**The Structural Constraint Nobody Talks About**
+
+The floor plan is the thing that makes a renovation work or not work. And the floor plan is constrained by the structure in ways that aren't always apparent until you're into the project. Load-bearing walls, structural columns, the location of the mechanical chase, the depth of the floor-to-floor height, the span of the existing structure — all of these impose limits on what the building can become. Sometimes those limits are manageable. Sometimes they're not.
+
+The operator who has already committed to a renovation because the price was right, and then discovers that the floor plan they need requires structural modifications that weren't in the original scope, is in a very uncomfortable position. They can pay for the modifications, which erases the cost advantage that justified the renovation in the first place. They can redesign the floor plan to accommodate the constraints, which may mean a practice that doesn't flow the way they want. Or they can accept a compromise and open in a building that's always going to be a little bit wrong.
+
+**When Renovation Is the Right Answer**
+
+None of this means renovation is always the wrong choice. There are buildings worth renovating. A well-maintained building with a good structural condition, upgraded electrical service, relatively recent plumbing, and a configuration that can accommodate the intended floor plan with modest modifications is a legitimate renovation candidate. The cost comparison against ground-up can be genuinely favorable when the existing conditions are good and the unknowns are limited.
+
+The operator making a good renovation decision is working with a team that has assessed the actual conditions — not just the drawings — before committing to a price. That means a detailed existing conditions review, targeted testing for hazardous materials where age of construction warrants it, evaluation of the mechanical and electrical systems by the engineers who will be specifying replacements, and a structural assessment that identifies constraints before the floor plan is drawn. The renovation budget that comes out of that process includes real contingency based on real unknowns, not a number sized to win the job.
+
+The contractor who tells every operator that renovation will be fine and cheaper is not giving advice. They're selling a contract. The conversation worth having — the one that takes into account what's actually in the building, what the renovation will realistically require, and what the honest cost comparison looks like — is the one that ends with a recommendation that may or may not be renovation. That's the conversation that protects the operator.
+
+Primus has done both ground-up and renovation projects across dental, veterinary, medical, and commercial facilities. If you're evaluating the choice, we'll tell you what we actually think. Start the conversation at primus-companies.com.
