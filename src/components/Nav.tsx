@@ -1,13 +1,16 @@
-"use client";
-import { useState, useEffect } from "react";
-import Link from "next/link";
+'use client';
+import { useState, useEffect } from 'react';
+import Link from 'next/link';
+import Image from 'next/image';
+import { AnimatePresence, motion } from 'framer-motion';
+import { MagneticButton } from './ui/MagneticButton';
 
 const NAV_LINKS = [
-  { label: "About", href: "/about" },
-  { label: "How We Work", href: "/how-we-work" },
-  { label: "Projects", href: "#projects" },
-  { label: "Field Notes", href: "/field-notes" },
-  { label: "Contact", href: "#contact" },
+  { label: 'About', href: '/about' },
+  { label: 'Services', href: '/services' },
+  { label: 'Projects', href: '/projects' },
+  { label: 'Blog', href: '/blog' },
+  { label: 'Contact', href: '/contact' },
 ];
 
 export default function Nav() {
@@ -15,77 +18,118 @@ export default function Nav() {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 40);
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
+    const onScroll = () => setScrolled(window.scrollY > 20);
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return () => window.removeEventListener('scroll', onScroll);
   }, []);
 
   return (
-    <nav aria-label="Main navigation" className={`sticky top-0 z-50 transition-all duration-500 ${
-      scrolled 
-        ? "bg-cream/95 backdrop-blur-lg shadow-[0_1px_0_#E2DFD8]" 
-        : "bg-cream"
-    }`}>
-      <div className="max-w-[1280px] mx-auto px-6 md:px-10 h-[68px] flex items-center justify-between">
-        <Link href="/" className="flex-shrink-0 group">
-          <img
-            src="/images/Primus_Logo.jpeg"
-            alt="Primus Companies"
-            className="h-[36px] w-auto transition-opacity group-hover:opacity-80"
-          />
-        </Link>
-
-        {/* Desktop nav */}
-        <div className="hidden md:flex items-center gap-9">
-          {NAV_LINKS.map((link) => (
-            <Link
-              key={link.label}
-              href={link.href}
-              className="text-[.82rem] font-medium text-mid hover:text-dark transition-colors relative after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-[2px] after:bg-accent after:transition-all after:duration-300 hover:after:w-full"
-            >
-              {link.label}
-            </Link>
-          ))}
-          <Link
-            href="/project-pathfinder"
-            className="bg-accent hover:bg-accent-hover text-white text-[.82rem] font-semibold px-5 py-[9px] rounded-md transition-all hover:shadow-lg hover:shadow-accent/20 hover:-translate-y-[1px]"
-          >
-            Request a Pathfinder →
+    <>
+      <header
+        className={`fixed top-0 w-full z-50 transition-all duration-300 ${
+          scrolled ? 'bg-white/95 backdrop-blur-sm shadow-sm' : 'bg-transparent'
+        }`}
+      >
+        <div className="max-w-[1200px] mx-auto px-6 h-16 md:h-20 flex items-center justify-between">
+          {/* Logo */}
+          <Link href="/" className="flex-shrink-0">
+            <Image
+              src="/images/logos/primus-logo.jpeg"
+              alt="Primus Companies"
+              width={120}
+              height={36}
+              className="h-9 w-auto"
+              priority
+            />
           </Link>
-        </div>
 
-        {/* Mobile hamburger */}
-        <button
-          onClick={() => setMobileOpen(!mobileOpen)}
-          className="md:hidden flex flex-col gap-[5px] p-2"
-        >
-          <span className={`block w-5 h-[2px] bg-dark transition-all duration-300 ${mobileOpen ? 'rotate-45 translate-y-[7px]' : ''}`} />
-          <span className={`block w-5 h-[2px] bg-dark transition-all duration-300 ${mobileOpen ? 'opacity-0' : ''}`} />
-          <span className={`block w-5 h-[2px] bg-dark transition-all duration-300 ${mobileOpen ? '-rotate-45 -translate-y-[7px]' : ''}`} />
-        </button>
-      </div>
+          {/* Desktop nav */}
+          <nav className="hidden md:flex items-center gap-8" aria-label="Main navigation">
+            {NAV_LINKS.map((link) => (
+              <Link
+                key={link.label}
+                href={link.href}
+                className="text-sm font-medium text-gray-600 hover:text-purple-700 transition-colors"
+              >
+                {link.label}
+              </Link>
+            ))}
+            <MagneticButton href="/contact?ref=pathfinder" variant="gold">
+              Start a Conversation
+            </MagneticButton>
+          </nav>
 
-      {/* Mobile menu */}
-      <div className={`md:hidden overflow-hidden transition-all duration-400 ${mobileOpen ? 'max-h-[400px] opacity-100' : 'max-h-0 opacity-0'}`}>
-        <div className="px-6 pb-6 pt-2 space-y-4 border-t border-border">
-          {NAV_LINKS.map((link) => (
-            <Link
-              key={link.label}
-              href={link.href}
-              onClick={() => setMobileOpen(false)}
-              className="block text-[.95rem] font-medium text-mid hover:text-dark transition-colors"
-            >
-              {link.label}
-            </Link>
-          ))}
-          <Link
-            href="/project-pathfinder"
-            className="block bg-accent text-white text-center font-semibold py-3 rounded-md text-[.92rem]"
+          {/* Mobile hamburger */}
+          <button
+            onClick={() => setMobileOpen(!mobileOpen)}
+            aria-label={mobileOpen ? 'Close menu' : 'Open menu'}
+            aria-expanded={mobileOpen}
+            className="md:hidden flex flex-col gap-[5px] p-2"
           >
-            Request a Pathfinder →
-          </Link>
+            <span
+              className={`block w-5 h-[2px] bg-gray-800 transition-all duration-300 ${
+                mobileOpen ? 'rotate-45 translate-y-[7px]' : ''
+              }`}
+            />
+            <span
+              className={`block w-5 h-[2px] bg-gray-800 transition-all duration-300 ${
+                mobileOpen ? 'opacity-0' : ''
+              }`}
+            />
+            <span
+              className={`block w-5 h-[2px] bg-gray-800 transition-all duration-300 ${
+                mobileOpen ? '-rotate-45 -translate-y-[7px]' : ''
+              }`}
+            />
+          </button>
         </div>
-      </div>
-    </nav>
+      </header>
+
+      {/* Mobile full-screen overlay */}
+      <AnimatePresence>
+        {mobileOpen && (
+          <motion.div
+            key="mobile-menu"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.2 }}
+            className="fixed inset-0 z-40 bg-white flex flex-col items-center justify-center gap-8 md:hidden"
+          >
+            {NAV_LINKS.map((link, i) => (
+              <motion.div
+                key={link.label}
+                initial={{ opacity: 0, y: 16 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: 8 }}
+                transition={{ duration: 0.2, delay: i * 0.05 }}
+              >
+                <Link
+                  href={link.href}
+                  onClick={() => setMobileOpen(false)}
+                  className="text-3xl font-semibold text-gray-800 hover:text-purple-700 transition-colors"
+                >
+                  {link.label}
+                </Link>
+              </motion.div>
+            ))}
+            <motion.div
+              initial={{ opacity: 0, y: 16 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: 8 }}
+              transition={{ duration: 0.2, delay: NAV_LINKS.length * 0.05 }}
+            >
+              <MagneticButton
+                href="/contact?ref=pathfinder"
+                variant="gold"
+                onClick={() => setMobileOpen(false)}
+              >
+                Start a Conversation
+              </MagneticButton>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </>
   );
 }
