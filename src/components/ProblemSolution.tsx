@@ -1,66 +1,61 @@
-"use client";
-import { useReveal } from "@/hooks/useReveal";
+'use client';
+import { ScrollReveal } from '@/components/ui/ScrollReveal';
 
-const PROBLEMS = [
-  "Budget surprises after you've already committed",
-  "Your GC disappears until they need a decision",
-  "Nobody asks the hard questions until it's too late",
-  "Design team and builder aren't aligned",
-  "Change orders that erode your confidence and your capital",
-];
-
-const SOLUTIONS = [
-  "Real numbers before you break ground — not after",
-  "One point of contact from preconstruction through punch list",
-  "We stress-test every assumption before you spend a dollar",
-  "We coordinate your design team — not just react to them",
-  "A scope that's locked, a price that holds, a team that delivers",
+const PAIRS = [
+  {
+    problem: 'Budget surprises after you\'ve already committed',
+    solution: 'Real numbers before you break ground — not after',
+  },
+  {
+    problem: 'Your GC disappears until they need a decision',
+    solution: 'One point of contact from preconstruction through punch list',
+  },
+  {
+    problem: 'Nobody asks the hard questions until it\'s too late',
+    solution: 'We stress-test every assumption before you spend a dollar',
+  },
+  {
+    problem: 'Design team and builder aren\'t aligned',
+    solution: 'We coordinate your design team — not just react to them',
+  },
+  {
+    problem: 'Change orders that erode your confidence and your capital',
+    solution: 'A scope that\'s locked, a price that holds, a team that delivers',
+  },
 ];
 
 export default function ProblemSolution() {
-  const { ref, visible } = useReveal();
-
   return (
-    <section ref={ref} aria-label="Why clients choose Primus Companies" className={`px-6 md:px-10 py-20 md:py-28 transition-all duration-700 ${visible ? "opacity-100" : "opacity-0"}`}>
-      <div className="max-w-[1280px] mx-auto">
-        <div className="grid md:grid-cols-2 gap-0">
-          {/* Problem side */}
-          <div className="bg-dark rounded-t-2xl md:rounded-l-2xl md:rounded-tr-none p-8 md:p-12">
-            <span className="text-[.72rem] font-semibold tracking-[.2em] uppercase text-red-400/80 block mb-6">
-              Sound Familiar?
-            </span>
-            <div className="space-y-5">
-              {PROBLEMS.map((p, i) => (
-                <div 
-                  key={i} 
-                  className={`flex gap-3 items-start transition-all duration-500 ${visible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-4'}`}
-                  style={{ transitionDelay: `${0.2 + i * 0.1}s` }}
-                >
-                  <span className="text-red-400/60 text-sm mt-[2px] flex-shrink-0">✕</span>
-                  <p className="text-white/60 leading-relaxed text-[.95rem]">{p}</p>
-                </div>
-              ))}
-            </div>
-          </div>
+    <section aria-label="Problems and solutions" className="px-6 py-20 md:py-28">
+      <div className="max-w-5xl mx-auto">
+        <ScrollReveal>
+          <h2 className="text-3xl md:text-4xl font-extrabold text-black mb-12 tracking-tight leading-tight">
+            The problems you&apos;ve seen.{' '}
+            <span className="text-purple-700">The solutions you haven&apos;t.</span>
+          </h2>
+        </ScrollReveal>
 
-          {/* Solution side */}
-          <div className="bg-white rounded-b-2xl md:rounded-r-2xl md:rounded-bl-none p-8 md:p-12 shadow-xl shadow-dark/5">
-            <span className="text-[.72rem] font-semibold tracking-[.2em] uppercase text-accent block mb-6">
-              The Primus Difference
-            </span>
-            <div className="space-y-5">
-              {SOLUTIONS.map((s, i) => (
-                <div 
-                  key={i} 
-                  className={`flex gap-3 items-start transition-all duration-500 ${visible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-4'}`}
-                  style={{ transitionDelay: `${0.2 + i * 0.1}s` }}
-                >
-                  <span className="text-accent text-sm mt-[2px] flex-shrink-0">✓</span>
-                  <p className="text-dark leading-relaxed font-medium text-[.95rem]">{s}</p>
+        <div className="flex flex-col gap-5">
+          {PAIRS.map((pair, i) => (
+            <ScrollReveal key={i} delay={i * 0.1}>
+              <div className="grid md:grid-cols-2 gap-0 rounded-xl overflow-hidden shadow-sm">
+                {/* Problem */}
+                <div className="bg-[#111] text-white p-8 rounded-t-xl md:rounded-l-xl md:rounded-tr-none">
+                  <span className="text-red-400/60 text-xs font-semibold uppercase tracking-widest block mb-3">
+                    The Problem
+                  </span>
+                  <p className="text-white/80 leading-relaxed">{pair.problem}</p>
                 </div>
-              ))}
-            </div>
-          </div>
+                {/* Solution */}
+                <div className="bg-white border border-gray-200 border-l-4 border-l-purple-700 p-8 rounded-b-xl md:rounded-r-xl md:rounded-bl-none">
+                  <span className="text-purple-700 text-xs font-semibold uppercase tracking-widest block mb-3">
+                    The Primus Way
+                  </span>
+                  <p className="text-gray-800 font-medium leading-relaxed">{pair.solution}</p>
+                </div>
+              </div>
+            </ScrollReveal>
+          ))}
         </div>
       </div>
     </section>

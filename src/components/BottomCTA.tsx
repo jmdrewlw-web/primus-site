@@ -1,29 +1,33 @@
-"use client";
-import Link from "next/link";
-import { useReveal } from "@/hooks/useReveal";
+import { MagneticButton } from '@/components/ui/MagneticButton';
 
 export default function BottomCTA() {
-  const { ref, visible } = useReveal();
-
   return (
-    <section ref={ref} aria-label="Get started with Project Pathfinder" className={`px-6 md:px-10 py-20 md:py-28 transition-all duration-700 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"}`}>
-      <div className="max-w-[720px] mx-auto text-center">
-        <div className="rule-accent mx-auto mb-8" />
-        <h2 className="font-display text-[clamp(2rem,4vw,3rem)] font-bold text-dark mb-4 leading-tight">
-          Not sure where to start?
+    <section aria-label="Get started" className="bg-[#111] text-white py-20 px-6">
+      <div className="max-w-3xl mx-auto text-center">
+        <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight mb-4 leading-tight">
+          Not sure where to start? That&apos;s exactly what we&apos;re here for.
         </h2>
-        <p className="text-mid text-[1.08rem] mb-2">
-          That&apos;s exactly what the Pathfinder is for.
+        <p className="text-gray-400 text-lg mb-4 max-w-xl mx-auto leading-relaxed">
+          Our Pathfinder process gives you a clear plan — budget, timeline, and next steps —
+          before you commit to anything.
         </p>
-        <p className="text-light text-[.92rem] mb-10 max-w-md mx-auto leading-relaxed">
-          Five minutes. No commitment. Just a clear picture of where your project stands and what comes next.
+        <div className="mb-10">
+          <MagneticButton href="/contact?ref=pathfinder" variant="gold">
+            Start a Conversation
+          </MagneticButton>
+        </div>
+        <p className="text-gray-500 text-sm">
+          <a
+            href="mailto:connect@primus-companies.com"
+            className="hover:text-gold transition-colors"
+          >
+            connect@primus-companies.com
+          </a>
+          {' · '}
+          <a href="tel:+13193934831" className="hover:text-gold transition-colors">
+            (319) 393-4831
+          </a>
         </p>
-        <Link
-          href="/project-pathfinder"
-          className="inline-block bg-accent hover:bg-accent-hover text-white font-semibold px-10 py-4 rounded-md transition-all hover:shadow-xl hover:shadow-accent/20 hover:-translate-y-[2px] text-[1rem]"
-        >
-          Get a Project Pathfinder →
-        </Link>
       </div>
     </section>
   );

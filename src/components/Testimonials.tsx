@@ -1,44 +1,117 @@
-"use client";
-import { useReveal } from "@/hooks/useReveal";
+'use client';
+import { useState, useEffect, useRef } from 'react';
+import { AnimatePresence, motion } from 'framer-motion';
+import { getFeaturedTestimonials } from '@/lib/testimonials';
+import { ScrollReveal } from '@/components/ui/ScrollReveal';
 
-const TESTIMONIALS = [
-  { quote: "Less than 100 days from demo to move-in. You won't be disappointed with the quality of people at Primus.", author: "Tom Zulandt", role: "Madison Veterinary Hospital", metric: "<100 days to move-in" },
-  { quote: "Primus earned my trust by being honest and upfront. Having somebody on my side who knows that business — it's hugely helpful.", author: "Benjamin Zimmerman", role: "Bluegrass Veterinary Hospital", metric: "Honest & direct" },
-  { quote: "No one has more project know-how than the Primus team. After 14 years of working together, they still exceed my expectations on every build.", author: "Eric Nuss", role: "CEO, Ssun Health", metric: "14-year partnership" },
-  { quote: "They were very straightforward and blunt about what they thought was possible and what wasn't. Didn't feel like there was a lot of selling.", author: "Dr. Jonathan Titus", role: "Titus Medical Group", metric: "No-BS approach" },
-  { quote: "They made it easy, they made it affordable, and they exceeded our expectations.", author: "Dr. Laura Fauchier", role: "Marion Healthcare", metric: "Exceeded expectations" },
-  { quote: "People ask me over and over again, 'Who did your construction?' The building does the marketing.", author: "Dr. Stephen Huber", role: "Huber Advanced Healthcare", metric: "Constant referrals" },
-];
+const testimonials = getFeaturedTestimonials(6);
 
 export default function Testimonials() {
-  const { ref, visible } = useReveal();
+  const [index, setIndex] = useState(0);
+  const [paused, setPaused] = useState(false);
+  const intervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
+
+  const current = testimonials[index];
+
+  const startTimer = () => {
+    if (intervalRef.current) clearInterval(intervalRef.current);
+    intervalRef.current = setInterval(() => {
+      setIndex((prev) => (prev + 1) % testimonials.length);
+    }, 6000);
+  };
+
+  useEffect(() => {
+    if (!paused) {
+      startTimer();
+    } else {
+      if (intervalRef.current) clearInterval(intervalRef.current);
+    }
+    return () => {
+      if (intervalRef.current) clearInterval(intervalRef.current);
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [paused, testimonials.length]);
+
+  const goTo = (i: number) => {
+    setIndex(i);
+    startTimer();
+  };
+
+  if (!current) return null;
 
   return (
-    <section ref={ref} aria-label="Client testimonials" className={`px-6 md:px-10 py-16 md:py-24 transition-all duration-700 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"}`}>
-      <div className="max-w-[1280px] mx-auto">
-        <span className="text-[.76rem] font-semibold tracking-[.16em] uppercase text-accent block mb-4">
-          Client Results
-        </span>
-        <h2 className="font-display text-[clamp(2rem,4vw,3.2rem)] font-bold text-dark mb-12 leading-tight">
-          Don&apos;t take our word for it.
-        </h2>
-
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {TESTIMONIALS.map((t, i) => (
-            <div key={i} className="bg-white rounded-xl p-7 hover:-translate-y-1 hover:shadow-lg hover:shadow-dark/5 transition-all flex flex-col">
-              <span className="inline-block bg-accent/10 text-accent text-xs font-bold px-3 py-1 rounded-full mb-5 self-start">
-                {t.metric}
-              </span>
-              <p className="font-display text-[1.05rem] italic text-dark/80 leading-relaxed mb-6 flex-1">
-                &ldquo;{t.quote}&rdquo;
-              </p>
-              <div>
-                <span className="font-semibold text-dark text-sm">{t.author}</span>
-                <span className="text-light text-sm block">{t.role}</span>
-              </div>
+    <section
+      aria-label="Client testimonials"
+      className="px-6 py-20 md:py-28 bg-gray-50"
+    >
+      <div className="max-w-3xl mx-auto">
+        <ScrollReveal>
+          <div
+            className="text-center"
+            onMouseEnter={() => setPaused(true)}
+            onMouseLeave={() => setPaused(false)}
+          >
+            {/* Quote mark */}
+            <div
+              className="text-6xl font-serif text-gold leading-none mb-6 select-none"
+              aria-hidden="true"
+            >
+              &ldquo;
             </div>
-          ))}
-        </div>
+
+            {/* Animated quote */}
+            <div className="min-h-[8rem] flex items-center justify-center mb-8">
+              <AnimatePresence mode="wait">
+                <motion.blockquote
+                  key={index}
+                  initial={{ opacity: 0, y: 12 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: -12 }}
+                  transition={{ duration: 0.4, ease: 'easeOut' }}
+                  className="text-xl md:text-2xl text-gray-800 italic leading-relaxed"
+                >
+                  {current.quote}
+                </motion.blockquote>
+              </AnimatePresence>
+            </div>
+
+            {/* Author */}
+            <AnimatePresence mode="wait">
+              <motion.div
+                key={`author-${index}`}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                transition={{ duration: 0.3 }}
+                className="mb-8"
+              >
+                <p className="font-bold text-black text-base">{current.author}</p>
+                <p className="text-gray-500 text-sm mt-0.5">
+                  {current.company}
+                  {current.location ? ` · ${current.location}` : ''}
+                </p>
+              </motion.div>
+            </AnimatePresence>
+
+            {/* Navigation dots */}
+            <div className="flex justify-center gap-2" role="tablist" aria-label="Testimonial navigation">
+              {testimonials.map((_, i) => (
+                <button
+                  key={i}
+                  role="tab"
+                  aria-selected={i === index}
+                  aria-label={`Testimonial ${i + 1}`}
+                  onClick={() => goTo(i)}
+                  className={`w-2 h-2 rounded-full transition-all duration-300 ${
+                    i === index
+                      ? 'bg-gold w-6'
+                      : 'bg-gray-300 hover:bg-gray-400'
+                  }`}
+                />
+              ))}
+            </div>
+          </div>
+        </ScrollReveal>
       </div>
     </section>
   );

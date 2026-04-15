@@ -1,90 +1,95 @@
-"use client";
-import { useState, useEffect } from "react";
-import Link from "next/link";
+'use client';
+import { useEffect, useState } from 'react';
+import { motion } from 'framer-motion';
+import { MagneticButton } from '@/components/ui/MagneticButton';
+import { CountUp } from '@/components/ui/CountUp';
+
+const HEADLINE_WORDS = ["We've", 'built', '500+', 'projects.', 'Yours', 'is', 'next.'];
+
+const STATS = [
+  { prefix: '', end: 500, suffix: '+', label: 'Projects' },
+  { prefix: '', end: 24, suffix: '', label: 'Years' },
+  { prefix: '$', end: 770, suffix: 'M', label: 'Delivered' },
+  { prefix: '', end: 5, suffix: '', label: 'Offices' },
+];
 
 export default function Hero() {
-  const [ready, setReady] = useState(false);
-  useEffect(() => { setTimeout(() => setReady(true), 100); }, []);
+  const [mounted, setMounted] = useState(false);
+  useEffect(() => {
+    const t = setTimeout(() => setMounted(true), 80);
+    return () => clearTimeout(t);
+  }, []);
 
   return (
-    <>
-      <section aria-label="Hero" className="relative min-h-[85vh] flex items-end overflow-hidden">
-        {/* Background image */}
-        <div
-          className="absolute inset-0 bg-cover bg-center"
-          role="img"
-          aria-label="Primus Companies commercial construction project"
-          style={{ backgroundImage: "url('/images/hero.jpg')", filter: "brightness(0.4)" }}
-        />
-        {/* Gradient overlay */}
-        <div className="absolute inset-0 bg-gradient-to-r from-dark/80 via-dark/40 to-transparent" />
-
-        <div className="relative z-10 max-w-[1280px] mx-auto px-6 md:px-10 pb-16 md:pb-24 w-full">
-          <span
-            className={`text-[.72rem] font-semibold tracking-[.2em] uppercase text-accent block mb-7 flex items-center gap-4 transition-all duration-700 ${ready ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}
-            style={{ transitionDelay: "0.1s" }}
-          >
-            <span className="w-8 h-[1px] bg-accent" />
-            Clarify · Plan · Build · Deliver
-          </span>
-
-          <h1
-            className={`font-display text-[clamp(2.8rem,6.5vw,5rem)] leading-[0.98] font-bold text-white mb-4 tracking-[-0.02em] max-w-2xl transition-all duration-700 ${ready ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"}`}
-            style={{ transitionDelay: "0.25s" }}
-          >
-            You&apos;ve got<br />a vision.
-          </h1>
-
-          <p
-            className={`font-display text-[clamp(1.2rem,2.5vw,1.7rem)] leading-[1.4] italic text-accent mb-8 transition-all duration-700 ${ready ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}
-            style={{ transitionDelay: "0.5s" }}
-          >
-            You deserve a builder who gets it.
-          </p>
-
-          <p
-            className={`text-[1rem] text-white/60 leading-[1.75] max-w-xl mb-10 transition-all duration-700 ${ready ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}
-            style={{ transitionDelay: "0.65s" }}
-          >
-            You bring the vision — wherever you are in the process. We bring the plan, the team, and the build. Whether you&apos;re still picking a site or you&apos;ve got drawings ready to price, we meet you where you are and get you to the finish line.
-          </p>
-
-          <div
-            className={`flex flex-wrap gap-4 transition-all duration-700 ${ready ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}
-            style={{ transitionDelay: "0.8s" }}
-          >
-            <Link
-              href="/project-pathfinder"
-              className="bg-accent hover:bg-accent-hover text-white font-semibold px-7 py-3.5 rounded-md transition-all hover:shadow-xl hover:shadow-accent/25 hover:-translate-y-[2px] text-[.92rem]"
+    <section
+      aria-label="Hero"
+      className="py-24 md:py-32 px-6 text-center"
+    >
+      <div className="max-w-4xl mx-auto">
+        {/* Headline — staggered word reveal */}
+        <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight text-black mb-6 leading-tight">
+          {HEADLINE_WORDS.map((word, i) => (
+            <motion.span
+              key={i}
+              initial={{ opacity: 0, y: 20 }}
+              animate={mounted ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.5, delay: i * 0.07, ease: 'easeOut' }}
+              className="inline-block mr-[0.25em]"
             >
-              Request My Project Pathfinder →
-            </Link>
-            <Link
-              href="#projects"
-              className="border border-white/20 text-white font-semibold px-7 py-3.5 rounded-md hover:border-white/40 hover:bg-white/5 transition-all text-[.92rem]"
-            >
-              View Our Work
-            </Link>
-          </div>
-        </div>
-      </section>
+              {word}
+            </motion.span>
+          ))}
+        </h1>
 
-      {/* Stats bar */}
-      <div className="bg-white border-b-[3px] border-accent">
-        <div className="max-w-[1280px] mx-auto px-6 md:px-10 py-6 grid grid-cols-2 md:grid-cols-4 gap-4">
-          {[
-            { value: "500+", label: "Projects Delivered" },
-            { value: "24", label: "Years in Business" },
-            { value: "5", label: "Regional Offices" },
-            { value: "$770M", label: "In Delivered Projects" },
-          ].map((s) => (
-            <div key={s.label} className="text-center md:border-r last:border-r-0 border-border/50 py-2">
-              <div className="font-display text-[clamp(1.6rem,3vw,2.2rem)] font-bold text-dark leading-none mb-1">{s.value}</div>
-              <div className="text-[.65rem] font-semibold tracking-[.12em] uppercase text-light">{s.label}</div>
+        {/* Subheadline */}
+        <motion.p
+          initial={{ opacity: 0, y: 16 }}
+          animate={mounted ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.5, delay: 0.6, ease: 'easeOut' }}
+          className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto mb-10 leading-relaxed"
+        >
+          Commercial construction with fixed pricing, one point of contact, and no surprises.
+          Design-build, construction management, and development advisory.
+        </motion.p>
+
+        {/* CTAs */}
+        <motion.div
+          initial={{ opacity: 0, y: 16 }}
+          animate={mounted ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.5, delay: 0.75, ease: 'easeOut' }}
+          className="flex flex-wrap justify-center gap-4 mb-16"
+        >
+          <MagneticButton href="/contact?ref=pathfinder" variant="gold">
+            Start a Conversation
+          </MagneticButton>
+          <MagneticButton href="/projects" variant="outline">
+            See Our Work
+          </MagneticButton>
+        </motion.div>
+
+        {/* Stats bar */}
+        <motion.div
+          initial={{ opacity: 0, y: 16 }}
+          animate={mounted ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.5, delay: 0.9, ease: 'easeOut' }}
+          className="grid grid-cols-2 md:grid-cols-4 gap-6 border-t border-gray-200 pt-10"
+        >
+          {STATS.map((stat) => (
+            <div key={stat.label} className="text-center">
+              <div className="text-3xl md:text-4xl font-extrabold text-black mb-1 font-mono">
+                <CountUp
+                  end={stat.end}
+                  prefix={stat.prefix}
+                  suffix={stat.suffix}
+                />
+              </div>
+              <div className="text-xs font-semibold uppercase tracking-widest text-gray-400">
+                {stat.label}
+              </div>
             </div>
           ))}
-        </div>
+        </motion.div>
       </div>
-    </>
+    </section>
   );
 }

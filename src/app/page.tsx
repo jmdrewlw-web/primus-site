@@ -1,16 +1,13 @@
-import Nav from "@/components/Nav";
-import Hero from "@/components/Hero";
-import ProblemSolution from "@/components/ProblemSolution";
-import Services from "@/components/Services";
-import TechnologyEdge from "@/components/TechnologyEdge";
-import HowItWorks from "@/components/HowItWorks";
-import Projects from "@/components/Projects";
-import Testimonials from "@/components/Testimonials";
-import Quote from "@/components/Quote";
-import Markets from "@/components/Markets";
-import FAQ from "@/components/FAQ";
-import BottomCTA from "@/components/BottomCTA";
-import Footer from "@/components/Footer";
+import Nav from '@/components/Nav';
+import Hero from '@/components/Hero';
+import { SectionDivider } from '@/components/ui/SectionDivider';
+import ProblemSolution from '@/components/ProblemSolution';
+import ServicesStrip from '@/components/ServicesStrip';
+import FeaturedProjects from '@/components/FeaturedProjects';
+import Testimonials from '@/components/Testimonials';
+import BlogPreview from '@/components/BlogPreview';
+import BottomCTA from '@/components/BottomCTA';
+import Footer from '@/components/Footer';
 
 export default function Home() {
   return (
@@ -18,15 +15,15 @@ export default function Home() {
       <Nav />
       <main>
         <Hero />
+        <SectionDivider />
         <ProblemSolution />
-        <Services />
-        <TechnologyEdge />
-        <HowItWorks />
-        <Projects />
+        <SectionDivider />
+        <ServicesStrip />
+        <SectionDivider />
+        <FeaturedProjects />
+        <SectionDivider />
         <Testimonials />
-        <Quote />
-        <Markets />
-        <FAQ />
+        <BlogPreview />
         <BottomCTA />
       </main>
       <Footer />
