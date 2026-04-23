@@ -2,11 +2,12 @@
 import { useRef, useState } from 'react';
 import Link from 'next/link';
 
-type Variant = 'gold' | 'outline';
+type Variant = 'gold' | 'outline' | 'outline-light';
 
 const variantClasses: Record<Variant, string> = {
   gold: 'bg-gold text-black hover:bg-gold-light',
   outline: 'border border-gray-200 text-gray-800 hover:border-purple-700 hover:text-purple-700',
+  'outline-light': 'border border-white/40 text-white hover:border-white hover:bg-white/10',
 };
 
 const baseClasses =

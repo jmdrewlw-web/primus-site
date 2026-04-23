@@ -34,7 +34,7 @@ export default function Nav() {
           {/* Logo */}
           <Link href="/" className="flex-shrink-0">
             <Image
-              src="/images/logos/primus-logo.jpeg"
+              src={scrolled ? '/images/logos/primus-logo.jpeg' : '/images/logos/primus-logo-white.png'}
               alt="Primus Companies"
               width={120}
               height={36}
@@ -49,7 +49,9 @@ export default function Nav() {
               <Link
                 key={link.label}
                 href={link.href}
-                className="text-sm font-medium text-gray-600 hover:text-purple-700 transition-colors"
+                className={`text-sm font-medium transition-colors ${
+                  scrolled ? 'text-gray-600 hover:text-purple-700' : 'text-white/90 hover:text-white'
+                }`}
               >
                 {link.label}
               </Link>
@@ -67,17 +69,17 @@ export default function Nav() {
             className="md:hidden flex flex-col gap-[5px] p-2"
           >
             <span
-              className={`block w-5 h-[2px] bg-gray-800 transition-all duration-300 ${
+              className={`block w-5 h-[2px] ${scrolled ? 'bg-gray-800' : 'bg-white'} transition-all duration-300 ${
                 mobileOpen ? 'rotate-45 translate-y-[7px]' : ''
               }`}
             />
             <span
-              className={`block w-5 h-[2px] bg-gray-800 transition-all duration-300 ${
+              className={`block w-5 h-[2px] ${scrolled ? 'bg-gray-800' : 'bg-white'} transition-all duration-300 ${
                 mobileOpen ? 'opacity-0' : ''
               }`}
             />
             <span
-              className={`block w-5 h-[2px] bg-gray-800 transition-all duration-300 ${
+              className={`block w-5 h-[2px] ${scrolled ? 'bg-gray-800' : 'bg-white'} transition-all duration-300 ${
                 mobileOpen ? '-rotate-45 -translate-y-[7px]' : ''
               }`}
             />

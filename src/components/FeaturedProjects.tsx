@@ -29,7 +29,7 @@ export default function FeaturedProjects() {
               <Link href={`/projects/${project.slug}`} className="block group">
                 <div className="relative aspect-[4/3] rounded-xl overflow-hidden bg-gray-100">
                   <Image
-                    src={`${project.photoDir}/cover.jpg`}
+                    src={`${project.photoDir}/exterior.jpg`}
                     alt={project.name}
                     fill
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
