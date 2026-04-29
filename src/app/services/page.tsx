@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import Nav from '@/components/Nav';
 import Footer from '@/components/Footer';
+import BottomCTA from '@/components/BottomCTA';
 import { ScrollReveal } from '@/components/ui/ScrollReveal';
 import { SectionDivider } from '@/components/ui/SectionDivider';
 import { SchemaScript, breadcrumbSchema } from '@/lib/schema';
@@ -66,6 +67,8 @@ export default function ServicesPage() {
             ))}
           </div>
         </section>
+
+        <BottomCTA />
       </main>
       <Footer />
     </>

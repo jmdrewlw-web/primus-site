@@ -13,15 +13,17 @@ const NAV_LINKS = [
   { label: 'Contact', href: '/contact' },
 ];
 
-export default function Nav() {
-  const [scrolled, setScrolled] = useState(false);
+export default function Nav({ transparent = false }: { transparent?: boolean }) {
+  const [scrolled, setScrolled] = useState(!transparent);
   const [mobileOpen, setMobileOpen] = useState(false);
 
   useEffect(() => {
+    if (!transparent) return;
     const onScroll = () => setScrolled(window.scrollY > 20);
+    onScroll(); // check initial position
     window.addEventListener('scroll', onScroll, { passive: true });
     return () => window.removeEventListener('scroll', onScroll);
-  }, []);
+  }, [transparent]);
 
   return (
     <>
