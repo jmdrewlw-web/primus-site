@@ -1,5 +1,6 @@
 'use client';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+import { useSearchParams } from 'next/navigation';
 import type { Project } from '@/data/projects';
 import type { CaseStudy } from '@/data/case-studies';
 import ProjectGrid from '@/components/ProjectGrid';
@@ -11,7 +12,30 @@ interface ProjectsClientProps {
 }
 
 export default function ProjectsClient({ projects, caseStudies }: ProjectsClientProps) {
+  const searchParams = useSearchParams();
+  const requestedSlug = searchParams.get('project');
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
+
+  useEffect(() => {
+    setSelectedProject(
+      requestedSlug ? projects.find((project) => project.slug === requestedSlug) ?? null : null
+    );
+  }, [projects, requestedSlug]);
+
+  useEffect(() => {
+    if (!selectedProject) return;
+
+    const frame = window.requestAnimationFrame(() => {
+      document.getElementById('project-detail')?.scrollIntoView({
+        behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches
+          ? 'auto'
+          : 'smooth',
+        block: 'start',
+      });
+    });
+
+    return () => window.cancelAnimationFrame(frame);
+  }, [selectedProject]);
 
   const caseStudy = selectedProject
     ? caseStudies.find((cs) => cs.slug === selectedProject.slug)
@@ -27,7 +51,7 @@ export default function ProjectsClient({ projects, caseStudies }: ProjectsClient
       />
 
       {selectedProject && (
-        <div className="mt-10" id="project-detail">
+        <div className="mt-10 scroll-mt-24" id="project-detail">
           <ProjectDetail
             project={selectedProject}
             caseStudy={caseStudy}

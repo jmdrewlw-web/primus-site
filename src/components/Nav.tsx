@@ -16,6 +16,7 @@ const NAV_LINKS = [
 export default function Nav({ transparent = false }: { transparent?: boolean }) {
   const [scrolled, setScrolled] = useState(!transparent);
   const [mobileOpen, setMobileOpen] = useState(false);
+  const showDarkControls = scrolled || mobileOpen;
 
   useEffect(() => {
     if (!transparent) return;
@@ -36,7 +37,7 @@ export default function Nav({ transparent = false }: { transparent?: boolean }) 
           {/* Logo */}
           <Link href="/" className="flex-shrink-0">
             <Image
-              src={scrolled ? '/images/logos/primus-logo.jpeg' : '/images/logos/primus-logo-white.png'}
+              src={showDarkControls ? '/images/logos/primus-logo.jpeg' : '/images/logos/primus-logo-white.png'}
               alt="Primus Companies"
               width={120}
               height={36}
@@ -46,7 +47,7 @@ export default function Nav({ transparent = false }: { transparent?: boolean }) 
           </Link>
 
           {/* Desktop nav */}
-          <nav className="hidden md:flex items-center gap-8" aria-label="Main navigation">
+          <nav className="hidden xl:flex items-center gap-8" aria-label="Main navigation">
             {NAV_LINKS.map((link) => (
               <Link
                 key={link.label}
@@ -68,20 +69,20 @@ export default function Nav({ transparent = false }: { transparent?: boolean }) 
             onClick={() => setMobileOpen(!mobileOpen)}
             aria-label={mobileOpen ? 'Close menu' : 'Open menu'}
             aria-expanded={mobileOpen}
-            className="md:hidden flex flex-col gap-[5px] p-2"
+            className="xl:hidden flex flex-col gap-[5px] p-2"
           >
             <span
-              className={`block w-5 h-[2px] ${scrolled ? 'bg-gray-800' : 'bg-white'} transition-all duration-300 ${
+              className={`block w-5 h-[2px] ${showDarkControls ? 'bg-gray-800' : 'bg-white'} transition-all duration-300 ${
                 mobileOpen ? 'rotate-45 translate-y-[7px]' : ''
               }`}
             />
             <span
-              className={`block w-5 h-[2px] ${scrolled ? 'bg-gray-800' : 'bg-white'} transition-all duration-300 ${
+              className={`block w-5 h-[2px] ${showDarkControls ? 'bg-gray-800' : 'bg-white'} transition-all duration-300 ${
                 mobileOpen ? 'opacity-0' : ''
               }`}
             />
             <span
-              className={`block w-5 h-[2px] ${scrolled ? 'bg-gray-800' : 'bg-white'} transition-all duration-300 ${
+              className={`block w-5 h-[2px] ${showDarkControls ? 'bg-gray-800' : 'bg-white'} transition-all duration-300 ${
                 mobileOpen ? '-rotate-45 -translate-y-[7px]' : ''
               }`}
             />
@@ -98,7 +99,7 @@ export default function Nav({ transparent = false }: { transparent?: boolean }) 
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.2 }}
-            className="fixed inset-0 z-40 bg-white flex flex-col items-center justify-center gap-8 md:hidden"
+            className="fixed inset-0 z-40 bg-white flex flex-col items-center justify-center gap-8 xl:hidden"
           >
             {NAV_LINKS.map((link, i) => (
               <motion.div

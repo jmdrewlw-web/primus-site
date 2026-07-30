@@ -11,7 +11,6 @@ const SERVICES = [
 
 const COMPANY = [
   { label: 'About', href: '/about' },
-  { label: 'Team', href: '/team' },
 ];
 
 const OFFICES = [
@@ -39,8 +38,8 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* 4-column grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 md:gap-8 mb-12">
+        {/* Footer navigation */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 md:gap-8 mb-12">
           {/* Column 1: Company */}
           <div>
             <h4 className="text-white/80 font-semibold text-xs uppercase tracking-widest mb-5">
@@ -84,7 +83,7 @@ export default function Footer() {
             </h4>
             <div className="space-y-3">
               <Link
-                href="/field-notes"
+                href="/blog"
                 className="block text-white/50 hover:text-white transition-colors text-sm"
               >
                 Blog (Field Notes)
@@ -127,18 +126,10 @@ export default function Footer() {
         </div>
 
         {/* Copyright */}
-        <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
+        <div className="flex items-center justify-center">
           <p className="text-white/25 text-xs">
             © 2026 Primus Companies. All rights reserved.
           </p>
-          <div className="flex gap-6">
-            <Link href="/privacy" className="text-white/25 hover:text-white/40 text-xs transition-colors">
-              Privacy
-            </Link>
-            <Link href="/terms" className="text-white/25 hover:text-white/40 text-xs transition-colors">
-              Terms
-            </Link>
-          </div>
         </div>
       </div>
     </footer>

@@ -71,6 +71,17 @@ export default function ContactForm() {
 
   return (
     <form ref={formRef} onSubmit={handleSubmit} noValidate className="space-y-5">
+      <div className="absolute -left-[10000px]" aria-hidden="true">
+        <label htmlFor="website">Website</label>
+        <input
+          id="website"
+          name="website"
+          type="text"
+          tabIndex={-1}
+          autoComplete="off"
+        />
+      </div>
+
       {/* Name + Email */}
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
         <div>
@@ -182,14 +193,22 @@ export default function ContactForm() {
 
       {/* Error */}
       {status === 'error' && errorMsg && (
-        <p className="text-sm text-red-600 bg-red-50 border border-red-200 rounded-lg px-4 py-3">
+        <p
+          role="alert"
+          className="text-sm text-red-600 bg-red-50 border border-red-200 rounded-lg px-4 py-3"
+        >
           {errorMsg}
         </p>
       )}
 
       {/* Submit */}
       <div>
-        <MagneticButton variant="gold" className={status === 'submitting' ? 'opacity-60 cursor-not-allowed' : ''}>
+        <MagneticButton
+          type="submit"
+          disabled={status === 'submitting'}
+          variant="gold"
+          className={status === 'submitting' ? 'opacity-60 cursor-not-allowed' : ''}
+        >
           {status === 'submitting' ? 'Sending…' : 'Send Message'}
         </MagneticButton>
       </div>

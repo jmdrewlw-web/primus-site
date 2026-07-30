@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import type { Project } from '@/data/projects';
+import { projectCardImage, type Project } from '@/data/projects';
 import type { CaseStudy } from '@/data/case-studies';
 
 interface ProjectDetailProps {
@@ -37,7 +37,7 @@ export default function ProjectDetail({ project, caseStudy, onClose }: ProjectDe
           {/* Left: image */}
           <div className="relative aspect-[4/3] rounded-xl overflow-hidden bg-gray-100">
             <Image
-              src={`${project.photoDir}/exterior.jpg`}
+              src={projectCardImage(project)}
               alt={project.name}
               fill
               sizes="(max-width: 768px) 100vw, 50vw"
@@ -106,24 +106,12 @@ export default function ProjectDetail({ project, caseStudy, onClose }: ProjectDe
 
       <div className="relative aspect-[4/3] rounded-xl overflow-hidden bg-gray-100 max-w-md">
         <Image
-          src={`${project.photoDir}/exterior.jpg`}
+          src={projectCardImage(project)}
           alt={project.name}
           fill
           sizes="(max-width: 768px) 100vw, 400px"
           className="object-cover"
         />
-        {/* Initials fallback */}
-        <span
-          aria-hidden="true"
-          className="absolute inset-0 flex items-center justify-center bg-gray-200 text-gray-500 font-bold text-3xl -z-10"
-        >
-          {project.name
-            .split(' ')
-            .filter(Boolean)
-            .slice(0, 2)
-            .map((w) => w[0])
-            .join('')}
-        </span>
       </div>
     </div>
   );

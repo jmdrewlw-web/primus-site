@@ -19,12 +19,16 @@ export function MagneticButton({
   href,
   variant = 'gold',
   onClick,
+  type = 'button',
+  disabled = false,
 }: {
   children: React.ReactNode;
   className?: string;
   href?: string;
   variant?: Variant;
   onClick?: () => void;
+  type?: 'button' | 'submit' | 'reset';
+  disabled?: boolean;
 }) {
   const ref = useRef<HTMLElement>(null);
   const [offset, setOffset] = useState({ x: 0, y: 0 });
@@ -72,6 +76,8 @@ export function MagneticButton({
   return (
     <button
       ref={ref as React.Ref<HTMLButtonElement>}
+      type={type}
+      disabled={disabled}
       className={combinedClassName}
       style={style}
       onMouseMove={handleMouseMove}

@@ -1,10 +1,12 @@
 import type { Metadata } from 'next';
+import { Suspense } from 'react';
 import Nav from '@/components/Nav';
 import Footer from '@/components/Footer';
 import { ScrollReveal } from '@/components/ui/ScrollReveal';
 import { breadcrumbSchema, creativeWorkSchema, SchemaScript } from '@/lib/schema';
-import { projects } from '@/data/projects';
+import { launchReadyProjects } from '@/data/projects';
 import { caseStudies } from '@/data/case-studies';
+import ProjectGrid from '@/components/ProjectGrid';
 import ProjectsClient from './ProjectsClient';
 
 export const metadata: Metadata = {
@@ -18,14 +20,20 @@ const breadcrumb = breadcrumbSchema([
   { name: 'Projects', url: '/projects' },
 ]);
 
-const caseStudySchemas = caseStudies.map((cs) =>
-  creativeWorkSchema({
-    name: cs.name,
-    description: cs.description,
-    location: cs.location,
-    type: cs.type,
-  })
+const launchReadyProjectSlugs = new Set(
+  launchReadyProjects.map((project) => project.slug)
 );
+
+const caseStudySchemas = caseStudies
+  .filter((caseStudy) => launchReadyProjectSlugs.has(caseStudy.slug))
+  .map((caseStudy) =>
+    creativeWorkSchema({
+      name: caseStudy.name,
+      description: caseStudy.description,
+      location: caseStudy.location,
+      type: caseStudy.type,
+    })
+  );
 
 export default function ProjectsPage() {
   return (
@@ -50,7 +58,9 @@ export default function ProjectsPage() {
 
         {/* Filterable grid + detail panel */}
         <section className="px-6 md:px-10 pb-24 max-w-[1200px] mx-auto">
-          <ProjectsClient projects={projects} caseStudies={caseStudies} />
+          <Suspense fallback={<ProjectGrid projects={launchReadyProjects} caseStudies={caseStudies} />}>
+            <ProjectsClient projects={launchReadyProjects} caseStudies={caseStudies} />
+          </Suspense>
         </section>
       </main>
       <Footer />

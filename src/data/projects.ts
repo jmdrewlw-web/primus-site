@@ -5,19 +5,25 @@ export interface Project {
   category: 'Healthcare' | 'Commercial' | 'Historic';
   type: string;
   photoDir: string;
+  curatedImage?: string;
   featured: boolean;
   hasCaseStudy: boolean;
+  launchReady?: boolean;
+}
+
+export function projectCardImage(project: Project): string {
+  return project.curatedImage ?? `${project.photoDir}/exterior.jpg`;
 }
 
 export const projects: Project[] = [
   // Case study clients (featured)
   { slug: 'gleason-dental', name: 'Gleason Dental Clinic', location: 'Beatrice, NE', category: 'Healthcare', type: 'Dental', photoDir: '/images/projects/gleason-dental', featured: true, hasCaseStudy: true },
-  { slug: 'lake-dental', name: 'Lake Dental Care', location: 'Big Lake, MN', category: 'Healthcare', type: 'Dental', photoDir: '/images/projects/lake-dental', featured: true, hasCaseStudy: true },
-  { slug: 'huber-dds', name: 'Stephen Huber, DDS', location: 'Leawood, KS', category: 'Healthcare', type: 'Dental', photoDir: '/images/projects/huber-dds', featured: false, hasCaseStudy: true },
-  { slug: 'ducharme-dermatology', name: 'Ducharme Dermatology', location: 'Clive, IA', category: 'Healthcare', type: 'Medical', photoDir: '/images/projects/ducharme-dermatology', featured: true, hasCaseStudy: true },
+  { slug: 'lake-dental', name: 'Lake Dental Care', location: 'Big Lake, MN', category: 'Healthcare', type: 'Dental', photoDir: '/images/projects/lake-dental', curatedImage: '/images/projects/lake-dental/sharepoint-curated.jpg', featured: true, hasCaseStudy: true },
+  { slug: 'huber-dds', name: 'Stephen Huber, DDS', location: 'Leawood, KS', category: 'Healthcare', type: 'Dental', photoDir: '/images/projects/huber-dds', featured: false, hasCaseStudy: true, launchReady: false },
+  { slug: 'ducharme-dermatology', name: 'Ducharme Dermatology', location: 'Clive, IA', category: 'Healthcare', type: 'Medical', photoDir: '/images/projects/ducharme-dermatology', curatedImage: '/images/projects/ducharme-dermatology/sharepoint-curated.jpg', featured: true, hasCaseStudy: true },
   // Additional portfolio projects
-  { slug: 'crystal-group', name: 'Crystal Group', location: 'Hiawatha, IA', category: 'Commercial', type: 'Industrial', photoDir: '/images/projects/crystal-group', featured: true, hasCaseStudy: false },
-  { slug: 'raining-rose', name: 'Raining Rose', location: 'Cedar Rapids, IA', category: 'Commercial', type: 'Commercial', photoDir: '/images/projects/raining-rose', featured: false, hasCaseStudy: false },
+  { slug: 'crystal-group', name: 'Crystal Group', location: 'Hiawatha, IA', category: 'Commercial', type: 'Industrial', photoDir: '/images/projects/crystal-group', curatedImage: '/images/projects/crystal-group/sharepoint-curated.jpg', featured: true, hasCaseStudy: false },
+  { slug: 'raining-rose', name: 'Raining Rose', location: 'Cedar Rapids, IA', category: 'Commercial', type: 'Commercial', photoDir: '/images/projects/raining-rose', featured: false, hasCaseStudy: false, launchReady: false },
   { slug: 'white-elephant', name: 'White Elephant Building', location: 'Cedar Rapids, IA', category: 'Historic', type: 'Historic Preservation', photoDir: '/images/projects/white-elephant', featured: true, hasCaseStudy: false },
   { slug: 'madison-vet', name: 'Madison Veterinary Hospital', location: 'Madison, WI', category: 'Healthcare', type: 'Veterinary', photoDir: '/images/projects/madison-vet', featured: false, hasCaseStudy: false },
   { slug: 'bluegrass-vet', name: 'Bluegrass Veterinary Hospital', location: 'Gallatin, TN', category: 'Healthcare', type: 'Veterinary', photoDir: '/images/projects/bluegrass-vet', featured: true, hasCaseStudy: false },
@@ -27,3 +33,7 @@ export const projects: Project[] = [
   { slug: 'renew-dental', name: 'Renew Dental', location: 'Clarksville, TN', category: 'Healthcare', type: 'Dental', photoDir: '/images/projects/renew-dental', featured: false, hasCaseStudy: false },
   { slug: 'indian-hills', name: 'Indian Hills Dental', location: 'Marion, IA', category: 'Healthcare', type: 'Dental', photoDir: '/images/projects/indian-hills', featured: false, hasCaseStudy: false },
 ];
+
+export const launchReadyProjects = projects.filter(
+  (project) => project.launchReady !== false
+);

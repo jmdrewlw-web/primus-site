@@ -1,21 +1,12 @@
 'use client';
 import { useState } from 'react';
 import Image from 'next/image';
-import type { Project } from '@/data/projects';
+import { projectCardImage, type Project } from '@/data/projects';
 import type { CaseStudy } from '@/data/case-studies';
 
 type FilterCategory = 'All' | 'Healthcare' | 'Commercial' | 'Historic';
 
 const FILTERS: FilterCategory[] = ['All', 'Healthcare', 'Commercial', 'Historic'];
-
-function getInitials(name: string): string {
-  return name
-    .split(' ')
-    .filter(Boolean)
-    .slice(0, 2)
-    .map((w) => w[0])
-    .join('');
-}
 
 interface ProjectGridProps {
   projects: Project[];
@@ -62,7 +53,7 @@ export default function ProjectGrid({
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {filtered.map((project) => {
           const isSelected = selectedSlug === project.slug;
-          const imageSrc = `${project.photoDir}/exterior.jpg`;
+          const imageSrc = projectCardImage(project);
 
           return (
             <button
@@ -76,7 +67,6 @@ export default function ProjectGrid({
               aria-pressed={isSelected}
               aria-label={`${project.name}${project.hasCaseStudy ? ', has case study' : ''}`}
             >
-              {/* Image or placeholder */}
               <ProjectImage project={project} imageSrc={imageSrc} />
 
               {/* Hover overlay */}
@@ -114,22 +104,12 @@ function ProjectImage({
   imageSrc: string;
 }) {
   return (
-    <>
-      <Image
-        src={imageSrc}
-        alt={project.name}
-        fill
-        sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-        className="object-cover transition-transform duration-500 group-hover:scale-105"
-        onError={undefined}
-      />
-      {/* Initials fallback rendered beneath the image */}
-      <span
-        aria-hidden="true"
-        className="absolute inset-0 flex items-center justify-center bg-gray-200 text-gray-500 font-bold text-2xl -z-10"
-      >
-        {getInitials(project.name)}
-      </span>
-    </>
+    <Image
+      src={imageSrc}
+      alt={project.name}
+      fill
+      sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+      className="object-cover transition-transform duration-500 group-hover:scale-105"
+    />
   );
 }

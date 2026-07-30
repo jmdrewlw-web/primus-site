@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { projects } from '@/data/projects';
+import { projectCardImage, projects } from '@/data/projects';
 import { ScrollReveal } from '@/components/ui/ScrollReveal';
 
 export default function FeaturedProjects() {
@@ -26,10 +26,10 @@ export default function FeaturedProjects() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
           {featured.map((project, i) => (
             <ScrollReveal key={project.slug} delay={i * 0.08}>
-              <Link href={`/projects/${project.slug}`} className="block group">
+              <Link href={`/projects?project=${project.slug}#project-detail`} className="block group">
                 <div className="relative aspect-[4/3] rounded-xl overflow-hidden bg-gray-100">
                   <Image
-                    src={`${project.photoDir}/exterior.jpg`}
+                    src={projectCardImage(project)}
                     alt={project.name}
                     fill
                     className="object-cover transition-transform duration-500 group-hover:scale-105"

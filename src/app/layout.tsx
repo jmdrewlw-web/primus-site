@@ -36,9 +36,9 @@ export const metadata: Metadata = {
       "Commercial general contractor specializing in design-build, construction management, and development advisory. 500+ projects, 24 years, $770M delivered.",
     images: [
       {
-        url: `${SITE_URL}/images/og-default.jpg`,
-        width: 1200,
-        height: 630,
+        url: `${SITE_URL}/images/hero/main.jpg`,
+        width: 878,
+        height: 585,
         alt: "Primus Companies — Commercial Construction",
       },
     ],
@@ -61,7 +61,7 @@ const organizationSchema = {
   "@id": "https://primus-companies.com/#organization",
   name: "Primus Companies",
   url: "https://primus-companies.com",
-  logo: "https://primus-companies.com/images/logos/primus-logo.png",
+  logo: "https://primus-companies.com/images/logos/primus-logo.jpeg",
   description:
     "Commercial general contractor specializing in design-build, construction management, and development advisory. 500+ projects, 24 years, $770M delivered.",
   telephone: "(319) 393-4831",
