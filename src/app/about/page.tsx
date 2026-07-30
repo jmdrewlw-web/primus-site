@@ -1,5 +1,4 @@
 import type { Metadata } from 'next';
-import Image from 'next/image';
 import Nav from '@/components/Nav';
 import Footer from '@/components/Footer';
 import BottomCTA from '@/components/BottomCTA';
@@ -47,7 +46,6 @@ const TEAM = [
   {
     name: 'Jason Drewelow',
     title: 'Principal',
-    image: '/images/team/jason-drewelow.jpg',
     initials: 'JD',
     color: 'bg-purple-700',
   },
@@ -233,27 +231,12 @@ function TeamCard({ member }: { member: (typeof TEAM)[number] }) {
 }
 
 function TeamPhoto({ member }: { member: (typeof TEAM)[number] }) {
-  // Try to render image; fall back to initials circle on error via client-side,
-  // but since we know the team dir is empty we render initials server-side.
-  // We attempt the image and let Next.js handle missing files gracefully via
-  // a wrapper that defaults to the initials div if the src path is absent.
   return (
-    <>
-      <Image
-        src={member.image}
-        alt={member.name}
-        fill
-        sizes="112px"
-        className="object-cover"
-        onError={undefined}
-      />
-      {/* Initials fallback layer rendered beneath — image sits on top when it loads */}
-      <span
-        aria-hidden="true"
-        className={`absolute inset-0 flex items-center justify-center ${member.color} text-white font-bold text-xl -z-10`}
-      >
-        {member.initials}
-      </span>
-    </>
+    <span
+      aria-hidden="true"
+      className={`absolute inset-0 flex items-center justify-center ${member.color} text-white font-bold text-xl`}
+    >
+      {member.initials}
+    </span>
   );
 }
