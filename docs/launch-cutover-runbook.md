@@ -6,8 +6,8 @@ the controlled cutover.
 
 ## Reviewed release candidate
 
-- Preview: `https://primus-site-oe2g3zk44-jasonds-projects-3ccfaebd.vercel.app`
-- Vercel deployment: `dpl_2G9646qPiA6oUHqxwmpEit2KyZ8e`
+- Preview: `https://primus-site-n9e4kzmqj-jasonds-projects-3ccfaebd.vercel.app`
+- Vercel deployment: `dpl_77oBA1r5yH2yw2Jok9TRUfWPJYj7`
 - Vercel project: `jasonds-projects-3ccfaebd/primus-site`
 - Project ID: `prj_w5nOZ0zrs61wU9GjrVTFoLEQ7t1e`
 - Preview protection: `X-Robots-Tag: noindex, nofollow, noarchive`
