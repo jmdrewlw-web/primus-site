@@ -13,14 +13,6 @@ const COMPANY = [
   { label: 'About', href: '/about' },
 ];
 
-const OFFICES = [
-  'Cedar Rapids (HQ)',
-  'Nashville',
-  'Omaha',
-  'Minneapolis',
-  'Kansas City',
-];
-
 export default function Footer() {
   return (
     <footer className="bg-[#111] text-white">
@@ -110,18 +102,14 @@ export default function Footer() {
                   (319) 393-4831
                 </a>
               </p>
-              <p className="text-white/30 pt-1">
-                401 8th Ave SE<br />
-                Cedar Rapids, IA 52401
-              </p>
+              <p className="text-white/30 pt-1">Serving commercial owners across the Midwest and beyond.</p>
             </div>
           </div>
         </div>
 
-        {/* Office locations */}
         <div className="border-t border-white/[.07] pt-8 mb-6">
           <p className="text-white/30 text-xs text-center">
-            {OFFICES.join(' · ')}
+            Founded in Cedar Rapids in 1973
           </p>
         </div>
 

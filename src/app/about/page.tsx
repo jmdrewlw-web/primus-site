@@ -10,14 +10,13 @@ import { breadcrumbSchema, SchemaScript } from '@/lib/schema';
 export const metadata: Metadata = {
   title: 'About',
   description:
-    'Primus Companies — 24 years, 500+ projects, $770M delivered. Commercial construction with offices in Cedar Rapids, Nashville, Omaha, Minneapolis, and Kansas City.',
+    'Primus Companies — commercial construction built on disciplined coordination, accountability, and a Cedar Rapids foundation dating to 1973.',
 };
 
 const STATS = [
   { end: 500, suffix: '+', label: 'Projects Completed' },
-  { end: 24, suffix: '', label: 'Years in Business' },
+  { end: 53, suffix: '', label: 'Years Building' },
   { end: 770, prefix: '$', suffix: 'M', label: 'Total Delivered' },
-  { end: 5, suffix: '', label: 'Regional Offices' },
   { end: 15, suffix: '+', label: 'States Served' },
 ];
 
@@ -51,14 +50,6 @@ const TEAM = [
   },
 ];
 
-const OFFICES = [
-  { city: 'Cedar Rapids', state: 'IA', note: 'Headquarters' },
-  { city: 'Nashville', state: 'TN', note: null },
-  { city: 'Omaha', state: 'NE', note: null },
-  { city: 'Minneapolis', state: 'MN', note: null },
-  { city: 'Kansas City', state: 'MO', note: null },
-];
-
 const schema = breadcrumbSchema([
   { name: 'Home', url: '/' },
   { name: 'About', url: '/about' },
@@ -75,24 +66,22 @@ export default function AboutPage() {
         <section className="px-6 md:px-10 py-20 md:py-28 max-w-[1200px] mx-auto">
           <ScrollReveal>
             <h1 className="font-sans text-[clamp(2.4rem,5vw,4rem)] font-bold text-black leading-tight tracking-tight mb-8">
-              24 Years. 500+ Projects.<br className="hidden sm:block" /> One Standard.
+              Built since 1973.<br className="hidden sm:block" /> Still accountable.
             </h1>
           </ScrollReveal>
           <ScrollReveal delay={0.1}>
             <div className="max-w-[680px] space-y-5 text-gray-600 text-[1.05rem] leading-relaxed">
               <p>
-                We started in Cedar Rapids in 2002. Since then, we&apos;ve built more than 500 projects
-                across 15 states — dental offices, veterinary clinics, commercial buildings, multifamily,
-                light industrial. We don&apos;t pitch. We don&apos;t sell. We build.
+                Primus started in Cedar Rapids in 1973. Since then, we&apos;ve built more than 500 projects
+                across 15 states for owners with serious plans and real operating needs. We don&apos;t pitch.
+                We don&apos;t sell. We build.
               </p>
               <p>
                 Every project gets the same attention: clear communication before the first shovel hits,
                 honest reporting when things get complicated, and a finished product that holds up years
                 after we&apos;ve moved on to the next job.
               </p>
-              <p>
-                Five offices. One standard. That&apos;s the whole model.
-              </p>
+              <p>Our model is simple: disciplined coordination, direct accountability, and work that holds up.</p>
             </div>
           </ScrollReveal>
         </section>
@@ -102,7 +91,7 @@ export default function AboutPage() {
         {/* Stats */}
         <section className="px-6 md:px-10 py-20 max-w-[1200px] mx-auto">
           <ScrollReveal>
-            <div className="grid grid-cols-2 md:grid-cols-5 gap-10 md:gap-6">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-10 md:gap-6">
               {STATS.map((stat, i) => (
                 <div key={i} className="text-center">
                   <div className="text-[clamp(2.2rem,4.5vw,3.2rem)] font-bold text-black leading-none mb-2 font-sans">
@@ -177,34 +166,15 @@ export default function AboutPage() {
 
         <SectionDivider />
 
-        {/* Offices */}
+        {/* Reach */}
         <section className="px-6 md:px-10 py-20 max-w-[1200px] mx-auto">
           <ScrollReveal>
             <h2 className="font-sans text-[clamp(1.6rem,3vw,2.2rem)] font-bold text-black mb-3">
-              Where We Work
+              Built to travel well
             </h2>
             <p className="text-gray-600 text-[1rem] mb-10 max-w-lg">
-              Five regional offices so there&apos;s always someone close to your site.
+              From a Cedar Rapids foundation, Primus brings commercial construction experience to owners across the Midwest and beyond.
             </p>
-          </ScrollReveal>
-          <ScrollReveal delay={0.1}>
-            <ul className="space-y-3" aria-label="Office locations">
-              {OFFICES.map((office, i) => (
-                <li
-                  key={i}
-                  className="flex items-baseline gap-3 text-[1rem]"
-                >
-                  <span className="font-semibold text-black">
-                    {office.city}, {office.state}
-                  </span>
-                  {office.note && (
-                    <span className="text-gray-400 text-[.85rem]">
-                      {office.note}
-                    </span>
-                  )}
-                </li>
-              ))}
-            </ul>
           </ScrollReveal>
         </section>
 

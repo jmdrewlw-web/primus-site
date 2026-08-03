@@ -6,6 +6,9 @@ import { SchemaScript, blogPostingSchema, breadcrumbSchema } from '@/lib/schema'
 import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
 
+// Retired legacy URLs must not serve stale architecture claims on demand.
+export const dynamicParams = false;
+
 export function generateStaticParams() {
   return getAllArticles().map((a) => ({ slug: a.slug }));
 }

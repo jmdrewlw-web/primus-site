@@ -11,14 +11,6 @@ export const metadata: Metadata = {
     'Start your commercial construction project with Primus Companies. Get a free Pathfinder assessment — budget, timeline, and clear next steps.',
 };
 
-const OFFICES = [
-  { city: 'Cedar Rapids', label: 'Cedar Rapids, IA (HQ)' },
-  { city: 'Nashville', label: 'Nashville, TN' },
-  { city: 'Omaha', label: 'Omaha, NE' },
-  { city: 'Minneapolis', label: 'Minneapolis, MN' },
-  { city: 'Kansas City', label: 'Kansas City, MO' },
-];
-
 export default function ContactPage() {
   const schema = breadcrumbSchema([
     { name: 'Home', url: '/' },
@@ -101,51 +93,9 @@ export default function ContactPage() {
                     </div>
                   </div>
 
-                  <div className="flex items-start gap-3">
-                    <span className="mt-0.5 text-purple-700 flex-shrink-0">
-                      {/* Location icon */}
-                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                        <path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0z"/>
-                        <circle cx="12" cy="10" r="3"/>
-                      </svg>
-                    </span>
-                    <div>
-                      <p className="text-gray-400 text-xs font-medium uppercase tracking-wide mb-0.5">Headquarters</p>
-                      <address className="not-italic text-gray-800 font-medium leading-relaxed">
-                        401 8th Ave SE<br />
-                        Cedar Rapids, IA 52401
-                      </address>
-                    </div>
-                  </div>
                 </div>
               </div>
 
-              {/* Offices card */}
-              <div className="rounded-xl border border-gray-200 bg-white p-7">
-                <h3 className="text-sm font-semibold uppercase tracking-widest text-gray-400 mb-4">Office Locations</h3>
-                <ul className="space-y-2">
-                  {OFFICES.map(({ city, label }) => (
-                    <li key={city} className="flex items-center gap-2 text-sm text-gray-700">
-                      <span className="w-1.5 h-1.5 rounded-full bg-gold flex-shrink-0" />
-                      {label}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-
-              {/* Map */}
-              <div className="rounded-xl overflow-hidden border border-gray-200">
-                <iframe
-                  title="Primus Companies HQ — Cedar Rapids, IA"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2982.3!2d-91.6638!3d41.9755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87e5fa5f3b9bc8b3%3A0x0!2s401+8th+Ave+SE%2C+Cedar+Rapids%2C+IA+52401!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus"
-                  width="100%"
-                  height="220"
-                  style={{ border: 0 }}
-                  allowFullScreen
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                />
-              </div>
             </div>
           </div>
         </section>

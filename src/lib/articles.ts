@@ -6,6 +6,20 @@ import { renderMarkdown } from './markdown';
 
 const ARTICLES_DIR = path.join(process.cwd(), 'content/articles');
 
+// These legacy pieces describe an in-house architecture practice Primus no
+// longer operates. They are deliberately removed from publishing, sitemap, and
+// related-content discovery until they are rewritten against the current
+// builder-led, design-partner model.
+const RETIRED_LEGACY_ARTICLE_SLUGS = new Set([
+  'architect-builder-same-page',
+  'change-order-trap',
+  'contractor-as-advisor',
+  'fixed-pricing-matters',
+  'first-time-builder',
+  'in-house-design-build',
+  'medical-office-compliance',
+]);
+
 export interface Article {
   slug: string;
   title: string;
@@ -58,7 +72,8 @@ export function getAllArticles(): Article[] {
   }
 
   const files = fs.readdirSync(ARTICLES_DIR)
-    .filter(f => f.endsWith('.md') && f.startsWith('article_'));
+    .filter(f => f.endsWith('.md') && f.startsWith('article_'))
+    .filter(filename => !RETIRED_LEGACY_ARTICLE_SLUGS.has(filenameToSlug(filename)));
 
   const articles: Article[] = files.map(filename => {
     const filePath = path.join(ARTICLES_DIR, filename);

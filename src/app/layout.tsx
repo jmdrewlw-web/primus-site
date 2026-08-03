@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     template: "%s | Primus Companies",
   },
   description:
-    "Commercial general contractor specializing in design-build, construction management, and development advisory. 500+ projects, 24 years, $770M delivered.",
+    "Commercial general contractor providing preconstruction, construction management, and coordinated design-build delivery. 500+ projects, serving owners since 1973.",
   metadataBase: new URL(SITE_URL),
   openGraph: {
     type: "website",
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     siteName: "Primus Companies",
     title: "Primus Companies — Commercial Construction",
     description:
-      "Commercial general contractor specializing in design-build, construction management, and development advisory. 500+ projects, 24 years, $770M delivered.",
+      "Commercial general contractor providing preconstruction, construction management, and coordinated design-build delivery. 500+ projects, serving owners since 1973.",
     images: [
       {
         url: `${SITE_URL}/images/hero/main.jpg`,
@@ -63,24 +63,22 @@ const organizationSchema = {
   url: "https://primus-companies.com",
   logo: "https://primus-companies.com/images/logos/primus-logo.jpeg",
   description:
-    "Commercial general contractor specializing in design-build, construction management, and development advisory. 500+ projects, 24 years, $770M delivered.",
+    "Commercial general contractor providing preconstruction, construction management, and coordinated design-build delivery. 500+ projects, serving owners since 1973.",
   telephone: "(319) 393-4831",
   email: "connect@primus-companies.com",
-  address: {
-    "@type": "PostalAddress",
-    streetAddress: "401 8th Ave SE",
-    addressLocality: "Cedar Rapids",
-    addressRegion: "IA",
-    postalCode: "52401",
-    addressCountry: "US",
-  },
   numberOfEmployees: {
     "@type": "QuantitativeValue",
     minValue: 50,
     maxValue: 100,
   },
-  foundingDate: "2002",
-  areaServed: ["Iowa", "Tennessee", "Nebraska", "Minnesota", "Missouri"],
+  foundingDate: "1973",
+  areaServed: [
+    "Eastern Iowa",
+    "Central Iowa",
+    "Minneapolis metropolitan area",
+    "Kansas City metropolitan area",
+    "Omaha metropolitan area",
+  ],
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

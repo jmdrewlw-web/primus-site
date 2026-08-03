@@ -1,12 +1,12 @@
 # Primus Companies
 
-> Primus Companies is a commercial general contractor with offices in Cedar Rapids (IA), Nashville (TN), Omaha (NE), Minneapolis (MN), and Kansas City (MO). Founded in 2002, the company specializes in design-build, preconstruction, general construction, construction management, and development advisory for commercial, healthcare, industrial, and residential projects. 500+ projects completed, $770M delivered.
+> Primus Companies is a commercial general contractor rooted in Cedar Rapids since 1973. The company provides preconstruction, general construction, construction management, and coordinated design-build delivery for commercial, healthcare, industrial, and other owner-led projects. 500+ projects completed, $770M delivered.
 
 ## Services
 
 - [Preconstruction](https://primus-companies.com/services/preconstruction): Budgeting, feasibility, site evaluation, constructability review
 - [General Construction](https://primus-companies.com/services/general-construction): Ground-up and renovation, fixed pricing, single point of contact
-- [Design-Build](https://primus-companies.com/services/design-build): In-house architecture and construction under one contract
+- [Design-Build](https://primus-companies.com/services/design-build): Builder-led coordination with an owner’s architect and design partners
 - [Construction Management](https://primus-companies.com/services/construction-management): Owner's representation, third-party oversight
 - [Development Advisory](https://primus-companies.com/services/development-advisory): Site selection, financing, investor structure, feasibility
 
@@ -21,6 +21,6 @@
 ## Contact
 
 - [Contact](https://primus-companies.com/contact)
-- Headquarters: 401 8th Ave SE, Cedar Rapids, IA 52401
+- Founded in Cedar Rapids in 1973
 - Phone: (319) 393-4831
 - Email: connect@primus-companies.com
