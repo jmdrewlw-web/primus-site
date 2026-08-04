@@ -7,13 +7,17 @@ rollback capture are configured and verified.
 ## Release candidate under verification
 
 - Branch: `codex/dre-671-work-wall-variation-2026-08-04`
+- Commit: `7971ee6`
+- Preview: `https://primus-site-fr1xyurvg-jasonds-projects-3ccfaebd.vercel.app`
+- Vercel deployment: `dpl_DeazPrZcMj64rn6XMBhnnx6Xtde5` (`READY`)
 - Vercel project: `jasonds-projects-3ccfaebd/primus-site`
 - Project ID: `prj_w5nOZ0zrs61wU9GjrVTFoLEQ7t1e`
-- The prior preview is superseded. The refreshed preview URL, deployment ID, and
-  exact commit are recorded in DRE-671 after deployment.
-- Local verification: eight focused release tests passed; lint passed;
-  production build passed; 68 pages generated; 52 active article pages and 13
-  retired claim sources were verified; desktop and mobile review passed.
+- Preview protection: `X-Robots-Tag: noindex, nofollow, noarchive`
+- Verification: eight focused release tests passed; lint passed; local and
+  Vercel production builds passed; 68 pages generated; 52 active article pages
+  and 13 retired claim sources were verified; desktop and mobile review passed;
+  all 190 Projects images loaded without error; no checked preview runtime
+  errors were present.
 
 ## Current public delivery and rollback snapshot
 
@@ -48,11 +52,14 @@ release blockers being resolved and verified. The approved correction set is:
 
 The remaining gates are operational, not copy approval:
 
-- verify a Primus-controlled Resend sender domain and restricted sending key;
-- add the production-only Vercel delivery settings;
+- verify a Primus-controlled Resend sender domain and restricted sending key
+  (not currently available in this release lane);
+- add the production-only Vercel delivery settings (the project currently has
+  zero production environment variables);
 - perform the separately authorized internal acceptance send and confirm
   receipt/reply-to behavior;
-- attach and validate the apex and `www` domains; and
+- attach and validate the apex and `www` domains (the Vercel project currently
+  has no Primus custom domains); and
 - capture the current GoDaddy zone and confirm WordPress/WP Engine rollback
   access immediately before the web-record change.
 
