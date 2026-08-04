@@ -1,6 +1,6 @@
 # Primus Companies
 
-> Primus Companies is a commercial general contractor rooted in Cedar Rapids since 1973. The company provides preconstruction, general construction, construction management, and coordinated design-build delivery for commercial, healthcare, industrial, and other owner-led projects. 500+ projects completed, $770M delivered.
+> Primus Companies is a commercial general contractor rooted in Cedar Rapids since 1973. The company provides preconstruction, general construction, construction management, and coordinated design-build delivery for commercial, healthcare, industrial, and other owner-led projects.
 
 ## Services
 
@@ -12,11 +12,11 @@
 
 ## Projects
 
-- [Portfolio](https://primus-companies.com/projects): 500+ completed projects across healthcare, commercial, industrial, and residential
+- [Portfolio](https://primus-companies.com/projects): Selected commercial construction work across healthcare, commercial, industrial, and residential settings
 
 ## Blog
 
-- [Field Notes](https://primus-companies.com/blog): 65+ articles on commercial construction — planning, design, finance, risk, and growth
+- [Field Notes](https://primus-companies.com/blog): Commercial construction perspectives on planning, design, finance, risk, and growth
 
 ## Contact
 

@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     template: "%s | Primus Companies",
   },
   description:
-    "Commercial general contractor providing preconstruction, construction management, and coordinated design-build delivery. 500+ projects, serving owners since 1973.",
+    "Commercial general contractor providing preconstruction, construction management, and coordinated design-build delivery, serving owners since 1973.",
   metadataBase: new URL(SITE_URL),
   openGraph: {
     type: "website",
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     siteName: "Primus Companies",
     title: "Primus Companies — Commercial Construction",
     description:
-      "Commercial general contractor providing preconstruction, construction management, and coordinated design-build delivery. 500+ projects, serving owners since 1973.",
+      "Commercial general contractor providing preconstruction, construction management, and coordinated design-build delivery, serving owners since 1973.",
     images: [
       {
         url: `${SITE_URL}/images/hero/main.jpg`,
@@ -63,14 +63,9 @@ const organizationSchema = {
   url: "https://primus-companies.com",
   logo: "https://primus-companies.com/images/logos/primus-logo.jpeg",
   description:
-    "Commercial general contractor providing preconstruction, construction management, and coordinated design-build delivery. 500+ projects, serving owners since 1973.",
+    "Commercial general contractor providing preconstruction, construction management, and coordinated design-build delivery, serving owners since 1973.",
   telephone: "(319) 393-4831",
   email: "connect@primus-companies.com",
-  numberOfEmployees: {
-    "@type": "QuantitativeValue",
-    minValue: 50,
-    maxValue: 100,
-  },
   foundingDate: "1973",
   areaServed: [
     "Eastern Iowa",

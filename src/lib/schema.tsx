@@ -12,11 +12,10 @@ export function organizationSchema() {
     name: 'Primus Companies',
     url: SITE_URL,
     logo: `${SITE_URL}/images/logos/primus-logo.jpeg`,
-    description: 'Commercial general contractor providing preconstruction, construction management, and coordinated design-build delivery. 500+ projects, serving owners since 1973.',
+    description: 'Commercial general contractor providing preconstruction, construction management, and coordinated design-build delivery, serving owners since 1973.',
     telephone: '(319) 393-4831',
     email: 'connect@primus-companies.com',
     foundingDate: '1973',
-    numberOfEmployees: { '@type': 'QuantitativeValue', minValue: 50, maxValue: 100 },
     areaServed: [
       'Eastern Iowa',
       'Central Iowa',
@@ -73,7 +72,13 @@ export function serviceSchema(service: { name: string; slug: string; description
     description: service.description,
     provider: { '@id': ORG_ID },
     url: `${SITE_URL}/services/${service.slug}`,
-    areaServed: ['Iowa', 'Tennessee', 'Nebraska', 'Minnesota', 'Missouri'],
+    areaServed: [
+      'Eastern Iowa',
+      'Central Iowa',
+      'Minneapolis metropolitan area',
+      'Kansas City metropolitan area',
+      'Omaha metropolitan area',
+    ],
   };
 }
 

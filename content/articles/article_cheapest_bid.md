@@ -56,7 +56,7 @@ When a builder comes to you with a fixed-price contract, they're telling you som
 
 The specific infrastructure matters. A veterinary clinic's plumbing and ventilation requirements are nothing like a daycare's. A dental office's operatory-level electrical is nothing like a light industrial tenant build-out. A firm that has built hundreds of projects across multiple verticals knows where the cost is buried in each one. A low-bid generalist does not — or does, and prices it out of scope intentionally.
 
-At Primus, we've built over 1,000 facilities across dental, veterinary, medical, daycare, multifamily, and light industrial. Fixed pricing isn't a marketing line — it's a requirement. You cannot build a functional relationship with a client on a contract designed to extract money through scope gaps. We know what these projects actually cost across every vertical we work in. We tell you up front.
+At Primus, pricing discipline is not a marketing line. You cannot build a functional relationship with a client on a contract designed to extract money through scope gaps. We work to make scope, assumptions, and change decisions visible up front.
 
 Scope gaps are not an inevitability of construction. They're a symptom of a contract that was never designed to protect you.
 

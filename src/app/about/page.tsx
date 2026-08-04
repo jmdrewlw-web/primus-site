@@ -3,7 +3,6 @@ import Nav from '@/components/Nav';
 import Footer from '@/components/Footer';
 import BottomCTA from '@/components/BottomCTA';
 import { ScrollReveal } from '@/components/ui/ScrollReveal';
-import { CountUp } from '@/components/ui/CountUp';
 import { SectionDivider } from '@/components/ui/SectionDivider';
 import { breadcrumbSchema, SchemaScript } from '@/lib/schema';
 
@@ -12,13 +11,6 @@ export const metadata: Metadata = {
   description:
     'Primus Companies — commercial construction built on disciplined coordination, accountability, and a Cedar Rapids foundation dating to 1973.',
 };
-
-const STATS = [
-  { end: 500, suffix: '+', label: 'Projects Completed' },
-  { end: 53, suffix: '', label: 'Years Building' },
-  { end: 770, prefix: '$', suffix: 'M', label: 'Total Delivered' },
-  { end: 15, suffix: '+', label: 'States Served' },
-];
 
 const VALUES = [
   {
@@ -37,7 +29,7 @@ const VALUES = [
     title: 'Craftsmanship',
     quote: 'Build it like it\u2019s yours.',
     description:
-      'Every detail gets treated as if it\u2019s going into our own building. That standard doesn\u2019t change at job #501.',
+      'Every detail gets treated as if it\u2019s going into our own building. That standard does not change from one project to the next.',
   },
 ];
 
@@ -66,15 +58,14 @@ export default function AboutPage() {
         <section className="px-6 md:px-10 py-20 md:py-28 max-w-[1200px] mx-auto">
           <ScrollReveal>
             <h1 className="font-sans text-[clamp(2.4rem,5vw,4rem)] font-bold text-black leading-tight tracking-tight mb-8">
-              Built since 1973.<br className="hidden sm:block" /> Still accountable.
+              Commercial construction,<br className="hidden sm:block" /> built on experience since 1973.
             </h1>
           </ScrollReveal>
           <ScrollReveal delay={0.1}>
             <div className="max-w-[680px] space-y-5 text-gray-600 text-[1.05rem] leading-relaxed">
               <p>
-                Primus started in Cedar Rapids in 1973. Since then, we&apos;ve built more than 500 projects
-                across 15 states for owners with serious plans and real operating needs. We don&apos;t pitch.
-                We don&apos;t sell. We build.
+                Primus started in Cedar Rapids in 1973. Since then, we&apos;ve built for owners with serious
+                plans and real operating needs. We don&apos;t pitch. We don&apos;t sell. We build.
               </p>
               <p>
                 Every project gets the same attention: clear communication before the first shovel hits,
@@ -82,34 +73,6 @@ export default function AboutPage() {
                 after we&apos;ve moved on to the next job.
               </p>
               <p>Our model is simple: disciplined coordination, direct accountability, and work that holds up.</p>
-            </div>
-          </ScrollReveal>
-        </section>
-
-        <SectionDivider />
-
-        {/* Stats */}
-        <section className="px-6 md:px-10 py-20 max-w-[1200px] mx-auto">
-          <ScrollReveal>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-10 md:gap-6">
-              {STATS.map((stat, i) => (
-                <div key={i} className="text-center">
-                  <div className="text-[clamp(2.2rem,4.5vw,3.2rem)] font-bold text-black leading-none mb-2 font-sans">
-                    <CountUp
-                      end={stat.end}
-                      prefix={stat.prefix ?? ''}
-                      suffix={stat.suffix}
-                    />
-                  </div>
-                  <div
-                    className="h-[2px] w-6 bg-gold mx-auto mb-3"
-                    aria-hidden="true"
-                  />
-                  <p className="text-gray-400 text-[.75rem] font-semibold tracking-[.12em] uppercase">
-                    {stat.label}
-                  </p>
-                </div>
-              ))}
             </div>
           </ScrollReveal>
         </section>

@@ -22,4 +22,4 @@ Dr. Gleason's new facility opened on a Monday. The prior office closed on Thursd
 
 Your best people are watching. The build is not just a construction project. It's a statement about how you lead.
 
-Primus has delivered more than 1,000 projects across dental, medical, veterinary, daycare, and other specialty facilities. Learn more at primus-companies.com.
+Learn more about Primus commercial construction at primus-companies.com.

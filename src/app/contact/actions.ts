@@ -1,11 +1,17 @@
 'use server';
 
+import { getContactDeliveryState } from '@/lib/contact-delivery';
+
 type ContactFormResult =
   | { success: true }
-  | { success: false; error: string };
+  | { success: false; error: string; reason: 'validation' | 'preview' | 'not-configured' | 'delivery' };
 
 const DELIVERY_ERROR =
   'We could not send your message. Please try again or contact us directly.';
+const PREVIEW_MESSAGE =
+  'This review preview does not send messages. Please email connect@primus-companies.com or call (319) 393-4831.';
+const NOT_CONFIGURED_MESSAGE =
+  'Online message delivery is not available yet. Please email connect@primus-companies.com or call (319) 393-4831.';
 const CONTACT_FORM_RECIPIENT = 'andy.hedding@primus-companies.com';
 const EMAIL_PATTERN = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
@@ -30,20 +36,20 @@ export async function submitContactForm(formData: FormData): Promise<ContactForm
 
   // Validate
   if (!name || !email || !message) {
-    return { success: false, error: 'Name, email, and message are required.' };
+    return { success: false, error: 'Name, email, and message are required.', reason: 'validation' };
   }
   if (!EMAIL_PATTERN.test(email)) {
-    return { success: false, error: 'Enter a valid email address.' };
+    return { success: false, error: 'Enter a valid email address.', reason: 'validation' };
   }
 
   // Review previews and any environment not explicitly approved for delivery
   // must never transmit a lead, even if mail credentials are present there.
-  if (
-    process.env.VERCEL_ENV !== 'production' ||
-    process.env.CONTACT_FORM_DELIVERY_ENABLED !== 'true' ||
-    !process.env.RESEND_API_KEY
-  ) {
-    return { success: false, error: DELIVERY_ERROR };
+  const deliveryState = getContactDeliveryState();
+  if (deliveryState === 'preview') {
+    return { success: false, error: PREVIEW_MESSAGE, reason: 'preview' };
+  }
+  if (deliveryState === 'not-configured') {
+    return { success: false, error: NOT_CONFIGURED_MESSAGE, reason: 'not-configured' };
   }
 
   try {
@@ -59,12 +65,12 @@ export async function submitContactForm(formData: FormData): Promise<ContactForm
 
     if (error || !data?.id) {
       console.error('Contact email delivery failed.');
-      return { success: false, error: DELIVERY_ERROR };
+      return { success: false, error: DELIVERY_ERROR, reason: 'delivery' };
     }
 
     return { success: true };
   } catch {
     console.error('Contact email delivery failed.');
-    return { success: false, error: DELIVERY_ERROR };
+    return { success: false, error: DELIVERY_ERROR, reason: 'delivery' };
   }
 }

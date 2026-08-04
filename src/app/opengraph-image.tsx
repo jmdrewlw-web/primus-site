@@ -48,7 +48,7 @@ export default async function Image() {
             marginTop: 16,
           }}
         >
-          500+ Projects · 24 Years · $770M Delivered
+          Commercial Construction · Cedar Rapids roots since 1973
         </div>
       </div>
     ),

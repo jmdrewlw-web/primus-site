@@ -11,8 +11,7 @@ export default function AuthorBio() {
         <p className="font-bold text-gray-900">Jason Drewelow</p>
         <p className="text-gray-600 text-sm">Principal, Primus Companies</p>
         <p className="text-sm text-gray-500 mt-2 leading-relaxed">
-          Jason leads Primus Companies, a commercial construction company rooted in Cedar Rapids since 1973, and has overseen more than 500 commercial
-          construction projects across 15 states.
+          Jason leads Primus Companies, a commercial construction company rooted in Cedar Rapids since 1973.
         </p>
       </div>
     </div>

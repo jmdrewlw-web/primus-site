@@ -4,6 +4,7 @@ import Nav from '@/components/Nav';
 import Footer from '@/components/Footer';
 import ContactForm from '@/components/ContactForm';
 import { SchemaScript, breadcrumbSchema } from '@/lib/schema';
+import { getContactDeliveryState } from '@/lib/contact-delivery';
 
 export const metadata: Metadata = {
   title: 'Contact',
@@ -32,7 +33,7 @@ export default function ContactPage() {
               Start the Conversation
             </h1>
             <p className="text-lg text-gray-600 max-w-xl">
-              Tell us about your project and we&apos;ll connect you with the right team. First response within one business day.
+              Tell us about your project and we&apos;ll connect you with the right team.
             </p>
           </div>
         </section>
@@ -45,7 +46,7 @@ export default function ContactPage() {
             <div>
               <h2 className="text-2xl font-bold text-gray-800 mb-6">Send Us a Message</h2>
               <Suspense fallback={<div className="h-96 bg-gray-50 rounded-xl animate-pulse" />}>
-                <ContactForm />
+                <ContactForm deliveryState={getContactDeliveryState()} />
               </Suspense>
             </div>
 

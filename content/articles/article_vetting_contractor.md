@@ -20,4 +20,4 @@ Ask what the longest delay was on a similar project, what caused it, and what wa
 
 Vetting takes time. A few phone calls to references, an hour with the contractor asking direct questions, a review of their contract structure. That time is trivially small compared to the pain of signing with the wrong team and spending 18 months managing a project that's behind schedule, over budget, and full of disputes. The sophistication you bring to contractor selection determines a significant portion of the outcome before the first permit application is filed.
 
-Primus has delivered more than 1,000 projects across dental, medical, veterinary, daycare, multifamily, and industrial facilities. If you want to ask the hard questions and compare answers, primus-companies.com is a good place to start.
+If you want to ask the hard questions and compare answers, primus-companies.com is a good place to start.

@@ -16,8 +16,14 @@ const RETIRED_LEGACY_ARTICLE_SLUGS = new Set([
   'contractor-as-advisor',
   'fixed-pricing-matters',
   'first-time-builder',
+  'horror-contractor-disappeared',
+  'horror-incomplete-drawings',
+  'insurance-construction-risk',
   'in-house-design-build',
+  'interior-design-is-not-decoration',
   'medical-office-compliance',
+  'multifamily-entitlement',
+  'single-point-of-contact',
 ]);
 
 export interface Article {

@@ -22,7 +22,7 @@ export const services: ServiceData[] = [
     tagline: 'The biggest cost decisions happen before construction starts.',
     description: 'We stress-test every assumption before you spend a dollar. Budgeting, feasibility studies, site evaluation, constructability review, and value engineering — all before you break ground.',
     features: [
-      { title: 'Real Budget Numbers', description: 'Not ballpark guesses — detailed cost analysis based on 500+ completed projects.' },
+      { title: 'Real Budget Numbers', description: 'Not ballpark guesses — detailed cost analysis grounded in commercial construction experience.' },
       { title: 'Site Evaluation', description: 'Zoning, utilities, soil conditions, access — we find the problems before they find you.' },
       { title: 'Feasibility Studies', description: 'Does this project make financial sense? We\'ll tell you honestly.' },
       { title: 'Value Engineering', description: 'Same quality, lower cost. We know where to save and where not to.' },
@@ -50,7 +50,7 @@ export const services: ServiceData[] = [
       { title: 'Fixed Pricing', description: 'The number we give you is the number you pay. No change order games.' },
       { title: 'Single Point of Contact', description: 'One person from preconstruction through punch list. You always know who to call.' },
       { title: 'Schedule Accountability', description: 'We build to a timeline and we own it. Delays cost us, not you.' },
-      { title: 'Quality Assurance', description: '500+ projects of institutional knowledge applied to every build.' },
+      { title: 'Quality Assurance', description: 'Institutional knowledge and disciplined field review applied to every build.' },
     ],
     process: [
       { step: 1, title: 'Scope Lock', description: 'We define exactly what you\'re getting. No ambiguity.' },

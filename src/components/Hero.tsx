@@ -3,16 +3,8 @@ import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { MagneticButton } from '@/components/ui/MagneticButton';
-import { CountUp } from '@/components/ui/CountUp';
 
 const HEADLINE_WORDS = ['We', 'navigate', 'the', 'build.', 'You', 'focus', 'on', 'the', 'business.'];
-
-const STATS = [
-  { prefix: '', end: 500, suffix: '+', label: 'Projects' },
-  { prefix: '', end: 24, suffix: '', label: 'Years' },
-  { prefix: '$', end: 770, suffix: 'M', label: 'Delivered' },
-  { prefix: '', end: 5, suffix: '', label: 'Offices' },
-];
 
 export default function Hero() {
   const [mounted, setMounted] = useState(false);
@@ -62,8 +54,8 @@ export default function Hero() {
           transition={{ duration: 0.5, delay: 0.6, ease: 'easeOut' }}
           className="text-lg md:text-xl text-white/80 max-w-2xl mx-auto mb-10 leading-relaxed"
         >
-          500+ projects delivered with fixed pricing and one point of contact.
-          Design-build, construction management, and development advisory.
+          Commercial construction with disciplined coordination and one point of accountability.
+          Preconstruction, design-build, and construction management.
         </motion.p>
 
         {/* CTAs */}
@@ -79,29 +71,6 @@ export default function Hero() {
           <MagneticButton href="/projects" variant="outline-light">
             See Our Work
           </MagneticButton>
-        </motion.div>
-
-        {/* Stats bar */}
-        <motion.div
-          initial={{ opacity: 0, y: 16 }}
-          animate={mounted ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.5, delay: 0.9, ease: 'easeOut' }}
-          className="grid grid-cols-2 md:grid-cols-4 gap-6 border-t border-white/20 pt-10"
-        >
-          {STATS.map((stat) => (
-            <div key={stat.label} className="text-center">
-              <div className="text-3xl md:text-4xl font-extrabold text-white mb-1 font-mono">
-                <CountUp
-                  end={stat.end}
-                  prefix={stat.prefix}
-                  suffix={stat.suffix}
-                />
-              </div>
-              <div className="text-xs font-semibold uppercase tracking-widest text-white/50">
-                {stat.label}
-              </div>
-            </div>
-          ))}
         </motion.div>
       </div>
     </section>

@@ -1,18 +1,19 @@
 # Primus Website Controlled Cutover and Rollback
 
-Status: staged for approval. Do not execute these production steps until Jason
-explicitly approves the reviewed preview, the public copy, contact delivery, and
-the controlled cutover.
+Status: owner direction approved; production remains gated. Do not execute the
+production steps until contact delivery, domain attachment, DNS access, and the
+rollback capture are configured and verified.
 
-## Reviewed release candidate
+## Release candidate under verification
 
-- Preview: `https://primus-site-n9e4kzmqj-jasonds-projects-3ccfaebd.vercel.app`
-- Vercel deployment: `dpl_77oBA1r5yH2yw2Jok9TRUfWPJYj7`
+- Branch: `codex/dre-671-work-wall-variation-2026-08-04`
 - Vercel project: `jasonds-projects-3ccfaebd/primus-site`
 - Project ID: `prj_w5nOZ0zrs61wU9GjrVTFoLEQ7t1e`
-- Preview protection: `X-Robots-Tag: noindex, nofollow, noarchive`
-- Verification: lint passed; production build passed; 81 routes generated;
-  representative public routes returned `200`; desktop and mobile review passed.
+- The prior preview is superseded. The refreshed preview URL, deployment ID, and
+  exact commit are recorded in DRE-671 after deployment.
+- Local verification: eight focused release tests passed; lint passed;
+  production build passed; 68 pages generated; 52 active article pages and 13
+  retired claim sources were verified; desktop and mobile review passed.
 
 ## Current public delivery and rollback snapshot
 
@@ -32,27 +33,28 @@ pre-cutover check shows that the current host changed.
 Do not change the nameservers or Microsoft 365 MX record. Preserve the existing
 WordPress/WP Engine site and account as the rollback origin.
 
-## Approval statement
+## Owner direction and remaining release gates
 
-Jason can authorize the full controlled launch with one response:
+Jason approved the refreshed direction for launch on August 4, subject to the
+release blockers being resolved and verified. The approved correction set is:
 
-> Approve the Primus controlled cutover using the reviewed preview. Approve the
-> displayed business claims and testimonials as public copy, authorize Resend
-> sender-domain setup and one test lead to Andy Hedding, and authorize changing
-> only the GoDaddy web records required by Vercel. Preserve Microsoft 365 mail
-> records and the WordPress/WP Engine rollback target.
+- use “Commercial construction, built on experience since 1973.” on About;
+- remove the 500-project, 24-year, $770M/$777M, five-office, and related
+  personal-record metrics rather than qualifying or replacing them;
+- preserve the Cedar Rapids 1973 company history;
+- retire old in-house-architecture claim articles rather than rewriting them;
+- reduce repeated same-project exterior runs in the anonymous work wall; and
+- do not claim contact delivery works until it has been verified.
 
-If any displayed claim is not approved, Jason should name only the correction.
-The claims needing explicit business approval are:
+The remaining gates are operational, not copy approval:
 
-- founded in 2002 / 24 years;
-- 500+ projects, $770M delivered, five offices, and work across 15 states;
-- fixed pricing, price-holds, and "no surprises" language;
-- design-build / architecture and construction "under one roof";
-- Pathfinder budget-range and timeline promises;
-- first response within one business day;
-- the displayed customer quotes, production, patient, revenue, schedule, cost,
-  and patient-flow results.
+- verify a Primus-controlled Resend sender domain and restricted sending key;
+- add the production-only Vercel delivery settings;
+- perform the separately authorized internal acceptance send and confirm
+  receipt/reply-to behavior;
+- attach and validate the apex and `www` domains; and
+- capture the current GoDaddy zone and confirm WordPress/WP Engine rollback
+  access immediately before the web-record change.
 
 ## Assembly after approval, before DNS
 

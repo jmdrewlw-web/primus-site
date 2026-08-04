@@ -1,0 +1,2662 @@
+[
+  {
+    "position": 1,
+    "group": "raining",
+    "project": "raining:exterior",
+    "kind": "exterior",
+    "source": "Raining Rose - Cedar Rapids, IA/Exterior full res jpegs/_A4A7538 1.jpg",
+    "score": 33.71,
+    "output": {
+      "src": "/images/work-wall/work-001.webp",
+      "alt": "Finished Primus commercial building exterior",
+      "width": 1800,
+      "height": 1200
+    }
+  },
+  {
+    "position": 2,
+    "group": "crystal",
+    "project": "crystal:exterior",
+    "kind": "exterior",
+    "source": "Crystal Group - Hiawatha, IA/Exterior Full Size Jpegs/Crystal Group Ext-2.jpg",
+    "score": 37.49,
+    "output": {
+      "src": "/images/work-wall/work-002.webp",
+      "alt": "Finished Primus commercial building exterior",
+      "width": 1800,
+      "height": 1200
+    }
+  },
+  {
+    "position": 3,
+    "group": "credit",
+    "project": "Veridian - Waukee, IA:exterior",
+    "kind": "exterior",
+    "source": "Credit Unions/Veridian - Waukee, IA/_N2A0607.jpg",
+    "score": 34.77,
+    "output": {
+      "src": "/images/work-wall/work-003.webp",
+      "alt": "Finished Primus commercial building exterior",
+      "width": 1800,
+      "height": 1200
+    }
+  },
+  {
+    "position": 4,
+    "group": "elplast",
+    "project": "elplast:exterior",
+    "kind": "exterior",
+    "source": "Elplast America - Marion, IA/Exteriors/full res jpegs/exterior 07.jpg",
+    "score": 35.93,
+    "output": {
+      "src": "/images/work-wall/work-004.webp",
+      "alt": "Finished Primus commercial building exterior",
+      "width": 1800,
+      "height": 1200
+    }
+  },
+  {
+    "position": 5,
+    "group": "misc",
+    "project": "misc",
+    "kind": "interior",
+    "source": "Miscellaneous/Bowman Sq 3.JPG",
+    "score": 25.46,
+    "output": {
+      "src": "/images/work-wall/work-005.webp",
+      "alt": "Finished Primus commercial building exterior",
+      "width": 1800,
+      "height": 1200
+    }
+  },
+  {
+    "position": 6,
+    "group": "methwick",
+    "project": "methwick:exterior",
+    "kind": "exterior",
+    "source": "Methwick Oakwood - Cedar Rapids, IA/Exteriors/Full Size Jpegs/exterior 03.jpg",
+    "score": 31.62,
+    "output": {
+      "src": "/images/work-wall/work-006.webp",
+      "alt": "Finished Primus commercial building exterior",
+      "width": 1800,
+      "height": 1200
+    }
+  },
+  {
+    "position": 7,
+    "group": "crescent",
+    "project": "crescent",
+    "kind": "interior",
+    "source": "Crescent Electric - Cedar Rapids, IA/cresent warehouse 2.jpg",
+    "score": 32.56,
+    "output": {
+      "src": "/images/work-wall/work-007.webp",
+      "alt": "Finished Primus light-industrial workspace",
+      "width": 1800,
+      "height": 1200
+    }
+  },
+  {
+    "position": 8,
+    "group": "credit",
+    "project": "Dupaco - 1st Ave Cedar Rapids:exterior",
+    "kind": "exterior",
+    "source": "Credit Unions/Dupaco - 1st Ave Cedar Rapids/dupaco exterior large.jpg",
+    "score": 34.22,
+    "output": {
+      "src": "/images/work-wall/work-008.webp",
+      "alt": "Finished Primus commercial building exterior",
+      "width": 1800,
+      "height": 1291
+    }
+  },
+  {
+    "position": 9,
+    "group": "personal",
+    "project": "personal:exterior",
+    "kind": "exterior",
+    "source": "Personal Safety Corporation/exterior 2.jpg",
+    "score": 30.35,
+    "output": {
+      "src": "/images/work-wall/work-009.webp",
+      "alt": "Finished Primus commercial building exterior",
+      "width": 1800,
+      "height": 1200
+    }
+  },
+  {
+    "position": 10,
+    "group": "paramount",
+    "project": "paramount",
+    "kind": "interior",
+    "source": "Paramount Health Options - Cedar Rapids, IA/20230223_074909.jpg",
+    "score": 25.71,
+    "output": {
+      "src": "/images/work-wall/work-010.webp",
+      "alt": "Finished Primus commercial construction interior",
+      "width": 1013,
+      "height": 1800
+    }
+  },
+  {
+    "position": 11,
+    "group": "legacy",
+    "project": "legacy",
+    "kind": "interior",
+    "source": "public/images/projects/ducharme-dermatology/sharepoint-curated.jpg",
+    "score": 32.79,
+    "output": {
+      "src": "/images/work-wall/work-011.webp",
+      "alt": "Finished Primus commercial construction interior",
+      "width": 1800,
+      "height": 1200
+    }
+  },
+  {
+    "position": 12,
+    "group": "modern",
+    "project": "modern",
+    "kind": "interior",
+    "source": "Modern Companies - Cedar Rapids, IA/IMG_0469.jpg",
+    "score": 22.63,
+    "output": {
+      "src": "/images/work-wall/work-012.webp",
+      "alt": "Finished Primus commercial building exterior",
+      "width": 1800,
+      "height": 615
+    }
+  },
+  {
+    "position": 13,
+    "group": "primus",
+    "project": "primus:interior",
+    "kind": "interior",
+    "source": "Primus Office - 8th Avenue Cedar Rapids, IA/primus bld 1.jpg",
+    "score": 27.3,
+    "output": {
+      "src": "/images/work-wall/work-013.webp",
+      "alt": "Finished Primus commercial construction interior",
+      "width": 1800,
+      "height": 1200
+    }
+  },
+  {
+    "position": 14,
+    "group": "crystal",
+    "project": "crystal:exterior",
+    "kind": "exterior",
+    "source": "Crystal Group - Hiawatha, IA/Exterior Full Size Jpegs/Crystal Group Ext-1.jpg",
+    "score": 37.42,
+    "output": {
+      "src": "/images/work-wall/work-014.webp",
+      "alt": "Finished Primus commercial building exterior",
+      "width": 1800,
+      "height": 1200
+    }
+  },
+  {
+    "position": 15,
+    "group": "methwick",
+    "project": "methwick:exterior",
+    "kind": "exterior",
+    "source": "Methwick Oakwood - Cedar Rapids, IA/Exteriors/Full Size Jpegs/exterior 01.jpg",
+    "score": 31.24,
+    "output": {
+      "src": "/images/work-wall/work-015.webp",
+      "alt": "Finished Primus commercial building exterior",
+      "width": 1800,
+      "height": 1200
+    }
+  },
+  {
+    "position": 16,
+    "group": "credit",
+    "project": "Veridian - Waukee, IA:exterior",
+    "kind": "exterior",
+    "source": "Credit Unions/Veridian - Waukee, IA/_N2A0845.jpg",
+    "score": 33.97,
+    "output": {
+      "src": "/images/work-wall/work-016.webp",
+      "alt": "Finished Primus commercial building exterior",
+      "width": 1800,
+      "height": 1200
+    }
+  },
+  {
+    "position": 17,
+    "group": "crystal",
+    "project": "crystal:interior",
+    "kind": "interior",
+    "source": "Crystal Group - Hiawatha, IA/Interiors 1 Full Size Jpegs/Crystal Int-14.jpg",
+    "score": 35.68,
+    "output": {
+      "src": "/images/work-wall/work-017.webp",
+      "alt": "Finished Primus commercial construction interior",
+      "width": 1800,
+      "height": 1200
+    }
+  },
+  {
+    "position": 18,
+    "group": "methwick",
+    "project": "methwick:interior",
+    "kind": "interior",
+    "source": "Methwick Oakwood - Cedar Rapids, IA/Interiors/Full Size Jpegs/interior 24.jpg",
+    "score": 30.3,
+    "output": {
+      "src": "/images/work-wall/work-018.webp",
+      "alt": "Finished Primus multifamily interior",
+      "width": 1800,
+      "height": 1200
+    }
+  },
+  {
+    "position": 19,
+    "group": "credit",
+    "project": "Linn Area - Marion, IA:interior",
+    "kind": "interior",
+    "source": "Credit Unions/Linn Area - Marion, IA/Linn Area Marion_17.jpg",
+    "score": 33.86,
+    "output": {
+      "src": "/images/work-wall/work-019.webp",
+      "alt": "Finished Primus commercial construction interior",
+      "width": 1800,
+      "height": 1200
+    }
+  },
+  {
+    "position": 20,
+    "group": "paramount",
+    "project": "paramount",
+    "kind": "interior",
+    "source": "Paramount Health Options - Cedar Rapids, IA/20230223_075641.jpg",
+    "score": 25.52,
+    "output": {
+      "src": "/images/work-wall/work-020.webp",
+      "alt": "Finished Primus commercial construction interior",
+      "width": 1013,
+      "height": 1800
+    }
+  },
+  {
+    "position": 21,
+    "group": "misc",
+    "project": "misc",
+    "kind": "interior",
+    "source": "Miscellaneous/Beaton 1.JPG",
+    "score": 24.7,
+    "output": {
+      "src": "/images/work-wall/work-021.webp",
+      "alt": "Finished Primus commercial building exterior",
+      "width": 1800,
+      "height": 1200
+    }
+  },
+  {
+    "position": 22,
+    "group": "credit",
+    "project": "Dupaco - SW Cedar Rapids:exterior",
+    "kind": "exterior",
+    "source": "Credit Unions/Dupaco - SW Cedar Rapids/dupaco ext3.tif",
+    "score": 33.74,
+    "output": {
+      "src": "/images/work-wall/work-022.webp",
+      "alt": "Finished Primus commercial building exterior",
+      "width": 1800,
+      "height": 1200
+    }
+  },
+  {
+    "position": 23,
+    "group": "legacy",
+    "project": "legacy",
+    "kind": "interior",
+    "source": "public/images/projects/white-elephant/interior.jpg",
+    "score": 29.74,
+    "output": {
+      "src": "/images/work-wall/work-023.webp",
+      "alt": "Finished Primus commercial construction interior",
+      "width": 1800,
+      "height": 1350
+    }
+  },
+  {
+    "position": 24,
+    "group": "crescent",
+    "project": "crescent",
+    "kind": "interior",
+    "source": "Crescent Electric - Cedar Rapids, IA/cresent warehouse 3.jpg",
+    "score": 32.5,
+    "output": {
+      "src": "/images/work-wall/work-024.webp",
+      "alt": "Finished Primus light-industrial workspace",
+      "width": 1800,
+      "height": 1200
+    }
+  },
+  {
+    "position": 25,
+    "group": "crystal",
+    "project": "crystal:interior",
+    "kind": "interior",
+    "source": "Crystal Group - Hiawatha, IA/Interiors 1 Full Size Jpegs/Crystal Int-7.jpg",
+    "score": 35.56,
+    "output": {
+      "src": "/images/work-wall/work-025.webp",
+      "alt": "Finished Primus commercial construction interior",
+      "width": 1800,
+      "height": 1200
+    }
+  },
+  {
+    "position": 26,
+    "group": "methwick",
+    "project": "methwick:interior",
+    "kind": "interior",
+    "source": "Methwick Oakwood - Cedar Rapids, IA/Interiors/Full Size Jpegs/interior 32.jpg",
+    "score": 30.27,
+    "output": {
+      "src": "/images/work-wall/work-026.webp",
+      "alt": "Finished Primus multifamily interior",
+      "width": 1800,
+      "height": 1200
+    }
+  },
+  {
+    "position": 27,
+    "group": "credit",
+    "project": "Dupaco - 1st Ave Cedar Rapids:interior",
+    "kind": "interior",
+    "source": "Credit Unions/Dupaco - 1st Ave Cedar Rapids/dupaco detail 5.jpg",
+    "score": 33.44,
+    "output": {
+      "src": "/images/work-wall/work-027.webp",
+      "alt": "Finished Primus commercial construction interior",
+      "width": 1800,
+      "height": 1200
+    }
+  },
+  {
+    "position": 28,
+    "group": "personal",
+    "project": "personal:exterior",
+    "kind": "exterior",
+    "source": "Personal Safety Corporation/exterior 1.jpg",
+    "score": 30.11,
+    "output": {
+      "src": "/images/work-wall/work-028.webp",
+      "alt": "Finished Primus commercial building exterior",
+      "width": 1800,
+      "height": 1200
+    }
+  },
+  {
+    "position": 29,
+    "group": "crystal",
+    "project": "crystal:interior",
+    "kind": "interior",
+    "source": "Crystal Group - Hiawatha, IA/Interiors 1 Full Size Jpegs/Crystal Int-36.jpg",
+    "score": 35.46,
+    "output": {
+      "src": "/images/work-wall/work-029.webp",
+      "alt": "Finished Primus commercial construction interior",
+      "width": 1800,
+      "height": 1200
+    }
+  },
+  {
+    "position": 30,
+    "group": "credit",
+    "project": "Veridian - Waterloo:interior",
+    "kind": "interior",
+    "source": "Credit Unions/Veridian - Waterloo/2024 Primus Veridian in Waterloo-19.jpg",
+    "score": 33.41,
+    "output": {
+      "src": "/images/work-wall/work-030.webp",
+      "alt": "Finished Primus commercial construction interior",
+      "width": 1800,
+      "height": 1200
+    }
+  },
+  {
+    "position": 31,
+    "group": "elplast",
+    "project": "elplast:exterior",
+    "kind": "exterior",
+    "source": "Elplast America - Marion, IA/Exteriors/full res jpegs/exterior 08.jpg",
+    "score": 35.84,
+    "output": {
+      "src": "/images/work-wall/work-031.webp",
+      "alt": "Finished Primus commercial building exterior",
+      "width": 1800,
+      "height": 1200
+    }
+  },
+  {
+    "position": 32,
+    "group": "methwick",
+    "project": "methwick:interior",
+    "kind": "interior",
+    "source": "Methwick Oakwood - Cedar Rapids, IA/Interiors/Full Size Jpegs/interior 31.jpg",
+    "score": 30.17,
+    "output": {
+      "src": "/images/work-wall/work-032.webp",
+      "alt": "Finished Primus multifamily interior",
+      "width": 1800,
+      "height": 1200
+    }
+  },
+  {
+    "position": 33,
+    "group": "paramount",
+    "project": "paramount",
+    "kind": "interior",
+    "source": "Paramount Health Options - Cedar Rapids, IA/20230223_074358.jpg",
+    "score": 25.44,
+    "output": {
+      "src": "/images/work-wall/work-033.webp",
+      "alt": "Finished Primus commercial construction interior",
+      "width": 1800,
+      "height": 1013
+    }
+  },
+  {
+    "position": 34,
+    "group": "misc",
+    "project": "misc",
+    "kind": "interior",
+    "source": "Miscellaneous/Gee Grading 1.JPG",
+    "score": 24.49,
+    "output": {
+      "src": "/images/work-wall/work-034.webp",
+      "alt": "Finished Primus commercial building exterior",
+      "width": 1800,
+      "height": 1200
+    }
+  },
+  {
+    "position": 35,
+    "group": "credit",
+    "project": "Linn Area - Marion, IA:interior",
+    "kind": "interior",
+    "source": "Credit Unions/Linn Area - Marion, IA/Linn Area Marion_6.jpg",
+    "score": 33.37,
+    "output": {
+      "src": "/images/work-wall/work-035.webp",
+      "alt": "Finished Primus commercial construction interior",
+      "width": 1800,
+      "height": 1200
+    }
+  },
+  {
+    "position": 36,
+    "group": "crystal",
+    "project": "crystal:interior",
+    "kind": "interior",
+    "source": "Crystal Group - Hiawatha, IA/Interiors 1 Full Size Jpegs/Crystal Int-25.jpg",
+    "score": 35.23,
+    "output": {
+      "src": "/images/work-wall/work-036.webp",
+      "alt": "Finished Primus commercial construction interior",
+      "width": 1800,
+      "height": 1200
+    }
+  },
+  {
+    "position": 37,
+    "group": "methwick",
+    "project": "methwick:interior",
+    "kind": "interior",
+    "source": "Methwick Oakwood - Cedar Rapids, IA/Interiors/Full Size Jpegs/interior 01.jpg",
+    "score": 30.04,
+    "output": {
+      "src": "/images/work-wall/work-037.webp",
+      "alt": "Finished Primus multifamily interior",
+      "width": 1800,
+      "height": 1200
+    }
+  },
+  {
+    "position": 38,
+    "group": "credit",
+    "project": "Linn Area - Marion, IA:interior",
+    "kind": "interior",
+    "source": "Credit Unions/Linn Area - Marion, IA/Linn Area Marion_5.jpg",
+    "score": 33.32,
+    "output": {
+      "src": "/images/work-wall/work-038.webp",
+      "alt": "Finished Primus commercial construction interior",
+      "width": 1800,
+      "height": 1200
+    }
+  },
+  {
+    "position": 39,
+    "group": "legacy",
+    "project": "legacy",
+    "kind": "exterior",
+    "source": "public/images/projects/white-elephant/exterior.jpg",
+    "score": 28,
+    "output": {
+      "src": "/images/work-wall/work-039.webp",
+      "alt": "Finished Primus commercial building exterior",
+      "width": 1350,
+      "height": 1800
+    }
+  },
+  {
+    "position": 40,
+    "group": "crescent",
+    "project": "crescent",
+    "kind": "interior",
+    "source": "Crescent Electric - Cedar Rapids, IA/cresent training room.jpg",
+    "score": 32.24,
+    "output": {
+      "src": "/images/work-wall/work-040.webp",
+      "alt": "Finished Primus commercial meeting space",
+      "width": 1800,
+      "height": 1200
+    }
+  },
+  {
+    "position": 41,
+    "group": "credit",
+    "project": "Linn Area - Marion, IA:interior",
+    "kind": "interior",
+    "source": "Credit Unions/Linn Area - Marion, IA/Linn Area Marion_1.jpg",
+    "score": 33.31,
+    "output": {
+      "src": "/images/work-wall/work-041.webp",
+      "alt": "Finished Primus commercial construction interior",
+      "width": 1800,
+      "height": 1200
+    }
+  },
+  {
+    "position": 42,
+    "group": "crystal",
+    "project": "crystal:interior",
+    "kind": "interior",
+    "source": "Crystal Group - Hiawatha, IA/Interiors 1 Full Size Jpegs/Crystal Int-15.jpg",
+    "score": 35.23,
+    "output": {
+      "src": "/images/work-wall/work-042.webp",
+      "alt": "Finished Primus commercial construction interior",
+      "width": 1800,
+      "height": 1200
+    }
+  },
+  {
+    "position": 43,
+    "group": "methwick",
+    "project": "methwick:interior",
+    "kind": "interior",
+    "source": "Methwick Oakwood - Cedar Rapids, IA/Interiors/Full Size Jpegs/interior 23.jpg",
+    "score": 29.92,
+    "output": {
+      "src": "/images/work-wall/work-043.webp",
+      "alt": "Finished Primus multifamily interior",
+      "width": 1800,
+      "height": 1200
+    }
+  },
+  {
+    "position": 44,
+    "group": "paramount",
+    "project": "paramount",
+    "kind": "interior",
+    "source": "Paramount Health Options - Cedar Rapids, IA/20230223_075135.jpg",
+    "score": 25.22,
+    "output": {
+      "src": "/images/work-wall/work-044.webp",
+      "alt": "Finished Primus commercial construction interior",
+      "width": 1013,
+      "height": 1800
+    }
+  },
+  {
+    "position": 45,
+    "group": "misc",
+    "project": "misc",
+    "kind": "interior",
+    "source": "Miscellaneous/Beaton 2.JPG",
+    "score": 24.49,
+    "output": {
+      "src": "/images/work-wall/work-045.webp",
+      "alt": "Finished Primus commercial building exterior",
+      "width": 1800,
+      "height": 1200
+    }
+  },
+  {
+    "position": 46,
+    "group": "credit",
+    "project": "Dupaco - 1st Ave Cedar Rapids:interior",
+    "kind": "interior",
+    "source": "Credit Unions/Dupaco - 1st Ave Cedar Rapids/dupaco seating area.jpg",
+    "score": 33.25,
+    "output": {
+      "src": "/images/work-wall/work-046.webp",
+      "alt": "Finished Primus commercial amenity space",
+      "width": 1800,
+      "height": 1200
+    }
+  },
+  {
+    "position": 47,
+    "group": "crystal",
+    "project": "crystal:interior",
+    "kind": "interior",
+    "source": "Crystal Group - Hiawatha, IA/Interiors 1 Full Size Jpegs/Crystal Int-10.jpg",
+    "score": 35.18,
+    "output": {
+      "src": "/images/work-wall/work-047.webp",
+      "alt": "Finished Primus commercial construction interior",
+      "width": 1800,
+      "height": 1200
+    }
+  },
+  {
+    "position": 48,
+    "group": "methwick",
+    "project": "methwick:interior",
+    "kind": "interior",
+    "source": "Methwick Oakwood - Cedar Rapids, IA/Interiors/Full Size Jpegs/interior 26.jpg",
+    "score": 29.9,
+    "output": {
+      "src": "/images/work-wall/work-048.webp",
+      "alt": "Finished Primus multifamily interior",
+      "width": 1800,
+      "height": 1200
+    }
+  },
+  {
+    "position": 49,
+    "group": "personal",
+    "project": "personal:interior",
+    "kind": "interior",
+    "source": "Personal Safety Corporation/lobby.jpg",
+    "score": 28.41,
+    "output": {
+      "src": "/images/work-wall/work-049.webp",
+      "alt": "Finished Primus commercial lobby and reception area",
+      "width": 1800,
+      "height": 1200
+    }
+  },
+  {
+    "position": 50,
+    "group": "credit",
+    "project": "Linn Area - Marion, IA:interior",
+    "kind": "interior",
+    "source": "Credit Unions/Linn Area - Marion, IA/Linn Area Marion_11.jpg",
+    "score": 33.23,
+    "output": {
+      "src": "/images/work-wall/work-050.webp",
+      "alt": "Finished Primus commercial construction interior",
+      "width": 1800,
+      "height": 1200
+    }
+  },
+  {
+    "position": 51,
+    "group": "crystal",
+    "project": "crystal:interior",
+    "kind": "interior",
+    "source": "Crystal Group - Hiawatha, IA/Interiors 1 Full Size Jpegs/Crystal Int-32.jpg",
+    "score": 35.15,
+    "output": {
+      "src": "/images/work-wall/work-051.webp",
+      "alt": "Finished Primus commercial construction interior",
+      "width": 1800,
+      "height": 1200
+    }
+  },
+  {
+    "position": 52,
+    "group": "elplast",
+    "project": "elplast:exterior",
+    "kind": "exterior",
+    "source": "Elplast America - Marion, IA/Exteriors/full res jpegs/exterior 03.jpg",
+    "score": 35.74,
+    "output": {
+      "src": "/images/work-wall/work-052.webp",
+      "alt": "Finished Primus commercial building exterior",
+      "width": 1800,
+      "height": 1200
+    }
+  },
+  {
+    "position": 53,
+    "group": "credit",
+    "project": "Linn Area - Marion, IA:interior",
+    "kind": "interior",
+    "source": "Credit Unions/Linn Area - Marion, IA/Linn Area Marion_16.jpg",
+    "score": 33.17,
+    "output": {
+      "src": "/images/work-wall/work-053.webp",
+      "alt": "Finished Primus commercial construction interior",
+      "width": 1800,
+      "height": 1200
+    }
+  },
+  {
+    "position": 54,
+    "group": "legacy",
+    "project": "legacy",
+    "kind": "interior",
+    "source": "public/images/projects/indian-hills/interior.jpg",
+    "score": 26.97,
+    "output": {
+      "src": "/images/work-wall/work-054.webp",
+      "alt": "Finished Primus commercial construction interior",
+      "width": 1800,
+      "height": 1245
+    }
+  },
+  {
+    "position": 55,
+    "group": "methwick",
+    "project": "methwick:interior",
+    "kind": "interior",
+    "source": "Methwick Oakwood - Cedar Rapids, IA/Interiors/Full Size Jpegs/interior 02.jpg",
+    "score": 29.88,
+    "output": {
+      "src": "/images/work-wall/work-055.webp",
+      "alt": "Finished Primus multifamily interior",
+      "width": 1800,
+      "height": 1200
+    }
+  },
+  {
+    "position": 56,
+    "group": "paramount",
+    "project": "paramount",
+    "kind": "interior",
+    "source": "Paramount Health Options - Cedar Rapids, IA/20230223_074906.jpg",
+    "score": 25.19,
+    "output": {
+      "src": "/images/work-wall/work-056.webp",
+      "alt": "Finished Primus commercial construction interior",
+      "width": 1013,
+      "height": 1800
+    }
+  },
+  {
+    "position": 57,
+    "group": "credit",
+    "project": "Veridian - Waterloo:interior",
+    "kind": "interior",
+    "source": "Credit Unions/Veridian - Waterloo/2024 Primus Veridian in Waterloo-11.jpg",
+    "score": 33.16,
+    "output": {
+      "src": "/images/work-wall/work-057.webp",
+      "alt": "Finished Primus commercial construction interior",
+      "width": 1800,
+      "height": 1200
+    }
+  },
+  {
+    "position": 58,
+    "group": "misc",
+    "project": "misc",
+    "kind": "interior",
+    "source": "Miscellaneous/Gee Grading 2.JPG",
+    "score": 24.43,
+    "output": {
+      "src": "/images/work-wall/work-058.webp",
+      "alt": "Finished Primus commercial building exterior",
+      "width": 1800,
+      "height": 1200
+    }
+  },
+  {
+    "position": 59,
+    "group": "crescent",
+    "project": "crescent",
+    "kind": "interior",
+    "source": "Crescent Electric - Cedar Rapids, IA/cresent sales area.jpg",
+    "score": 32.06,
+    "output": {
+      "src": "/images/work-wall/work-059.webp",
+      "alt": "Finished Primus light-industrial workspace",
+      "width": 1800,
+      "height": 1200
+    }
+  },
+  {
+    "position": 60,
+    "group": "crystal",
+    "project": "crystal:interior",
+    "kind": "interior",
+    "source": "Crystal Group - Hiawatha, IA/Interiors 1 Full Size Jpegs/Crystal Int-30.jpg",
+    "score": 35.14,
+    "output": {
+      "src": "/images/work-wall/work-060.webp",
+      "alt": "Finished Primus commercial construction interior",
+      "width": 1800,
+      "height": 1200
+    }
+  },
+  {
+    "position": 61,
+    "group": "methwick",
+    "project": "methwick:interior",
+    "kind": "interior",
+    "source": "Methwick Oakwood - Cedar Rapids, IA/Interiors/Full Size Jpegs/interior 28.jpg",
+    "score": 29.7,
+    "output": {
+      "src": "/images/work-wall/work-061.webp",
+      "alt": "Finished Primus multifamily interior",
+      "width": 1800,
+      "height": 1200
+    }
+  },
+  {
+    "position": 62,
+    "group": "credit",
+    "project": "Veridian - Waterloo:interior",
+    "kind": "interior",
+    "source": "Credit Unions/Veridian - Waterloo/2024 Primus Veridian in Waterloo-12.jpg",
+    "score": 33.15,
+    "output": {
+      "src": "/images/work-wall/work-062.webp",
+      "alt": "Finished Primus commercial construction interior",
+      "width": 1800,
+      "height": 1199
+    }
+  },
+  {
+    "position": 63,
+    "group": "crystal",
+    "project": "crystal:interior",
+    "kind": "interior",
+    "source": "Crystal Group - Hiawatha, IA/Interiors 1 Full Size Jpegs/Crystal Int-24.jpg",
+    "score": 34.99,
+    "output": {
+      "src": "/images/work-wall/work-063.webp",
+      "alt": "Finished Primus commercial construction interior",
+      "width": 1800,
+      "height": 1200
+    }
+  },
+  {
+    "position": 64,
+    "group": "methwick",
+    "project": "methwick:interior",
+    "kind": "interior",
+    "source": "Methwick Oakwood - Cedar Rapids, IA/Interiors/Full Size Jpegs/interior 03.jpg",
+    "score": 29.69,
+    "output": {
+      "src": "/images/work-wall/work-064.webp",
+      "alt": "Finished Primus multifamily interior",
+      "width": 1800,
+      "height": 1200
+    }
+  },
+  {
+    "position": 65,
+    "group": "credit",
+    "project": "Linn Area - Marion, IA:interior",
+    "kind": "interior",
+    "source": "Credit Unions/Linn Area - Marion, IA/Linn Area Marion_8.jpg",
+    "score": 33.15,
+    "output": {
+      "src": "/images/work-wall/work-065.webp",
+      "alt": "Finished Primus commercial construction interior",
+      "width": 1800,
+      "height": 1200
+    }
+  },
+  {
+    "position": 66,
+    "group": "paramount",
+    "project": "paramount",
+    "kind": "interior",
+    "source": "Paramount Health Options - Cedar Rapids, IA/20230223_074446.jpg",
+    "score": 25.11,
+    "output": {
+      "src": "/images/work-wall/work-066.webp",
+      "alt": "Finished Primus commercial construction interior",
+      "width": 1800,
+      "height": 1013
+    }
+  },
+  {
+    "position": 67,
+    "group": "legacy",
+    "project": "legacy",
+    "kind": "exterior",
+    "source": "public/images/projects/lake-dental/exterior.jpg",
+    "score": 24.14,
+    "output": {
+      "src": "/images/work-wall/work-067.webp",
+      "alt": "Finished Primus commercial building exterior",
+      "width": 1024,
+      "height": 683
+    }
+  },
+  {
+    "position": 68,
+    "group": "credit",
+    "project": "Dupaco - 1st Ave Cedar Rapids:interior",
+    "kind": "interior",
+    "source": "Credit Unions/Dupaco - 1st Ave Cedar Rapids/dupaco detail 1.jpg",
+    "score": 33.12,
+    "output": {
+      "src": "/images/work-wall/work-068.webp",
+      "alt": "Finished Primus commercial construction interior",
+      "width": 1800,
+      "height": 1200
+    }
+  },
+  {
+    "position": 69,
+    "group": "misc",
+    "project": "misc",
+    "kind": "interior",
+    "source": "Miscellaneous/Bowman Sq 2.jpg",
+    "score": 23.93,
+    "output": {
+      "src": "/images/work-wall/work-069.webp",
+      "alt": "Finished Primus commercial building exterior",
+      "width": 1800,
+      "height": 930
+    }
+  },
+  {
+    "position": 70,
+    "group": "personal",
+    "project": "personal:interior",
+    "kind": "interior",
+    "source": "Personal Safety Corporation/office.jpg",
+    "score": 28.27,
+    "output": {
+      "src": "/images/work-wall/work-070.webp",
+      "alt": "Finished Primus commercial construction interior",
+      "width": 1800,
+      "height": 1200
+    }
+  },
+  {
+    "position": 71,
+    "group": "crystal",
+    "project": "crystal:interior",
+    "kind": "interior",
+    "source": "Crystal Group - Hiawatha, IA/Interiors 1 Full Size Jpegs/Crystal Int-9.jpg",
+    "score": 34.96,
+    "output": {
+      "src": "/images/work-wall/work-071.webp",
+      "alt": "Finished Primus commercial construction interior",
+      "width": 1800,
+      "height": 1200
+    }
+  },
+  {
+    "position": 72,
+    "group": "methwick",
+    "project": "methwick:interior",
+    "kind": "interior",
+    "source": "Methwick Oakwood - Cedar Rapids, IA/Interiors/Full Size Jpegs/interior 05.jpg",
+    "score": 29.65,
+    "output": {
+      "src": "/images/work-wall/work-072.webp",
+      "alt": "Finished Primus multifamily interior",
+      "width": 1800,
+      "height": 1200
+    }
+  },
+  {
+    "position": 73,
+    "group": "credit",
+    "project": "Veridian - Waterloo:interior",
+    "kind": "interior",
+    "source": "Credit Unions/Veridian - Waterloo/2024 Primus Veridian in Waterloo-16.jpg",
+    "score": 33.04,
+    "output": {
+      "src": "/images/work-wall/work-073.webp",
+      "alt": "Finished Primus commercial construction interior",
+      "width": 1800,
+      "height": 1200
+    }
+  },
+  {
+    "position": 74,
+    "group": "crescent",
+    "project": "crescent",
+    "kind": "interior",
+    "source": "Crescent Electric - Cedar Rapids, IA/crescent1.jpg",
+    "score": 31.62,
+    "output": {
+      "src": "/images/work-wall/work-074.webp",
+      "alt": "Finished Primus commercial construction interior",
+      "width": 1800,
+      "height": 1200
+    }
+  },
+  {
+    "position": 75,
+    "group": "crystal",
+    "project": "crystal:interior",
+    "kind": "interior",
+    "source": "Crystal Group - Hiawatha, IA/Interiors 1 Full Size Jpegs/Crystal Int-34.jpg",
+    "score": 34.95,
+    "output": {
+      "src": "/images/work-wall/work-075.webp",
+      "alt": "Finished Primus commercial construction interior",
+      "width": 1800,
+      "height": 1200
+    }
+  },
+  {
+    "position": 76,
+    "group": "credit",
+    "project": "Veridian - Waterloo:interior",
+    "kind": "interior",
+    "source": "Credit Unions/Veridian - Waterloo/2024 Primus Veridian in Waterloo-17.jpg",
+    "score": 32.94,
+    "output": {
+      "src": "/images/work-wall/work-076.webp",
+      "alt": "Finished Primus commercial construction interior",
+      "width": 1800,
+      "height": 1200
+    }
+  },
+  {
+    "position": 77,
+    "group": "elplast",
+    "project": "elplast:interior",
+    "kind": "interior",
+    "source": "Elplast America - Marion, IA/Interiors/full res jpegs/interior 09.jpg",
+    "score": 33.43,
+    "output": {
+      "src": "/images/work-wall/work-077.webp",
+      "alt": "Finished Primus commercial construction interior",
+      "width": 1800,
+      "height": 1200
+    }
+  },
+  {
+    "position": 78,
+    "group": "methwick",
+    "project": "methwick:interior",
+    "kind": "interior",
+    "source": "Methwick Oakwood - Cedar Rapids, IA/Interiors/Full Size Jpegs/interior 29.jpg",
+    "score": 29.65,
+    "output": {
+      "src": "/images/work-wall/work-078.webp",
+      "alt": "Finished Primus multifamily interior",
+      "width": 1800,
+      "height": 1200
+    }
+  },
+  {
+    "position": 79,
+    "group": "paramount",
+    "project": "paramount",
+    "kind": "interior",
+    "source": "Paramount Health Options - Cedar Rapids, IA/20230223_074732.jpg",
+    "score": 25.1,
+    "output": {
+      "src": "/images/work-wall/work-079.webp",
+      "alt": "Finished Primus commercial construction interior",
+      "width": 1800,
+      "height": 1013
+    }
+  },
+  {
+    "position": 80,
+    "group": "credit",
+    "project": "Dupaco - 1st Ave Cedar Rapids:interior",
+    "kind": "interior",
+    "source": "Credit Unions/Dupaco - 1st Ave Cedar Rapids/dupaco detail 7.jpg",
+    "score": 32.93,
+    "output": {
+      "src": "/images/work-wall/work-080.webp",
+      "alt": "Finished Primus commercial construction interior",
+      "width": 1800,
+      "height": 1200
+    }
+  },
+  {
+    "position": 81,
+    "group": "misc",
+    "project": "misc",
+    "kind": "interior",
+    "source": "Miscellaneous/Furniture Row.jpg",
+    "score": 23.66,
+    "output": {
+      "src": "/images/work-wall/work-081.webp",
+      "alt": "Finished Primus commercial building exterior",
+      "width": 1800,
+      "height": 1200
+    }
+  },
+  {
+    "position": 82,
+    "group": "crystal",
+    "project": "crystal:interior",
+    "kind": "interior",
+    "source": "Crystal Group - Hiawatha, IA/Interiors 1 Full Size Jpegs/Crystal Int-42.jpg",
+    "score": 34.91,
+    "output": {
+      "src": "/images/work-wall/work-082.webp",
+      "alt": "Finished Primus commercial construction interior",
+      "width": 1800,
+      "height": 1200
+    }
+  },
+  {
+    "position": 83,
+    "group": "methwick",
+    "project": "methwick:interior",
+    "kind": "interior",
+    "source": "Methwick Oakwood - Cedar Rapids, IA/Interiors/Full Size Jpegs/interior 04.jpg",
+    "score": 29.63,
+    "output": {
+      "src": "/images/work-wall/work-083.webp",
+      "alt": "Finished Primus multifamily interior",
+      "width": 1800,
+      "height": 1200
+    }
+  },
+  {
+    "position": 84,
+    "group": "credit",
+    "project": "Dupaco - 1st Ave Cedar Rapids:interior",
+    "kind": "interior",
+    "source": "Credit Unions/Dupaco - 1st Ave Cedar Rapids/dupaco teller.jpg",
+    "score": 32.85,
+    "output": {
+      "src": "/images/work-wall/work-084.webp",
+      "alt": "Finished Primus commercial lobby and reception area",
+      "width": 1800,
+      "height": 1200
+    }
+  },
+  {
+    "position": 85,
+    "group": "legacy",
+    "project": "legacy",
+    "kind": "exterior",
+    "source": "public/images/projects/ducharme-dermatology/exterior.jpg",
+    "score": 23.78,
+    "output": {
+      "src": "/images/work-wall/work-085.webp",
+      "alt": "Finished Primus commercial building exterior",
+      "width": 878,
+      "height": 585
+    }
+  },
+  {
+    "position": 86,
+    "group": "crystal",
+    "project": "crystal:interior",
+    "kind": "interior",
+    "source": "Crystal Group - Hiawatha, IA/Interiors 1 Full Size Jpegs/Crystal Int-29.jpg",
+    "score": 34.9,
+    "output": {
+      "src": "/images/work-wall/work-086.webp",
+      "alt": "Finished Primus commercial construction interior",
+      "width": 1800,
+      "height": 1200
+    }
+  },
+  {
+    "position": 87,
+    "group": "credit",
+    "project": "Dupaco - 1st Ave Cedar Rapids:interior",
+    "kind": "interior",
+    "source": "Credit Unions/Dupaco - 1st Ave Cedar Rapids/dupaco office.jpg",
+    "score": 32.84,
+    "output": {
+      "src": "/images/work-wall/work-087.webp",
+      "alt": "Finished Primus commercial construction interior",
+      "width": 1800,
+      "height": 1200
+    }
+  },
+  {
+    "position": 88,
+    "group": "methwick",
+    "project": "methwick:interior",
+    "kind": "interior",
+    "source": "Methwick Oakwood - Cedar Rapids, IA/Interiors/Full Size Jpegs/interior 27.jpg",
+    "score": 29.61,
+    "output": {
+      "src": "/images/work-wall/work-088.webp",
+      "alt": "Finished Primus multifamily interior",
+      "width": 1800,
+      "height": 1200
+    }
+  },
+  {
+    "position": 89,
+    "group": "paramount",
+    "project": "paramount",
+    "kind": "interior",
+    "source": "Paramount Health Options - Cedar Rapids, IA/20230223_075008.jpg",
+    "score": 25.01,
+    "output": {
+      "src": "/images/work-wall/work-089.webp",
+      "alt": "Finished Primus commercial construction interior",
+      "width": 1800,
+      "height": 1013
+    }
+  },
+  {
+    "position": 90,
+    "group": "personal",
+    "project": "personal:interior",
+    "kind": "interior",
+    "source": "Personal Safety Corporation/sales room.jpg",
+    "score": 28.2,
+    "output": {
+      "src": "/images/work-wall/work-090.webp",
+      "alt": "Finished Primus commercial construction interior",
+      "width": 1800,
+      "height": 1200
+    }
+  },
+  {
+    "position": 91,
+    "group": "credit",
+    "project": "Dupaco - 1st Ave Cedar Rapids:interior",
+    "kind": "interior",
+    "source": "Credit Unions/Dupaco - 1st Ave Cedar Rapids/dupaco detail 6.jpg",
+    "score": 32.78,
+    "output": {
+      "src": "/images/work-wall/work-091.webp",
+      "alt": "Finished Primus commercial construction interior",
+      "width": 1800,
+      "height": 1200
+    }
+  },
+  {
+    "position": 92,
+    "group": "crescent",
+    "project": "crescent",
+    "kind": "interior",
+    "source": "Crescent Electric - Cedar Rapids, IA/crescent2.jpg",
+    "score": 31.51,
+    "output": {
+      "src": "/images/work-wall/work-092.webp",
+      "alt": "Finished Primus commercial construction interior",
+      "width": 1800,
+      "height": 1200
+    }
+  },
+  {
+    "position": 93,
+    "group": "misc",
+    "project": "misc",
+    "kind": "interior",
+    "source": "Miscellaneous/Parker Hannifin.jpg",
+    "score": 23.45,
+    "output": {
+      "src": "/images/work-wall/work-093.webp",
+      "alt": "Finished Primus commercial building exterior",
+      "width": 1800,
+      "height": 1354
+    }
+  },
+  {
+    "position": 94,
+    "group": "crystal",
+    "project": "crystal:interior",
+    "kind": "interior",
+    "source": "Crystal Group - Hiawatha, IA/Interiors 1 Full Size Jpegs/Crystal Int-11.jpg",
+    "score": 34.88,
+    "output": {
+      "src": "/images/work-wall/work-094.webp",
+      "alt": "Finished Primus commercial construction interior",
+      "width": 1800,
+      "height": 1200
+    }
+  },
+  {
+    "position": 95,
+    "group": "methwick",
+    "project": "methwick:interior",
+    "kind": "interior",
+    "source": "Methwick Oakwood - Cedar Rapids, IA/Interiors/Full Size Jpegs/interior 22.jpg",
+    "score": 29.56,
+    "output": {
+      "src": "/images/work-wall/work-095.webp",
+      "alt": "Finished Primus multifamily interior",
+      "width": 1800,
+      "height": 1200
+    }
+  },
+  {
+    "position": 96,
+    "group": "credit",
+    "project": "Dupaco - 1st Ave Cedar Rapids:interior",
+    "kind": "interior",
+    "source": "Credit Unions/Dupaco - 1st Ave Cedar Rapids/dupaco main 1.jpg",
+    "score": 32.74,
+    "output": {
+      "src": "/images/work-wall/work-096.webp",
+      "alt": "Finished Primus commercial construction interior",
+      "width": 1800,
+      "height": 1200
+    }
+  },
+  {
+    "position": 97,
+    "group": "crystal",
+    "project": "crystal:interior",
+    "kind": "interior",
+    "source": "Crystal Group - Hiawatha, IA/Interiors 1 Full Size Jpegs/Crystal Int-2.jpg",
+    "score": 34.85,
+    "output": {
+      "src": "/images/work-wall/work-097.webp",
+      "alt": "Finished Primus commercial construction interior",
+      "width": 1800,
+      "height": 1200
+    }
+  },
+  {
+    "position": 98,
+    "group": "elplast",
+    "project": "elplast:interior",
+    "kind": "interior",
+    "source": "Elplast America - Marion, IA/Interiors/full res jpegs/interior 04.jpg",
+    "score": 33.41,
+    "output": {
+      "src": "/images/work-wall/work-098.webp",
+      "alt": "Finished Primus commercial construction interior",
+      "width": 1800,
+      "height": 1200
+    }
+  },
+  {
+    "position": 99,
+    "group": "credit",
+    "project": "Veridian - Waterloo:interior",
+    "kind": "interior",
+    "source": "Credit Unions/Veridian - Waterloo/2024 Primus Veridian in Waterloo-10.jpg",
+    "score": 32.69,
+    "output": {
+      "src": "/images/work-wall/work-099.webp",
+      "alt": "Finished Primus commercial construction interior",
+      "width": 1800,
+      "height": 1200
+    }
+  },
+  {
+    "position": 100,
+    "group": "legacy",
+    "project": "legacy",
+    "kind": "exterior",
+    "source": "public/images/projects/indian-hills/exterior.jpg",
+    "score": 23.03,
+    "output": {
+      "src": "/images/work-wall/work-100.webp",
+      "alt": "Finished Primus commercial building exterior",
+      "width": 800,
+      "height": 541
+    }
+  },
+  {
+    "position": 101,
+    "group": "methwick",
+    "project": "methwick:interior",
+    "kind": "interior",
+    "source": "Methwick Oakwood - Cedar Rapids, IA/Interiors/Full Size Jpegs/interior 13.jpg",
+    "score": 29.51,
+    "output": {
+      "src": "/images/work-wall/work-101.webp",
+      "alt": "Finished Primus multifamily interior",
+      "width": 1800,
+      "height": 1200
+    }
+  },
+  {
+    "position": 102,
+    "group": "modern",
+    "project": "modern",
+    "kind": "interior",
+    "source": "Modern Companies - Cedar Rapids, IA/IMG_0470.jpg",
+    "score": 21.09,
+    "output": {
+      "src": "/images/work-wall/work-102.webp",
+      "alt": "Finished Primus commercial building exterior",
+      "width": 1715,
+      "height": 1122
+    }
+  },
+  {
+    "position": 103,
+    "group": "paramount",
+    "project": "paramount",
+    "kind": "interior",
+    "source": "Paramount Health Options - Cedar Rapids, IA/20230223_074635.jpg",
+    "score": 24.82,
+    "output": {
+      "src": "/images/work-wall/work-103.webp",
+      "alt": "Finished Primus commercial construction interior",
+      "width": 1800,
+      "height": 1013
+    }
+  },
+  {
+    "position": 104,
+    "group": "primus",
+    "project": "primus:exterior",
+    "kind": "exterior",
+    "source": "Primus Office - 8th Avenue Cedar Rapids, IA/primus ext 1a.jpg",
+    "score": 27.01,
+    "output": {
+      "src": "/images/work-wall/work-104.webp",
+      "alt": "Finished Primus commercial building exterior",
+      "width": 1800,
+      "height": 1180
+    }
+  },
+  {
+    "position": 105,
+    "group": "raining",
+    "project": "raining:exterior",
+    "kind": "exterior",
+    "source": "Raining Rose - Cedar Rapids, IA/Exterior full res jpegs/_A4A7561 1.jpg",
+    "score": 33.41,
+    "output": {
+      "src": "/images/work-wall/work-105.webp",
+      "alt": "Finished Primus commercial building exterior",
+      "width": 1800,
+      "height": 1200
+    }
+  },
+  {
+    "position": 106,
+    "group": "credit",
+    "project": "Veridian - Waterloo:interior",
+    "kind": "interior",
+    "source": "Credit Unions/Veridian - Waterloo/2024 Primus Veridian in Waterloo-20.jpg",
+    "score": 32.61,
+    "output": {
+      "src": "/images/work-wall/work-106.webp",
+      "alt": "Finished Primus commercial construction interior",
+      "width": 1800,
+      "height": 1200
+    }
+  },
+  {
+    "position": 107,
+    "group": "crystal",
+    "project": "crystal:interior",
+    "kind": "interior",
+    "source": "Crystal Group - Hiawatha, IA/Interiors 1 Full Size Jpegs/Crystal Int-8.jpg",
+    "score": 34.84,
+    "output": {
+      "src": "/images/work-wall/work-107.webp",
+      "alt": "Finished Primus commercial construction interior",
+      "width": 1800,
+      "height": 1200
+    }
+  },
+  {
+    "position": 108,
+    "group": "methwick",
+    "project": "methwick:interior",
+    "kind": "interior",
+    "source": "Methwick Oakwood - Cedar Rapids, IA/Interiors/Full Size Jpegs/interior 21.jpg",
+    "score": 29.46,
+    "output": {
+      "src": "/images/work-wall/work-108.webp",
+      "alt": "Finished Primus multifamily interior",
+      "width": 1800,
+      "height": 1200
+    }
+  },
+  {
+    "position": 109,
+    "group": "credit",
+    "project": "Veridian - Waterloo:interior",
+    "kind": "interior",
+    "source": "Credit Unions/Veridian - Waterloo/2024 Primus Veridian in Waterloo-4.jpg",
+    "score": 32.56,
+    "output": {
+      "src": "/images/work-wall/work-109.webp",
+      "alt": "Finished Primus commercial construction interior",
+      "width": 1800,
+      "height": 1200
+    }
+  },
+  {
+    "position": 110,
+    "group": "misc",
+    "project": "misc",
+    "kind": "interior",
+    "source": "Miscellaneous/Boyson.jpg",
+    "score": 21.78,
+    "output": {
+      "src": "/images/work-wall/work-110.webp",
+      "alt": "Finished Primus commercial building exterior",
+      "width": 1600,
+      "height": 1200
+    }
+  },
+  {
+    "position": 111,
+    "group": "crescent",
+    "project": "crescent",
+    "kind": "interior",
+    "source": "Crescent Electric - Cedar Rapids, IA/cresent warehouse 1.jpg",
+    "score": 30.04,
+    "output": {
+      "src": "/images/work-wall/work-111.webp",
+      "alt": "Finished Primus light-industrial workspace",
+      "width": 1200,
+      "height": 1800
+    }
+  },
+  {
+    "position": 112,
+    "group": "credit",
+    "project": "Dupaco - SW Cedar Rapids:exterior",
+    "kind": "exterior",
+    "source": "Credit Unions/Dupaco - SW Cedar Rapids/dupaco nite ext1b.tif",
+    "score": 32.43,
+    "output": {
+      "src": "/images/work-wall/work-112.webp",
+      "alt": "Finished Primus commercial building exterior",
+      "width": 1800,
+      "height": 1324
+    }
+  },
+  {
+    "position": 113,
+    "group": "personal",
+    "project": "personal:interior",
+    "kind": "interior",
+    "source": "Personal Safety Corporation/hallway 1.jpg",
+    "score": 28.11,
+    "output": {
+      "src": "/images/work-wall/work-113.webp",
+      "alt": "Finished Primus commercial construction interior",
+      "width": 1800,
+      "height": 1200
+    }
+  },
+  {
+    "position": 114,
+    "group": "crystal",
+    "project": "crystal:interior",
+    "kind": "interior",
+    "source": "Crystal Group - Hiawatha, IA/Interiors 1 Full Size Jpegs/Crystal Int-1.jpg",
+    "score": 34.83,
+    "output": {
+      "src": "/images/work-wall/work-114.webp",
+      "alt": "Finished Primus commercial construction interior",
+      "width": 1800,
+      "height": 1200
+    }
+  },
+  {
+    "position": 115,
+    "group": "methwick",
+    "project": "methwick:interior",
+    "kind": "interior",
+    "source": "Methwick Oakwood - Cedar Rapids, IA/Interiors/Full Size Jpegs/interior 25.jpg",
+    "score": 29.43,
+    "output": {
+      "src": "/images/work-wall/work-115.webp",
+      "alt": "Finished Primus multifamily interior",
+      "width": 1800,
+      "height": 1200
+    }
+  },
+  {
+    "position": 116,
+    "group": "paramount",
+    "project": "paramount",
+    "kind": "interior",
+    "source": "Paramount Health Options - Cedar Rapids, IA/20230223_075219.jpg",
+    "score": 24.72,
+    "output": {
+      "src": "/images/work-wall/work-116.webp",
+      "alt": "Finished Primus commercial construction interior",
+      "width": 1800,
+      "height": 1013
+    }
+  },
+  {
+    "position": 117,
+    "group": "credit",
+    "project": "Linn Area - Marion, IA:interior",
+    "kind": "interior",
+    "source": "Credit Unions/Linn Area - Marion, IA/Linn Area Marion_22.jpg",
+    "score": 32.41,
+    "output": {
+      "src": "/images/work-wall/work-117.webp",
+      "alt": "Finished Primus commercial construction interior",
+      "width": 1800,
+      "height": 1200
+    }
+  },
+  {
+    "position": 118,
+    "group": "legacy",
+    "project": "legacy",
+    "kind": "exterior",
+    "source": "public/images/projects/gleason-dental/exterior.jpg",
+    "score": 22.99,
+    "output": {
+      "src": "/images/work-wall/work-118.webp",
+      "alt": "Finished Primus commercial building exterior",
+      "width": 800,
+      "height": 600
+    }
+  },
+  {
+    "position": 119,
+    "group": "crystal",
+    "project": "crystal:interior",
+    "kind": "interior",
+    "source": "Crystal Group - Hiawatha, IA/Interiors 1 Full Size Jpegs/Crystal Int-39.jpg",
+    "score": 34.8,
+    "output": {
+      "src": "/images/work-wall/work-119.webp",
+      "alt": "Finished Primus commercial construction interior",
+      "width": 1800,
+      "height": 1200
+    }
+  },
+  {
+    "position": 120,
+    "group": "credit",
+    "project": "Veridian - Waterloo:interior",
+    "kind": "interior",
+    "source": "Credit Unions/Veridian - Waterloo/2024 Primus Veridian in Waterloo-22.jpg",
+    "score": 32.4,
+    "output": {
+      "src": "/images/work-wall/work-120.webp",
+      "alt": "Finished Primus commercial construction interior",
+      "width": 1800,
+      "height": 1200
+    }
+  },
+  {
+    "position": 121,
+    "group": "methwick",
+    "project": "methwick:interior",
+    "kind": "interior",
+    "source": "Methwick Oakwood - Cedar Rapids, IA/Interiors/Full Size Jpegs/interior 14.jpg",
+    "score": 29.43,
+    "output": {
+      "src": "/images/work-wall/work-121.webp",
+      "alt": "Finished Primus multifamily interior",
+      "width": 1800,
+      "height": 1200
+    }
+  },
+  {
+    "position": 122,
+    "group": "misc",
+    "project": "misc",
+    "kind": "interior",
+    "source": "Miscellaneous/AirportWare.jpg",
+    "score": 21.43,
+    "output": {
+      "src": "/images/work-wall/work-122.webp",
+      "alt": "Finished Primus commercial building exterior",
+      "width": 1600,
+      "height": 1200
+    }
+  },
+  {
+    "position": 123,
+    "group": "credit",
+    "project": "Veridian - Waterloo:interior",
+    "kind": "interior",
+    "source": "Credit Unions/Veridian - Waterloo/2024 Primus Veridian in Waterloo-21.jpg",
+    "score": 32.26,
+    "output": {
+      "src": "/images/work-wall/work-123.webp",
+      "alt": "Finished Primus commercial construction interior",
+      "width": 1800,
+      "height": 1200
+    }
+  },
+  {
+    "position": 124,
+    "group": "crystal",
+    "project": "crystal:interior",
+    "kind": "interior",
+    "source": "Crystal Group - Hiawatha, IA/Interiors 1 Full Size Jpegs/Crystal Int-13.jpg",
+    "score": 34.77,
+    "output": {
+      "src": "/images/work-wall/work-124.webp",
+      "alt": "Finished Primus commercial construction interior",
+      "width": 1800,
+      "height": 1200
+    }
+  },
+  {
+    "position": 125,
+    "group": "elplast",
+    "project": "elplast:interior",
+    "kind": "interior",
+    "source": "Elplast America - Marion, IA/Interiors/full res jpegs/interior 03.jpg",
+    "score": 33.38,
+    "output": {
+      "src": "/images/work-wall/work-125.webp",
+      "alt": "Finished Primus commercial construction interior",
+      "width": 1800,
+      "height": 1200
+    }
+  },
+  {
+    "position": 126,
+    "group": "methwick",
+    "project": "methwick:interior",
+    "kind": "interior",
+    "source": "Methwick Oakwood - Cedar Rapids, IA/Interiors/Full Size Jpegs/interior 07.jpg",
+    "score": 29.25,
+    "output": {
+      "src": "/images/work-wall/work-126.webp",
+      "alt": "Finished Primus multifamily interior",
+      "width": 1800,
+      "height": 1200
+    }
+  },
+  {
+    "position": 127,
+    "group": "paramount",
+    "project": "paramount",
+    "kind": "interior",
+    "source": "Paramount Health Options - Cedar Rapids, IA/20230223_074810.jpg",
+    "score": 24.69,
+    "output": {
+      "src": "/images/work-wall/work-127.webp",
+      "alt": "Finished Primus commercial construction interior",
+      "width": 1013,
+      "height": 1800
+    }
+  },
+  {
+    "position": 128,
+    "group": "credit",
+    "project": "Dupaco - SW Cedar Rapids:interior",
+    "kind": "interior",
+    "source": "Credit Unions/Dupaco - SW Cedar Rapids/dupaco waiting area.tif",
+    "score": 31.76,
+    "output": {
+      "src": "/images/work-wall/work-128.webp",
+      "alt": "Finished Primus commercial lobby and reception area",
+      "width": 1800,
+      "height": 1200
+    }
+  },
+  {
+    "position": 129,
+    "group": "crescent",
+    "project": "crescent",
+    "kind": "interior",
+    "source": "Crescent Electric - Cedar Rapids, IA/cresent reception.jpg",
+    "score": 29.39,
+    "output": {
+      "src": "/images/work-wall/work-129.webp",
+      "alt": "Finished Primus commercial lobby and reception area",
+      "width": 1200,
+      "height": 1800
+    }
+  },
+  {
+    "position": 130,
+    "group": "crystal",
+    "project": "crystal:interior",
+    "kind": "interior",
+    "source": "Crystal Group - Hiawatha, IA/Interiors 1 Full Size Jpegs/Crystal Int-21.jpg",
+    "score": 34.73,
+    "output": {
+      "src": "/images/work-wall/work-130.webp",
+      "alt": "Finished Primus commercial construction interior",
+      "width": 1800,
+      "height": 1200
+    }
+  },
+  {
+    "position": 131,
+    "group": "credit",
+    "project": "Veridian - Westdale - Cedar Rapids, IA:interior",
+    "kind": "interior",
+    "source": "Credit Unions/Veridian - Westdale - Cedar Rapids, IA/veridian westdale 4.tif",
+    "score": 31.75,
+    "output": {
+      "src": "/images/work-wall/work-131.webp",
+      "alt": "Finished Primus commercial construction interior",
+      "width": 1800,
+      "height": 1309
+    }
+  },
+  {
+    "position": 132,
+    "group": "methwick",
+    "project": "methwick:interior",
+    "kind": "interior",
+    "source": "Methwick Oakwood - Cedar Rapids, IA/Interiors/Full Size Jpegs/interior 19.jpg",
+    "score": 29.22,
+    "output": {
+      "src": "/images/work-wall/work-132.webp",
+      "alt": "Finished Primus multifamily interior",
+      "width": 1800,
+      "height": 1200
+    }
+  },
+  {
+    "position": 133,
+    "group": "legacy",
+    "project": "legacy",
+    "kind": "interior",
+    "source": "public/images/projects/gleason-dental/interior.jpg",
+    "score": 22.78,
+    "output": {
+      "src": "/images/work-wall/work-133.webp",
+      "alt": "Finished Primus commercial construction interior",
+      "width": 800,
+      "height": 600
+    }
+  },
+  {
+    "position": 134,
+    "group": "misc",
+    "project": "misc",
+    "kind": "interior",
+    "source": "Miscellaneous/Saturn.jpg",
+    "score": 21.03,
+    "output": {
+      "src": "/images/work-wall/work-134.webp",
+      "alt": "Finished Primus commercial building exterior",
+      "width": 1600,
+      "height": 1200
+    }
+  },
+  {
+    "position": 135,
+    "group": "personal",
+    "project": "personal:interior",
+    "kind": "interior",
+    "source": "Personal Safety Corporation/conference room.jpg",
+    "score": 26.69,
+    "output": {
+      "src": "/images/work-wall/work-135.webp",
+      "alt": "Finished Primus commercial meeting space",
+      "width": 1800,
+      "height": 1346
+    }
+  },
+  {
+    "position": 136,
+    "group": "credit",
+    "project": "Linn Area - Marion, IA:interior",
+    "kind": "interior",
+    "source": "Credit Unions/Linn Area - Marion, IA/Linn Area Marion_3.jpg",
+    "score": 31.46,
+    "output": {
+      "src": "/images/work-wall/work-136.webp",
+      "alt": "Finished Primus commercial construction interior",
+      "width": 1200,
+      "height": 1800
+    }
+  },
+  {
+    "position": 137,
+    "group": "crystal",
+    "project": "crystal:interior",
+    "kind": "interior",
+    "source": "Crystal Group - Hiawatha, IA/Interiors 1 Full Size Jpegs/Crystal Int-17.jpg",
+    "score": 34.61,
+    "output": {
+      "src": "/images/work-wall/work-137.webp",
+      "alt": "Finished Primus commercial construction interior",
+      "width": 1800,
+      "height": 1200
+    }
+  },
+  {
+    "position": 138,
+    "group": "methwick",
+    "project": "methwick:interior",
+    "kind": "interior",
+    "source": "Methwick Oakwood - Cedar Rapids, IA/Interiors/Full Size Jpegs/interior 06.jpg",
+    "score": 29.19,
+    "output": {
+      "src": "/images/work-wall/work-138.webp",
+      "alt": "Finished Primus multifamily interior",
+      "width": 1800,
+      "height": 1200
+    }
+  },
+  {
+    "position": 139,
+    "group": "paramount",
+    "project": "paramount",
+    "kind": "interior",
+    "source": "Paramount Health Options - Cedar Rapids, IA/20230223_075150.jpg",
+    "score": 24.64,
+    "output": {
+      "src": "/images/work-wall/work-139.webp",
+      "alt": "Finished Primus commercial construction interior",
+      "width": 1013,
+      "height": 1800
+    }
+  },
+  {
+    "position": 140,
+    "group": "credit",
+    "project": "Veridian - Westdale - Cedar Rapids, IA:interior",
+    "kind": "interior",
+    "source": "Credit Unions/Veridian - Westdale - Cedar Rapids, IA/veridian westdale 2.tif",
+    "score": 31.34,
+    "output": {
+      "src": "/images/work-wall/work-140.webp",
+      "alt": "Finished Primus commercial construction interior",
+      "width": 1800,
+      "height": 1273
+    }
+  },
+  {
+    "position": 141,
+    "group": "crystal",
+    "project": "crystal:interior",
+    "kind": "interior",
+    "source": "Crystal Group - Hiawatha, IA/Interiors 1 Full Size Jpegs/Crystal Int-38.jpg",
+    "score": 34.6,
+    "output": {
+      "src": "/images/work-wall/work-141.webp",
+      "alt": "Finished Primus commercial construction interior",
+      "width": 1800,
+      "height": 1200
+    }
+  },
+  {
+    "position": 142,
+    "group": "methwick",
+    "project": "methwick:interior",
+    "kind": "interior",
+    "source": "Methwick Oakwood - Cedar Rapids, IA/Interiors/Full Size Jpegs/interior 15.jpg",
+    "score": 29.17,
+    "output": {
+      "src": "/images/work-wall/work-142.webp",
+      "alt": "Finished Primus multifamily interior",
+      "width": 1800,
+      "height": 1200
+    }
+  },
+  {
+    "position": 143,
+    "group": "credit",
+    "project": "Dupaco - SW Cedar Rapids:interior",
+    "kind": "interior",
+    "source": "Credit Unions/Dupaco - SW Cedar Rapids/dupaco glass corner office.tif",
+    "score": 31.19,
+    "output": {
+      "src": "/images/work-wall/work-143.webp",
+      "alt": "Finished Primus commercial construction interior",
+      "width": 1800,
+      "height": 1200
+    }
+  },
+  {
+    "position": 144,
+    "group": "crescent",
+    "project": "crescent",
+    "kind": "interior",
+    "source": "Crescent Electric - Cedar Rapids, IA/crescent4.jpg",
+    "score": 29.19,
+    "output": {
+      "src": "/images/work-wall/work-144.webp",
+      "alt": "Finished Primus commercial construction interior",
+      "width": 1200,
+      "height": 1800
+    }
+  },
+  {
+    "position": 145,
+    "group": "misc",
+    "project": "misc",
+    "kind": "interior",
+    "source": "Miscellaneous/World Class.jpg",
+    "score": 20.83,
+    "output": {
+      "src": "/images/work-wall/work-145.webp",
+      "alt": "Finished Primus commercial building exterior",
+      "width": 1600,
+      "height": 1200
+    }
+  },
+  {
+    "position": 146,
+    "group": "credit",
+    "project": "Veridian - Westdale - Cedar Rapids, IA:interior",
+    "kind": "interior",
+    "source": "Credit Unions/Veridian - Westdale - Cedar Rapids, IA/veridian lobby.tif",
+    "score": 31.11,
+    "output": {
+      "src": "/images/work-wall/work-146.webp",
+      "alt": "Finished Primus commercial lobby and reception area",
+      "width": 1800,
+      "height": 1200
+    }
+  },
+  {
+    "position": 147,
+    "group": "crystal",
+    "project": "crystal:interior",
+    "kind": "interior",
+    "source": "Crystal Group - Hiawatha, IA/Interiors 1 Full Size Jpegs/Crystal Int-37.jpg",
+    "score": 34.54,
+    "output": {
+      "src": "/images/work-wall/work-147.webp",
+      "alt": "Finished Primus commercial construction interior",
+      "width": 1800,
+      "height": 1200
+    }
+  },
+  {
+    "position": 148,
+    "group": "elplast",
+    "project": "elplast:interior",
+    "kind": "interior",
+    "source": "Elplast America - Marion, IA/Interiors/full res jpegs/interior 02.jpg",
+    "score": 30.94,
+    "output": {
+      "src": "/images/work-wall/work-148.webp",
+      "alt": "Finished Primus commercial construction interior",
+      "width": 1200,
+      "height": 1800
+    }
+  },
+  {
+    "position": 149,
+    "group": "legacy",
+    "project": "legacy",
+    "kind": "interior",
+    "source": "public/images/projects/lake-dental/sharepoint-curated.jpg",
+    "score": 22.03,
+    "output": {
+      "src": "/images/work-wall/work-149.webp",
+      "alt": "Finished Primus commercial construction interior",
+      "width": 1024,
+      "height": 683
+    }
+  },
+  {
+    "position": 150,
+    "group": "methwick",
+    "project": "methwick:interior",
+    "kind": "interior",
+    "source": "Methwick Oakwood - Cedar Rapids, IA/Interiors/Full Size Jpegs/interior 20.jpg",
+    "score": 29.1,
+    "output": {
+      "src": "/images/work-wall/work-150.webp",
+      "alt": "Finished Primus multifamily interior",
+      "width": 1800,
+      "height": 1200
+    }
+  },
+  {
+    "position": 151,
+    "group": "paramount",
+    "project": "paramount",
+    "kind": "interior",
+    "source": "Paramount Health Options - Cedar Rapids, IA/20230223_075023.jpg",
+    "score": 24.49,
+    "output": {
+      "src": "/images/work-wall/work-151.webp",
+      "alt": "Finished Primus commercial construction interior",
+      "width": 1800,
+      "height": 943
+    }
+  },
+  {
+    "position": 152,
+    "group": "credit",
+    "project": "Dupaco - 1st Ave Cedar Rapids:interior",
+    "kind": "interior",
+    "source": "Credit Unions/Dupaco - 1st Ave Cedar Rapids/dupaco detail 4.jpg",
+    "score": 30.91,
+    "output": {
+      "src": "/images/work-wall/work-152.webp",
+      "alt": "Finished Primus commercial construction interior",
+      "width": 1800,
+      "height": 1200
+    }
+  },
+  {
+    "position": 153,
+    "group": "personal",
+    "project": "personal:interior",
+    "kind": "interior",
+    "source": "Personal Safety Corporation/hallway 2.jpg",
+    "score": 25.78,
+    "output": {
+      "src": "/images/work-wall/work-153.webp",
+      "alt": "Finished Primus commercial construction interior",
+      "width": 1200,
+      "height": 1800
+    }
+  },
+  {
+    "position": 154,
+    "group": "crystal",
+    "project": "crystal:interior",
+    "kind": "interior",
+    "source": "Crystal Group - Hiawatha, IA/Interiors 1 Full Size Jpegs/Crystal Int-28.jpg",
+    "score": 34.5,
+    "output": {
+      "src": "/images/work-wall/work-154.webp",
+      "alt": "Finished Primus commercial construction interior",
+      "width": 1800,
+      "height": 1200
+    }
+  },
+  {
+    "position": 155,
+    "group": "credit",
+    "project": "Linn Area - Marion, IA:interior",
+    "kind": "interior",
+    "source": "Credit Unions/Linn Area - Marion, IA/Linn Area Marion_4.jpg",
+    "score": 30.54,
+    "output": {
+      "src": "/images/work-wall/work-155.webp",
+      "alt": "Finished Primus commercial construction interior",
+      "width": 1200,
+      "height": 1800
+    }
+  },
+  {
+    "position": 156,
+    "group": "methwick",
+    "project": "methwick:interior",
+    "kind": "interior",
+    "source": "Methwick Oakwood - Cedar Rapids, IA/Interiors/Full Size Jpegs/interior 08.jpg",
+    "score": 29.07,
+    "output": {
+      "src": "/images/work-wall/work-156.webp",
+      "alt": "Finished Primus multifamily interior",
+      "width": 1800,
+      "height": 1200
+    }
+  },
+  {
+    "position": 157,
+    "group": "misc",
+    "project": "misc",
+    "kind": "interior",
+    "source": "Miscellaneous/Parker.jpg",
+    "score": 20.12,
+    "output": {
+      "src": "/images/work-wall/work-157.webp",
+      "alt": "Finished Primus commercial building exterior",
+      "width": 1600,
+      "height": 1200
+    }
+  },
+  {
+    "position": 158,
+    "group": "credit",
+    "project": "Veridian - Westdale - Cedar Rapids, IA:interior",
+    "kind": "interior",
+    "source": "Credit Unions/Veridian - Westdale - Cedar Rapids, IA/veridian westdale 1.tif",
+    "score": 30.47,
+    "output": {
+      "src": "/images/work-wall/work-158.webp",
+      "alt": "Finished Primus commercial construction interior",
+      "width": 1800,
+      "height": 1295
+    }
+  },
+  {
+    "position": 159,
+    "group": "crystal",
+    "project": "crystal:interior",
+    "kind": "interior",
+    "source": "Crystal Group - Hiawatha, IA/Interiors 1 Full Size Jpegs/Crystal Int-40.jpg",
+    "score": 34.49,
+    "output": {
+      "src": "/images/work-wall/work-159.webp",
+      "alt": "Finished Primus commercial construction interior",
+      "width": 1800,
+      "height": 1200
+    }
+  },
+  {
+    "position": 160,
+    "group": "methwick",
+    "project": "methwick:interior",
+    "kind": "interior",
+    "source": "Methwick Oakwood - Cedar Rapids, IA/Interiors/Full Size Jpegs/interior 33.jpg",
+    "score": 28.99,
+    "output": {
+      "src": "/images/work-wall/work-160.webp",
+      "alt": "Finished Primus multifamily interior",
+      "width": 1800,
+      "height": 1200
+    }
+  },
+  {
+    "position": 161,
+    "group": "paramount",
+    "project": "paramount",
+    "kind": "interior",
+    "source": "Paramount Health Options - Cedar Rapids, IA/20230223_074828.jpg",
+    "score": 24.41,
+    "output": {
+      "src": "/images/work-wall/work-161.webp",
+      "alt": "Finished Primus commercial construction interior",
+      "width": 1013,
+      "height": 1800
+    }
+  },
+  {
+    "position": 162,
+    "group": "credit",
+    "project": "Dupaco - 1st Ave Cedar Rapids:interior",
+    "kind": "interior",
+    "source": "Credit Unions/Dupaco - 1st Ave Cedar Rapids/dupaco main 2.jpg",
+    "score": 30.12,
+    "output": {
+      "src": "/images/work-wall/work-162.webp",
+      "alt": "Finished Primus commercial construction interior",
+      "width": 1200,
+      "height": 1800
+    }
+  },
+  {
+    "position": 163,
+    "group": "crescent",
+    "project": "crescent",
+    "kind": "interior",
+    "source": "Crescent Electric - Cedar Rapids, IA/crescent3.jpg",
+    "score": 28.91,
+    "output": {
+      "src": "/images/work-wall/work-163.webp",
+      "alt": "Finished Primus commercial construction interior",
+      "width": 1200,
+      "height": 1800
+    }
+  },
+  {
+    "position": 164,
+    "group": "legacy",
+    "project": "legacy",
+    "kind": "interior",
+    "source": "public/images/projects/lake-dental/interior.jpg",
+    "score": 21.8,
+    "output": {
+      "src": "/images/work-wall/work-164.webp",
+      "alt": "Finished Primus commercial construction interior",
+      "width": 1024,
+      "height": 683
+    }
+  },
+  {
+    "position": 165,
+    "group": "credit",
+    "project": "Veridian - MLK and Ingersoll - Des Moines, IA:interior",
+    "kind": "interior",
+    "source": "Credit Unions/Veridian - MLK and Ingersoll - Des Moines, IA/WP_20150623_16_49_43_Pro.jpg",
+    "score": 28.96,
+    "output": {
+      "src": "/images/work-wall/work-165.webp",
+      "alt": "Finished Primus commercial construction interior",
+      "width": 1800,
+      "height": 1013
+    }
+  },
+  {
+    "position": 166,
+    "group": "crystal",
+    "project": "crystal:interior",
+    "kind": "interior",
+    "source": "Crystal Group - Hiawatha, IA/Interiors 1 Full Size Jpegs/Crystal Int-27.jpg",
+    "score": 34.47,
+    "output": {
+      "src": "/images/work-wall/work-166.webp",
+      "alt": "Finished Primus commercial construction interior",
+      "width": 1800,
+      "height": 1200
+    }
+  },
+  {
+    "position": 167,
+    "group": "methwick",
+    "project": "methwick:interior",
+    "kind": "interior",
+    "source": "Methwick Oakwood - Cedar Rapids, IA/Interiors/Full Size Jpegs/interior 12.jpg",
+    "score": 28.97,
+    "output": {
+      "src": "/images/work-wall/work-167.webp",
+      "alt": "Finished Primus multifamily interior",
+      "width": 1800,
+      "height": 1200
+    }
+  },
+  {
+    "position": 168,
+    "group": "credit",
+    "project": "Veridian - MLK and Ingersoll - Des Moines, IA:interior",
+    "kind": "interior",
+    "source": "Credit Unions/Veridian - MLK and Ingersoll - Des Moines, IA/Lounge - Red North Wall 2.jpg",
+    "score": 28.81,
+    "output": {
+      "src": "/images/work-wall/work-168.webp",
+      "alt": "Finished Primus commercial amenity space",
+      "width": 1800,
+      "height": 862
+    }
+  },
+  {
+    "position": 169,
+    "group": "misc",
+    "project": "misc",
+    "kind": "interior",
+    "source": "Miscellaneous/Allens.jpg",
+    "score": 20.12,
+    "output": {
+      "src": "/images/work-wall/work-169.webp",
+      "alt": "Finished Primus commercial building exterior",
+      "width": 1600,
+      "height": 1200
+    }
+  },
+  {
+    "position": 170,
+    "group": "crystal",
+    "project": "crystal:interior",
+    "kind": "interior",
+    "source": "Crystal Group - Hiawatha, IA/Interiors 1 Full Size Jpegs/Crystal Int-41.jpg",
+    "score": 34.4,
+    "output": {
+      "src": "/images/work-wall/work-170.webp",
+      "alt": "Finished Primus commercial construction interior",
+      "width": 1800,
+      "height": 1200
+    }
+  },
+  {
+    "position": 171,
+    "group": "elplast",
+    "project": "elplast:interior",
+    "kind": "interior",
+    "source": "Elplast America - Marion, IA/Interiors/full res jpegs/interior 12.jpg",
+    "score": 29.83,
+    "output": {
+      "src": "/images/work-wall/work-171.webp",
+      "alt": "Finished Primus commercial construction interior",
+      "width": 1200,
+      "height": 1800
+    }
+  },
+  {
+    "position": 172,
+    "group": "methwick",
+    "project": "methwick:interior",
+    "kind": "interior",
+    "source": "Methwick Oakwood - Cedar Rapids, IA/Interiors/Full Size Jpegs/interior 18.jpg",
+    "score": 28.91,
+    "output": {
+      "src": "/images/work-wall/work-172.webp",
+      "alt": "Finished Primus multifamily interior",
+      "width": 1800,
+      "height": 1200
+    }
+  },
+  {
+    "position": 173,
+    "group": "paramount",
+    "project": "paramount",
+    "kind": "interior",
+    "source": "Paramount Health Options - Cedar Rapids, IA/20230223_075450.jpg",
+    "score": 24.2,
+    "output": {
+      "src": "/images/work-wall/work-173.webp",
+      "alt": "Finished Primus commercial construction interior",
+      "width": 1800,
+      "height": 1013
+    }
+  },
+  {
+    "position": 174,
+    "group": "credit",
+    "project": "standalone-cccunorthlibertyexterior:exterior",
+    "kind": "exterior",
+    "source": "Credit Unions/Exteriors/CCCU North Liberty exterior copy.JPG",
+    "score": 28.78,
+    "output": {
+      "src": "/images/work-wall/work-174.webp",
+      "alt": "Finished Primus commercial building exterior",
+      "width": 1800,
+      "height": 1350
+    }
+  },
+  {
+    "position": 175,
+    "group": "personal",
+    "project": "personal:interior",
+    "kind": "interior",
+    "source": "Personal Safety Corporation/reception desk.jpg",
+    "score": 25.57,
+    "output": {
+      "src": "/images/work-wall/work-175.webp",
+      "alt": "Finished Primus commercial lobby and reception area",
+      "width": 1200,
+      "height": 1800
+    }
+  },
+  {
+    "position": 176,
+    "group": "crystal",
+    "project": "crystal:interior",
+    "kind": "interior",
+    "source": "Crystal Group - Hiawatha, IA/Interiors 1 Full Size Jpegs/Crystal Int-23.jpg",
+    "score": 34.23,
+    "output": {
+      "src": "/images/work-wall/work-176.webp",
+      "alt": "Finished Primus commercial construction interior",
+      "width": 1800,
+      "height": 1200
+    }
+  },
+  {
+    "position": 177,
+    "group": "credit",
+    "project": "Dupaco - SW Cedar Rapids:interior",
+    "kind": "interior",
+    "source": "Credit Unions/Dupaco - SW Cedar Rapids/dupaco entry.tif",
+    "score": 28.64,
+    "output": {
+      "src": "/images/work-wall/work-177.webp",
+      "alt": "Finished Primus commercial lobby and reception area",
+      "width": 1155,
+      "height": 1800
+    }
+  },
+  {
+    "position": 178,
+    "group": "methwick",
+    "project": "methwick:interior",
+    "kind": "interior",
+    "source": "Methwick Oakwood - Cedar Rapids, IA/Interiors/Full Size Jpegs/interior 09.jpg",
+    "score": 28.9,
+    "output": {
+      "src": "/images/work-wall/work-178.webp",
+      "alt": "Finished Primus multifamily interior",
+      "width": 1800,
+      "height": 1200
+    }
+  },
+  {
+    "position": 179,
+    "group": "crescent",
+    "project": "crescent",
+    "kind": "interior",
+    "source": "Crescent Electric - Cedar Rapids, IA/cresent hallway.jpg",
+    "score": 28.83,
+    "output": {
+      "src": "/images/work-wall/work-179.webp",
+      "alt": "Finished Primus commercial construction interior",
+      "width": 1200,
+      "height": 1800
+    }
+  },
+  {
+    "position": 180,
+    "group": "legacy",
+    "project": "legacy",
+    "kind": "interior",
+    "source": "public/images/projects/ducharme-dermatology/interior.jpg",
+    "score": 20.68,
+    "output": {
+      "src": "/images/work-wall/work-180.webp",
+      "alt": "Finished Primus commercial construction interior",
+      "width": 878,
+      "height": 585
+    }
+  },
+  {
+    "position": 181,
+    "group": "credit",
+    "project": "standalone-lacumtvernonrdcr:exterior",
+    "kind": "exterior",
+    "source": "Credit Unions/Exteriors/LACU Mt. Vernon RD CR copy.JPG",
+    "score": 25.46,
+    "output": {
+      "src": "/images/work-wall/work-181.webp",
+      "alt": "Finished Primus commercial building exterior",
+      "width": 1800,
+      "height": 1350
+    }
+  },
+  {
+    "position": 182,
+    "group": "misc",
+    "project": "misc",
+    "kind": "interior",
+    "source": "Miscellaneous/FARMBUREAU.jpg",
+    "score": 20.07,
+    "output": {
+      "src": "/images/work-wall/work-182.webp",
+      "alt": "Finished Primus commercial building exterior",
+      "width": 1600,
+      "height": 1200
+    }
+  },
+  {
+    "position": 183,
+    "group": "crystal",
+    "project": "crystal:interior",
+    "kind": "interior",
+    "source": "Crystal Group - Hiawatha, IA/Interiors 1 Full Size Jpegs/Crystal Int-26.jpg",
+    "score": 34.08,
+    "output": {
+      "src": "/images/work-wall/work-183.webp",
+      "alt": "Finished Primus commercial construction interior",
+      "width": 1800,
+      "height": 1200
+    }
+  },
+  {
+    "position": 184,
+    "group": "methwick",
+    "project": "methwick:interior",
+    "kind": "interior",
+    "source": "Methwick Oakwood - Cedar Rapids, IA/Interiors/Full Size Jpegs/interior 16.jpg",
+    "score": 28.55,
+    "output": {
+      "src": "/images/work-wall/work-184.webp",
+      "alt": "Finished Primus multifamily interior",
+      "width": 1800,
+      "height": 1200
+    }
+  },
+  {
+    "position": 185,
+    "group": "paramount",
+    "project": "paramount",
+    "kind": "interior",
+    "source": "Paramount Health Options - Cedar Rapids, IA/20230223_074844.jpg",
+    "score": 24.14,
+    "output": {
+      "src": "/images/work-wall/work-185.webp",
+      "alt": "Finished Primus commercial construction interior",
+      "width": 1800,
+      "height": 1328
+    }
+  },
+  {
+    "position": 186,
+    "group": "credit",
+    "project": "standalone-linnareamarion:exterior",
+    "kind": "exterior",
+    "source": "Credit Unions/Exteriors/Linn Area Marion.jpg",
+    "score": 24.29,
+    "output": {
+      "src": "/images/work-wall/work-186.webp",
+      "alt": "Finished Primus commercial building exterior",
+      "width": 1600,
+      "height": 1200
+    }
+  },
+  {
+    "position": 187,
+    "group": "crystal",
+    "project": "crystal:interior",
+    "kind": "interior",
+    "source": "Crystal Group - Hiawatha, IA/Interiors 1 Full Size Jpegs/Crystal Int-3.jpg",
+    "score": 33.91,
+    "output": {
+      "src": "/images/work-wall/work-187.webp",
+      "alt": "Finished Primus commercial construction interior",
+      "width": 1800,
+      "height": 1200
+    }
+  },
+  {
+    "position": 188,
+    "group": "methwick",
+    "project": "methwick:interior",
+    "kind": "interior",
+    "source": "Methwick Oakwood - Cedar Rapids, IA/Interiors/Full Size Jpegs/interior 17.jpg",
+    "score": 28.16,
+    "output": {
+      "src": "/images/work-wall/work-188.webp",
+      "alt": "Finished Primus multifamily interior",
+      "width": 1800,
+      "height": 1200
+    }
+  },
+  {
+    "position": 189,
+    "group": "credit",
+    "project": "standalone-linnareacr:exterior",
+    "kind": "exterior",
+    "source": "Credit Unions/Exteriors/Linn Area CR.jpg",
+    "score": 23.99,
+    "output": {
+      "src": "/images/work-wall/work-189.webp",
+      "alt": "Finished Primus commercial building exterior",
+      "width": 1600,
+      "height": 1200
+    }
+  },
+  {
+    "position": 190,
+    "group": "credit",
+    "project": "standalone-johndeerecommunitycreditunionwestdesmoines:exterior",
+    "kind": "exterior",
+    "source": "Credit Unions/Exteriors/John Deere Community Credit Union - West Des Moines.JPG",
+    "score": 22.03,
+    "output": {
+      "src": "/images/work-wall/work-190.webp",
+      "alt": "Finished Primus commercial building exterior",
+      "width": 1594,
+      "height": 655
+    }
+  }
+]
