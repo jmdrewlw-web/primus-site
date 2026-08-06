@@ -12,7 +12,10 @@ const PREVIEW_MESSAGE =
   'This review preview does not send messages. Please email connect@primus-companies.com or call (319) 393-4831.';
 const NOT_CONFIGURED_MESSAGE =
   'Online message delivery is not available yet. Please email connect@primus-companies.com or call (319) 393-4831.';
-const CONTACT_FORM_RECIPIENT = 'andy.hedding@primus-companies.com';
+const CONTACT_FORM_RECIPIENTS = [
+  'andy.hedding@primus-companies.com',
+  'connect@primus-companies.com',
+];
 const EMAIL_PATTERN = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 function formValue(formData: FormData, key: string, maxLength: number): string {
@@ -57,7 +60,7 @@ export async function submitContactForm(formData: FormData): Promise<ContactForm
     const resend = new Resend(process.env.RESEND_API_KEY);
     const { data, error } = await resend.emails.send({
       from: 'Primus Website <website@primus-companies.com>',
-      to: CONTACT_FORM_RECIPIENT,
+      to: CONTACT_FORM_RECIPIENTS,
       replyTo: email,
       subject: `New Contact: ${name} — ${projectType}`,
       text: `Name: ${name}\nEmail: ${email}\nPhone: ${phone}\nCompany: ${company}\nProject Type: ${projectType}\nBudget: ${budget}\n\nMessage:\n${message}`,

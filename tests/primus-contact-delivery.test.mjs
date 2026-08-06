@@ -21,6 +21,9 @@ test('contact delivery fails closed outside an explicitly configured production 
   assert.ok(action.indexOf("deliveryState === 'not-configured'") < action.indexOf("await import('resend')"));
   assert.match(action, /if \(error \|\| !data\?\.id\)/);
   assert.match(action, /reason: 'delivery'/);
+  assert.match(action, /andy\.hedding@primus-companies\.com/);
+  assert.match(action, /connect@primus-companies\.com/);
+  assert.match(action, /to: CONTACT_FORM_RECIPIENTS/);
 });
 
 test('preview contact UI explains the gate and cannot submit', () => {
