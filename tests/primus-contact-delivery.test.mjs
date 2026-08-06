@@ -8,6 +8,7 @@ const readiness = fs.readFileSync(path.join(repo, 'src/lib/contact-delivery.ts')
 const action = fs.readFileSync(path.join(repo, 'src/app/contact/actions.ts'), 'utf8');
 const form = fs.readFileSync(path.join(repo, 'src/components/ContactForm.tsx'), 'utf8');
 const page = fs.readFileSync(path.join(repo, 'src/app/contact/page.tsx'), 'utf8');
+const middleware = fs.readFileSync(path.join(repo, 'src/middleware.ts'), 'utf8');
 
 test('contact delivery fails closed outside an explicitly configured production environment', () => {
   assert.match(readiness, /process\.env\.VERCEL_ENV !== 'production'/);
@@ -34,4 +35,10 @@ test('unconfigured delivery falls back to direct email to both Primus inboxes', 
   assert.match(`${action}\n${page}`, /connect@primus-companies\.com/);
   assert.match(`${action}\n${page}`, /\(319\) 393-4831/);
   assert.doesNotMatch(`${form}\n${page}`, /one business day/i);
+});
+
+test('www permanently redirects to the canonical apex domain', () => {
+  assert.match(middleware, /request\.nextUrl\.hostname === 'www\.primus-companies\.com'/);
+  assert.match(middleware, /canonicalUrl\.hostname = 'primus-companies\.com'/);
+  assert.match(middleware, /NextResponse\.redirect\(canonicalUrl, 308\)/);
 });

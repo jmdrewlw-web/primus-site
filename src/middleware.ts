@@ -1,7 +1,14 @@
 import { NextResponse } from 'next/server';
 import type { NextRequest } from 'next/server';
 
-export function middleware(_request: NextRequest) {
+export function middleware(request: NextRequest) {
+  if (request.nextUrl.hostname === 'www.primus-companies.com') {
+    const canonicalUrl = request.nextUrl.clone();
+    canonicalUrl.hostname = 'primus-companies.com';
+
+    return NextResponse.redirect(canonicalUrl, 308);
+  }
+
   const response = NextResponse.next();
 
   // Vercel preview and local environments must never be indexed. Production
