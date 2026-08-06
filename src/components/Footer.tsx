@@ -91,7 +91,7 @@ export default function Footer() {
             <div className="space-y-3 text-sm text-white/50">
               <p>
                 <a
-                  href="mailto:connect@primus-companies.com"
+                  href="mailto:connect@primus-companies.com?cc=andy.hedding@primus-companies.com"
                   className="hover:text-white transition-colors"
                 >
                   connect@primus-companies.com

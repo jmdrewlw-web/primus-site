@@ -18,7 +18,7 @@ export default function BottomCTA() {
         </div>
         <p className="text-gray-500 text-sm">
           <a
-            href="mailto:connect@primus-companies.com"
+            href="mailto:connect@primus-companies.com?cc=andy.hedding@primus-companies.com"
             className="hover:text-gold transition-colors"
           >
             connect@primus-companies.com

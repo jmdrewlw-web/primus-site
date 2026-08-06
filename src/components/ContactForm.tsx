@@ -26,6 +26,8 @@ const BUDGET_RANGES = [
 const labelClass = 'block text-sm font-medium text-gray-800 mb-1.5';
 const inputClass =
   'w-full rounded-lg border border-gray-200 bg-white px-4 py-3 text-sm text-gray-800 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-700 focus:border-transparent transition';
+const CONTACT_EMAIL_HREF =
+  'mailto:connect@primus-companies.com?cc=andy.hedding@primus-companies.com';
 
 export default function ContactForm({ deliveryState }: { deliveryState: ContactDeliveryState }) {
   const searchParams = useSearchParams();
@@ -34,6 +36,23 @@ export default function ContactForm({ deliveryState }: { deliveryState: ContactD
 
   const [status, setStatus] = useState<'idle' | 'submitting' | 'success' | 'error'>('idle');
   const [errorMsg, setErrorMsg] = useState('');
+
+  if (deliveryState !== 'ready') {
+    return (
+      <div className="rounded-xl border border-gray-200 bg-gray-50 p-7">
+        <h3 className="text-lg font-semibold text-gray-800 mb-2">Tell us about your project</h3>
+        <p className="text-sm text-gray-600 mb-5">
+          Email our team directly and we&apos;ll get the right person involved.
+        </p>
+        <a
+          href={CONTACT_EMAIL_HREF}
+          className="inline-block rounded-lg px-6 py-3 bg-gold text-black font-semibold text-sm hover:bg-gold-light transition-colors"
+        >
+          Email Primus
+        </a>
+      </div>
+    );
+  }
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -72,17 +91,6 @@ export default function ContactForm({ deliveryState }: { deliveryState: ContactD
 
   return (
     <form ref={formRef} onSubmit={handleSubmit} noValidate className="space-y-5">
-      {deliveryState !== 'ready' && (
-        <div
-          role="status"
-          className="rounded-lg border border-amber-200 bg-amber-50 px-4 py-3 text-sm text-amber-900"
-        >
-          {deliveryState === 'preview'
-            ? 'Review preview: message delivery is disabled, so this form will not send. Please use the email or phone number on this page.'
-            : 'Online message delivery is not configured yet. Please use the email or phone number on this page.'}
-        </div>
-      )}
-
       <div className="absolute -left-[10000px]" aria-hidden="true">
         <label htmlFor="website">Website</label>
         <input
@@ -217,15 +225,11 @@ export default function ContactForm({ deliveryState }: { deliveryState: ContactD
       <div>
         <MagneticButton
           type="submit"
-          disabled={status === 'submitting' || deliveryState !== 'ready'}
+          disabled={status === 'submitting'}
           variant="gold"
-          className={status === 'submitting' || deliveryState !== 'ready' ? 'opacity-60 cursor-not-allowed' : ''}
+          className={status === 'submitting' ? 'opacity-60 cursor-not-allowed' : ''}
         >
-          {status === 'submitting'
-            ? 'Sending…'
-            : deliveryState === 'ready'
-              ? 'Send Message'
-              : 'Message Delivery Disabled'}
+          {status === 'submitting' ? 'Sending…' : 'Send Message'}
         </MagneticButton>
       </div>
     </form>

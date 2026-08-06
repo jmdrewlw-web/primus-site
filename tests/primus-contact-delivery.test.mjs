@@ -26,10 +26,10 @@ test('contact delivery fails closed outside an explicitly configured production 
   assert.match(action, /to: CONTACT_FORM_RECIPIENTS/);
 });
 
-test('preview contact UI explains the gate and cannot submit', () => {
-  assert.match(form, /Review preview: message delivery is disabled, so this form will not send/);
-  assert.match(form, /disabled=\{status === 'submitting' \|\| deliveryState !== 'ready'\}/);
-  assert.match(form, /Message Delivery Disabled/);
+test('unconfigured delivery falls back to direct email to both Primus inboxes', () => {
+  assert.match(form, /deliveryState !== 'ready'/);
+  assert.match(form, /mailto:connect@primus-companies\.com\?cc=andy\.hedding@primus-companies\.com/);
+  assert.match(form, /Email Primus/);
   assert.match(page, /<ContactForm deliveryState=\{getContactDeliveryState\(\)\}/);
   assert.match(`${action}\n${page}`, /connect@primus-companies\.com/);
   assert.match(`${action}\n${page}`, /\(319\) 393-4831/);

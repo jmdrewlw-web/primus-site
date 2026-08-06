@@ -68,7 +68,7 @@ export default function ContactPage() {
                     <div>
                       <p className="text-gray-400 text-xs font-medium uppercase tracking-wide mb-0.5">Email</p>
                       <a
-                        href="mailto:connect@primus-companies.com"
+                        href="mailto:connect@primus-companies.com?cc=andy.hedding@primus-companies.com"
                         className="text-gray-800 hover:text-purple-700 transition-colors font-medium"
                       >
                         connect@primus-companies.com
